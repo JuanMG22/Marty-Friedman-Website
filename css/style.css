@@ -1,0 +1,237 @@
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #141414;
+    color: #fff;
+    text-rendering: optimizeLegibility;
+    font-size: 16px;
+    font-family: 'Megadeth', sans-serif;
+}
+
+p {
+    font-family: sans-serif;
+}
+
+/* BUTTONS */
+
+.btn:link,
+.btn:visited {
+    text-decoration: none;
+    padding: 10px 30px;
+    margin: 20px;
+    display: inline-block;
+}
+
+.btn-full:link,
+.btn-full:visited {
+    border: 2px solid #fff;
+    color: #fff;
+    -webkit-transition: ease all .3s;
+    -o-transition: ease all .3s;
+    transition: ease all .3s;
+}
+
+.btn-full:hover,
+.btn-full:active {
+    background-color: #fff;
+    color: #000;
+    -webkit-transition: ease all .3s;
+    -o-transition: ease all .3s;
+    transition: ease all .3s;
+}
+
+
+/* Header Section */
+
+#header-section {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, .2)), to(rgba(0, 0, 0, .8))), url(../img/header-bg.jpg);
+    background-image: -o-linear-gradient(rgba(0, 0, 0, .2), rgba(0, 0, 0, .8)), url(../img/header-bg.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, .2), rgba(0, 0, 0, .8)), url(../img/header-bg.jpg);
+    height: 100vh;
+    background-size: cover;
+    background-position: top;
+    position: relative;
+    border-bottom: 1px solid #ccc;
+}
+
+h1 {
+    font-size: 400%;
+    color: #fff;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: 200%;
+    color: #fff;
+    font-weight: 400;
+}
+
+.header-box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+/* Navigation */
+
+.navegacion {
+    width: 1000px;
+    margin: 0 auto;
+    background: none;
+    background: none;
+    border-bottom: 5px solid #fff;
+}
+
+.navegacion i {
+    font-size: 200%;
+    margin-left: 20px;
+    color: #fff;
+}
+
+
+.logo {
+    display: inline-block;
+    margin-top: 10px;
+    margin-left: 185px;
+    height: 100px;
+    width: auto;
+
+}
+
+.navegacion ul {
+    list-style: none;
+}
+
+.menu {
+    margin-left: 287px;
+    display: inline;
+    text-align: right;
+}
+
+.menu>li {
+    position: relative;
+    display: inline-block;
+}
+
+.menu>li>a {
+    display: block;
+    padding: 15px 20px;
+    color: #fff;
+    text-decoration: none;
+}
+
+.menu li a:hover,
+.navegacion i:hover {
+    color: #727272;
+    -webkit-transition: all .3s;
+    -o-transition: all .3s;
+    transition: all .3s;
+}
+
+/* Submenu */
+
+.submenu {
+    position: absolute;
+    background: rgba(20, 20, 20, .5);
+    width: 120%;
+    visibility: hidden;
+    opacity: 0;
+    -webkit-transition: opacity 1.5s;
+    -o-transition: opacity 1.5s;
+    transition: opacity 1.5s;
+    text-align: left;
+}
+
+.submenu li a {
+    display: block;
+    padding: 15px;
+    color: #fff;
+    ;
+    text-decoration: none;
+}
+
+.menu li:hover .submenu {
+    visibility: visible;
+    opacity: 1;
+}
+
+/* Tabla */
+
+.tabla {
+    background-color: #000;
+    text-align: left;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.tabla tr td ul li {
+    list-style: none;
+}
+
+th,
+td {
+    padding: 20px;
+}
+
+tr:hover th,
+tr:hover td {
+    background-color: #141414;
+    color: white;
+}
+
+/* Videos */
+
+.videos-section p {
+    text-align: center;
+    margin: 25px;
+}
+
+.videos-section h2 {
+    text-align: center;
+    margin-top: 100px;
+}
+
+.videos-section iframe {
+    text-align: center;
+    margin: 20px;
+    margin-left: 40px;
+
+}
+
+/* Footer */
+
+footer {
+    border-top: 1px solid #ccc;
+}
+
+.footer-para1 {
+    display: inline-block;
+    margin-top: 10px;
+    margin-left: 650px;
+    padding-top: 20px;
+}
+
+.footer-para2 {
+    display: inline-block;
+    margin-top: 10px;
+    margin-left: 400px;
+    padding-top: 20px;
+}
+
+.logo-footer {
+    float: left;
+    margin-top: 20px;
+    margin-left: 100px;
+    height: 40px;
+    width: auto;
+}
