@@ -5,11 +5,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="http://fonts.cdnfonts.com/css/megadeth" rel="stylesheet">
+    <link rel="apple-touch-icon" sizes="180x180" href="./favicon_io//apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon_io//favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicon_io/favicon-16x16.png">
+    <link rel="manifest" href="./favicon_io/site.webmanifest">
     <script src="https://kit.fontawesome.com/4592a31928.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" type="text/css" href="./css/fluid.css">
     <link rel="stylesheet" href="./css/style.css">
     <title>Marty Friedman Website</title>
 </head>
@@ -25,10 +25,10 @@
             <a href="index.html"><img class="logo" src="./img/logo.png" alt="Marty Friedman Logo"></a>
                 <ul class="menu">
                     <li class="enlace">
-                        <a href="#">Menu 
-                            <i class="fas fa-bars menu-icon">
-                            </i>
-                        </a>
+                            <a href="#">Menu 
+                                <i class="fas fa-bars menu-icon">
+                                </i>
+                            </a>
                         <ul class="submenu">
                             <li><a href="index.html">Inicio</a></li>
                             <li><a href="./sections/noticias.html">Noticias</a></li>
@@ -49,69 +49,65 @@
             <a href="https://open.spotify.com/album/25iszifCj3DHz8NAIgHFAu" target="_blank" class="btn btn-full">TOKYO JUKEBOX 3</a>
         </div>
     </header>
-    <section class="noticias-section">
-        <h2 class="noticias-heading">Noticias</h2>
+    <section class="noticias-section js--noticias-section">
+        <h2 class="noticias-heading"><span>Noticias</span> </h2>
         <div class="noticias-box">
-            <img src="#" alt="Imagen Noticia">
+            <img class="noticia-imagen" src="./img/noticia-imagen.gif" alt="Imagen Noticia">
             <h3>Titulo Noticia</h3>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur, quos illo? Laudantium ea explicabo
                 voluptas!</p>
-            <a href="#">Leer más</a>
+            <a class="btn btn-full btn-noticia" href="#">Leer más</a>
         </div>
         <div class="noticias-box">
-            <img src="#" alt="Imagen Noticia">
+            <img class="noticia-imagen" src="./img/noticia-imagen.gif" alt="Imagen Noticia">
             <h3>Titulo Noticia</h3>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur, quos illo? Laudantium ea explicabo
                 voluptas!
             </p>
-            <a href="#">Leer más</a>
+            <a class="btn btn-full btn-noticia" href="#">Leer más</a>
         </div>
         <div class="noticias-box">
-            <img src="#" alt="Imagen Noticia">
+            <img class="noticia-imagen" src="./img/noticia-imagen.gif" alt="Imagen Noticia">
             <h3>Titulo Noticia</h3>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur, quos illo? Laudantium ea explicabo
                 voluptas!
             </p>
-            <a href="#">Leer más</a>
+            <a class="btn btn-full btn-noticia" href="#">Leer más</a>
         </div>
         <div class="noticias-box">
-            <img src="#" alt="Imagen Noticia">
+            <img class="noticia-imagen" src="./img/noticia-imagen.gif" alt="Imagen Noticia">
             <h3>Titulo Noticia</h3>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur, quos illo? Laudantium ea explicabo
                 voluptas!
             </p>
-            <a href="#">Leer más</a>
+            <a class="btn btn-full btn-noticia" href="#">Leer más</a>
         </div>
         <div class="noticias-box">
-            <img src="#" alt="Imagen Noticia">
+            <img class="noticia-imagen" src="./img/noticia-imagen.gif" alt="Imagen Noticia">
             <h3>Titulo Noticia</h3>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur, quos illo? Laudantium ea explicabo
                 voluptas!
             </p>
-            <a href="#">Leer más</a>
+            <a class="btn btn-full btn-noticia" href="#">Leer más</a>
         </div>
         <div class="noticias-box">
-            <img src="#" alt="Imagen Noticia">
+            <img class="noticia-imagen" src="./img/noticia-imagen.gif" alt="Imagen Noticia">
             <h3>Titulo Noticia</h3>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur, quos illo? Laudantium ea explicabo
                 voluptas!
             </p>
-            <a href="#">Leer más</a>
+            <a class="btn btn-full btn-noticia" href="#">Leer más</a>
         </div>
     </section>
 
     <section class="contact-section">
-        <h2>Contacto</h2>
-        <form>
-            <label for="nombre">Nombre</label>
+        <h2 class="contact-heading"><span>Contacto</span></h2>
+        <form class="contact-form">
+            <label class="contact-label" for="nombre">Nombre</label>
             <input type="text" name="nombre" placeholder="Tu nombre" required>
-            <br>
-            <br>
-            <label for="email">Email</label>
+            <label class="contact-label" for="email">Email</label>
             <input type="email" name="email" placeholder="Tu email" required>
-            <br>
-            <br>
-            <label for="pais">País</label>
+            <label class="contact-label" for="pais">País</label>
             <select name="pais">
                 <option name="Afganistan">Afganistan</option>
                 <option name="Albania">Albania</option>
@@ -157,25 +153,23 @@
                 <option name="Venezuela">Venezuela</option>
                 <option name="Zimbabue">Zimbabue</option>
             </select>
-            <br>
-            <br>
             <div id="newsletter"> Newsletter?
                 <input type="checkbox" name="acepta" value="1"></div>
-            <br>
             <label for="comentarios">Dejanos un mensaje</label>
-            <br><br>
             <textarea name="consulta" rows="10" cols="40" placeholder="Tu mensaje"></textarea>
-            <br><br>
-            <input type="reset" value="Limpiar">
-            <input type="submit" value="Enviar!">
+            <input class="send-button" type="reset" value="Limpiar">
+            <input class="reset-button" type="submit" value="Enviar!">
         </form>
     </section>
 
     <footer>
         <img src="./img/logo.png" alt="Logo-footer" class="logo-footer">
-            <p class="footer-para1">© COPYRIGHT 2021 MARTY FRIEDMAN</p>
+            <p class="footer-para1">&copy; COPYRIGHT 2021 MARTY FRIEDMAN</p>
             <p class="footer-para2">DEVOLOPED BY JUAN MANUEL GONZÁLEZ</p>
     </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+    <script src="./js/script.js"></script>
 </body>
 
 </html>
