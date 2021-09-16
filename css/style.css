@@ -43,8 +43,6 @@ p {
 .btn-full:visited {
     border: 2px solid #fff;
     color: #fff;
-    -webkit-transition: ease all .3s;
-    -o-transition: ease all .3s;
     transition: ease all .3s;
 }
 
@@ -52,8 +50,6 @@ p {
 .btn-full:active {
     background-color: #fff;
     color: #000;
-    -webkit-transition: ease all .3s;
-    -o-transition: ease all .3s;
     transition: ease all .3s;
 }
 
@@ -68,20 +64,24 @@ h2 {
 
 /* Header Section */
 
-#header-section {
-    background-image: linear-gradient(rgba(0, 0, 0, .2), rgba(0, 0, 0, .8)), url(../img/header-bg.jpg);
-    height: 100vh;
+.header-section {
+    background-image: linear-gradient(rgba(0, 0, 0, .9), rgba(0, 0, 0, .5)),
+    url(../img/header-bg2.jpg);
     background-size: cover;
+    border-bottom: 5px solid #fff;
 }
 
 .header-box {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    -webkit-transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-    text-align: center;
+    height: 88vh;
+    background-image: linear-gradient(rgba(45, 45, 45, .4), rgba(0, 0, 0, 1)),
+    url(../img/header-bg.jpg);
+    background-size: cover;
+    background-position: 0% 22%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 50px;
 }
 
 /* Navigation */
@@ -89,8 +89,6 @@ h2 {
     width: 1000px;
     margin: 0 auto;
     background: none;
-
-
 }
 
 .navegacion i {
@@ -129,11 +127,17 @@ h2 {
     text-decoration: none;
 }
 
-.menu li a:hover,
-.navegacion i:hover {
-    color: #727272;
-    transition: all .3s;
+.social:hover {
+    color: #dba520;
+    transition: all ease .3s;
 }
+
+.menu li a:hover  {
+    background-color: #dba520;
+    color: #000;
+}
+
+
 
 .sticky-nav {
     position: fixed;
@@ -143,7 +147,6 @@ h2 {
     width: 100%;
     z-index: 999;
     border-bottom: 1px solid #fff;
-    border-radius: 0;
     box-shadow: 0 2px 2px #ccc;
 }
 
@@ -168,8 +171,8 @@ h2 {
 
 .submenu {
     position: absolute;
-    background: rgba(20, 20, 20, .5);
-    width: 120%;
+    background: rgba(20, 20, 20, 1);
+    width: 100%;
     display: none;
     text-align: left;
     z-index: 999;
@@ -188,44 +191,81 @@ h2 {
 
 /* Discografia Section */
 
-#header-discografia {
-    background-image: linear-gradient(rgba(0, 0, 0, .9), rgba(0, 0, 0, .5)),
-    url(../img/header-bg2.jpg);
-    background-size: cover;
-}
-
 .discografia-section {
-    border-top: 5px solid white;
-    height: 170vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding-top: 50px;
+    padding-bottom: 50px;
 }
 
 .discografia-text {
     margin-bottom: 10px;
 }
+
 .discografia-text h2 span {
     padding-bottom: 10px;
-    border-bottom: 1px solid white;
+    border-bottom: 1px solid #fff;
+}
+
+.discografia-categoria {
+    font-size: 130%;
+    margin-top: 40px;
+    text-align: center;
+}
+
+.categoria-input {
+    margin: 5px;
+}
+
+#todo:checked~.todo,
+#solista:checked~.solista,
+#megadeth:checked~.megadeth,
+#cacophony:checked~.cacophony,
+.categoria-input:hover {
+    color: #dba520;
+}
+
+#solista:checked~.albumes .megadeth,
+#solista:checked~.albumes .hawaii,
+#solista:checked~.albumes .cacophony {
+    display: none;
+}
+
+#megadeth:checked~.albumes .mf,
+#megadeth:checked~.albumes .hawaii,
+#megadeth:checked~.albumes .cacophony {
+    display: none;
+}
+
+#cacophony:checked~.albumes .megadeth,
+#cacophony:checked~.albumes .hawaii,
+#cacophony:checked~.albumes .mf {
+    display: none;
 }
 
 .discografia-box {
     background-color: #141414;
-    display: inline-block;
     width: 70vw;
-    height: 150vh;
-    position: relative;
-    top: 3%;
-    left: 15%;
     padding: 20px;
     border: 1px solid #000;
     box-shadow: 1px 1px 15px 0 #000;
 }
 
+.albumes {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
 .discografia-imagen {
-    display: inline-block;
-    margin: 20px 11px 11px 11px;
-    width: 300px;
-    height: 300px;
+    margin: 30px 30px 0px 0px;
+    width: 22rem;
+    height: 22rem;
     opacity: .5;
+    transform: scale(1);
+    transition: ease all .3s;
 }
 
 .discografia-imagen:hover {
@@ -236,6 +276,10 @@ h2 {
 
 
 /* Videos Section */
+
+.videos-section {
+    border-top: 1px solid #fff;
+}
 
 .videos-section p {
     text-align: center;
@@ -256,16 +300,23 @@ h2 {
 /* Noticias Section */
 
 .noticias-section {
-    border-top: 1px solid #ccc;
+    border-top: 1px solid #fff;
     text-align: left;
     background-image: linear-gradient(rgba(0, 0, 0, .2), rgba(0, 0, 0, .8)),
     url(../img/noticias-bg.jpg);
     background-size: cover;
     background-attachment: fixed;
+    
+}
+
+.noticias-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
 }
 
 .noticia-imagen {
-    display: inline;
     width: 250px;
     height: 200px;
 }
@@ -279,20 +330,20 @@ h2 {
 .noticias-section span {
     padding-bottom: 10px;
     border-bottom: 1px solid #ccc;
-
 }
 
 
 .noticias-box {
     background-color: #141414;
-    display: inline-block;
     width: 290px;
     height: 430px;
     padding: 20px;
-    margin-left: 255px;
+    margin-left: 5vw;
+    margin-right: 5vw;
     margin-bottom: 100px;
     border: 1px solid #000;
     box-shadow: 1px 1px 15px 0 #000;
+    transition: ease all 0.4s;
 }
 
 
@@ -359,24 +410,14 @@ input[type=checkbox] {
 footer {
     background-color: rgba(27, 27, 27, .3);
     border-top: 1px solid #ccc;
-}
-
-.footer-para1 {
-    display: inline-block;
-    margin-left: 650px;
-    margin-bottom: 30px;
-}
-
-.footer-para2 {
-    display: inline-block;
-    margin-left: 400px;
-    margin-bottom: 30px;
+    padding: 30px 0px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
 }
 
 .logo-footer {
-    display: inline-block;
-    margin-top: 30px;
-    margin-left: 100px;
     height: 50px;
-    width: auto;
 }
