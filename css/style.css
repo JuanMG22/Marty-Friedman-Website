@@ -495,20 +495,19 @@ footer {
 /* Responsive */
 
 @media only screen and (max-width: 1400px) {
-
-    .navegacion .menu {
-        width: 10vw;
-    }
-
     body {
         font-size: 15px;
+    }
+    /* Navigation */
+    .navegacion .menu {
+        width: 10vw;
     }
 
     .navegacion .social-box {
         width: 15vw;
     }
 
-
+    /* Galeria */
     .galeria-container {
         grid-template-columns: repeat(2, 1fr);
     }
@@ -519,6 +518,7 @@ footer {
         font-size: 13px;
     }
 
+    /* Navigation */
     .navegacion .menu {
         width: 12vw;
     }
@@ -526,6 +526,8 @@ footer {
     .logo {
         height: 10vh;
     }
+
+    /* Galeria */
     .galeria-container {
         grid-template-columns: repeat(2, 1fr);
     }
@@ -536,6 +538,7 @@ footer {
         font-size: 12px;
     }
 
+    /* Navigation */
     .navegacion .menu {
         width: 14vw;
     }
@@ -544,6 +547,7 @@ footer {
         height: 8vh;
     }
 
+    /* Galeria */
     .galeria-container {
         grid-template-columns: repeat(2, 1fr);
     }
@@ -554,6 +558,12 @@ footer {
         font-size: 10px;
     }
 
+    p,
+    label {
+        font-size: 14px;
+    }
+
+    /* Navigation */
     .navegacion .menu li a span {
         display: none;
     }
@@ -569,11 +579,7 @@ footer {
         height: 8vh;
     }
 
-    p,
-    label {
-        font-size: 14px;
-    }
-
+    /* Galeria */
     .galeria-container {
         grid-template-columns: repeat(1, 1fr);
     }
@@ -597,6 +603,7 @@ footer {
         font-size: 14px;
     }
 
+    /* Navigation */
     .navegacion {
         width: 80vw;
     }
@@ -620,10 +627,28 @@ footer {
     .logo {
         height: 7vh;
     }
+    /* Noticias Section*/
+    .noticias-box {
+        width: 260x;
+        height: 390px;
+    }
 
+    /* Discografia Section*/
+    .discografia-imagen {
+        width: 14rem;
+        height: 14rem;
+        margin: 10px 10px 0px 0px;
+    }
+    
+    /* Footer */
     footer {
         padding: 20px 0px;
     }
+
+    footer p{
+        font-size: 110%;
+    }
+
     .logo-footer {
         height: 30px;
         margin-right: 0vw;
