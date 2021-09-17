@@ -579,6 +579,12 @@ footer {
         height: 8vh;
     }
 
+    /* Discografia Section*/
+    .discografia-imagen {
+        width: 16rem;
+        height: 16rem;
+        margin: 10px 10px 0px 0px;
+    }
     /* Galeria */
     .galeria-container {
         grid-template-columns: repeat(1, 1fr);
