@@ -14,6 +14,9 @@
     <!-- CSS y Icons -->
     <script src="https://kit.fontawesome.com/4592a31928.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./css/style.css">
+
+    <!-- Animate CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     
 </head>
 
@@ -36,10 +39,10 @@
             <a href="index.html"><img class="logo" src="./img/logo.png" alt="Marty Friedman Logo"></a>
             <ul class="menu">
                 <li>
-                    <a href="#"><span>Menu</span>
-                        <i class="fas fa-bars menu-icon">
-                        </i>
-                    </a>
+                    <button id="btn-menu" class="btn-menu">
+                        <span>Menu</span>
+                            <i class="fas fa-bars menu-icon"></i>
+                    </button>
                     <ul class="submenu">
                         <li><a href="index.html">Inicio</a></li>
                         <li><a href="./sections/noticias.html">Noticias</a></li>
@@ -68,14 +71,14 @@
     <section class="noticias-section js--noticias-section">
         <h2 class="noticias-heading"><span>Noticias</span> </h2>
         <div class="noticias-container">
-            <div class="noticias-box">
+            <div class="noticias-box wow animate__animated animate__fadeInUp">
                 <img class="noticia-imagen" src="./img/noticia-imagen.gif" alt="Imagen Noticia">
                 <h3>Titulo Noticia</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur, quos illo? Laudantium ea explicabo
                     voluptas!</p>
                 <a class="btn btn-full btn-noticia" href="#">Leer más</a>
             </div>
-            <div class="noticias-box">
+            <div class="noticias-box wow animate__animated animate__fadeInUp">
                 <img class="noticia-imagen" src="./img/noticia-imagen.gif" alt="Imagen Noticia">
                 <h3>Titulo Noticia</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur, quos illo? Laudantium ea explicabo
@@ -83,7 +86,7 @@
                 </p>
                 <a class="btn btn-full btn-noticia" href="#">Leer más</a>
             </div>
-            <div class="noticias-box">
+            <div class="noticias-box wow animate__animated animate__fadeInUp">
                 <img class="noticia-imagen" src="./img/noticia-imagen.gif" alt="Imagen Noticia">
                 <h3>Titulo Noticia</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur, quos illo? Laudantium ea explicabo
@@ -91,7 +94,7 @@
                 </p>
                 <a class="btn btn-full btn-noticia" href="#">Leer más</a>
             </div>
-            <div class="noticias-box">
+            <div class="noticias-box wow animate__animated animate__fadeInUp">
                 <img class="noticia-imagen" src="./img/noticia-imagen.gif" alt="Imagen Noticia">
                 <h3>Titulo Noticia</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur, quos illo? Laudantium ea explicabo
@@ -99,7 +102,7 @@
                 </p>
                 <a class="btn btn-full btn-noticia" href="#">Leer más</a>
             </div>
-            <div class="noticias-box">
+            <div class="noticias-box wow animate__animated animate__fadeInUp">
                 <img class="noticia-imagen" src="./img/noticia-imagen.gif" alt="Imagen Noticia">
                 <h3>Titulo Noticia</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur, quos illo? Laudantium ea explicabo
@@ -107,7 +110,7 @@
                 </p>
                 <a class="btn btn-full btn-noticia" href="#">Leer más</a>
             </div>
-            <div class="noticias-box">
+            <div class="noticias-box wow animate__animated animate__fadeInUp">
                 <img class="noticia-imagen" src="./img/noticia-imagen.gif" alt="Imagen Noticia">
                 <h3>Titulo Noticia</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur, quos illo? Laudantium ea explicabo
@@ -119,6 +122,7 @@
     </section>
     <!-- Seccion de Contacto -->
     <section id="contact-section" class="contact-section">
+        <div class="wow animate__animated animate__fadeInUp">
         <h2 class="contact-heading"><span>Contacto</span></h2>
         <form class="contact-form">
             <label class="contact-label" for="nombre">Nombre</label>
@@ -178,6 +182,7 @@
             <input class="send-button" type="reset" value="Limpiar">
             <input class="reset-button" type="submit" value="Enviar!">
         </form>
+        </div>
     </section>
     <!-- Footer -->
     <footer>
@@ -186,6 +191,10 @@
         <p>Devoloped by Juan Manuel González</p>
     </footer>
     <!-- JavaScript -->
+    <script src="http://wowjs.uk/dist/wow.min.js"></script>
+    <script>
+    new WOW().init();
+    </script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
     <script src="./js/script.js"></script>

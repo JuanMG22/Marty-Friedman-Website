@@ -4,6 +4,8 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Staatliches',
+    cursive;
 }
 
 body {
@@ -12,12 +14,20 @@ body {
     color: #fff;
     text-rendering: optimizeLegibility;
     font-size: 16px;
-    font-family: 'Staatliches', cursive;
 }
 
+h1 {
+    display: none;
+}
+
+h2 {
+    font-size: 350%;
+    color: #fff;
+}
 
 p {
     font-family: 'Roboto', sans-serif;
+    color: #ccc;
 }
 
 /* Buttons */
@@ -28,7 +38,11 @@ p {
     text-decoration: none;
     padding: 10px 30px;
     margin: 20px;
+    border-radius: 5px;
     display: inline-block;
+    animation: bounceIn;
+    animation-duration: 1s;
+    animation-delay: .5s;
 }
 
 .btn-noticia:link,
@@ -51,16 +65,6 @@ p {
 .btn-full:active {
     background-color: #fff;
     color: #000;
-    transition: ease all .3s;
-}
-
-h1 {
-    display: none;
-}
-
-h2 {
-    font-size: 350%;
-    color: #fff;
 }
 
 /* Header Section */
@@ -69,13 +73,13 @@ h2 {
     background-image: linear-gradient(rgba(0, 0, 0, .9), rgba(0, 0, 0, .5)),
         url(../img/header-bg2.jpg);
     background-size: cover;
-    border-bottom: 5px solid #fff;
+    border-bottom: 4px solid #fff;
     display: flex;
     justify-content: center;
 }
 
 .header-box {
-    height: 88vh;
+    height: 92vh;
     background-image: linear-gradient(rgba(45, 45, 45, .4), rgba(0, 0, 0, 1)),
         url(../img/header-bg.jpg);
     background-size: cover;
@@ -86,6 +90,12 @@ h2 {
     align-items: center;
     padding-bottom: 50px;
 }
+
+.header-text {
+    text-align: center;
+}
+
+
 
 /* Navigation */
 .navegacion {
@@ -104,8 +114,8 @@ h2 {
 }
 
 .logo {
-    height: 10.5vh;
-    margin-right: 6.6vw;
+    height: 7vh;
+    margin-right: 4.9vw;
 }
 
 .navegacion ul {
@@ -113,18 +123,39 @@ h2 {
 }
 
 .menu {
-    width: 8.6vw;
+    width: 8.8vw;
     text-align: left;
     z-index: 999;
+    font-size: 120%;
+}
+.menu li button span {
+    font-size: 140%;
+    letter-spacing: 1px;
+}
+
+.btn-menu {
+    text-decoration: none;
+    background: none;
+    border: none;
+    box-shadow: none;
+    cursor: pointer;
+    transition: ease all .3s;
+}
+
+.btn-menu:hover,
+.menu li a:hover {
+    background: #dba520;
+    color: #141414;
 }
 
 .menu>li {
     position: relative;
 }
 
-.menu>li>a {
+.menu>li>a,
+.menu>li>button {
     display: block;
-    padding: 15px 20px;
+    padding: 15px 30px;
     color: #fff;
     text-decoration: none;
 }
@@ -138,15 +169,7 @@ h2 {
 .social:hover {
     transform: scale(1.15);
     color: #dba520;
-    transition: ease all .3s;
 }
-
-.menu li a:hover {
-    background-color: #dba520;
-    color: #000;
-}
-
-
 
 .sticky-nav {
     position: fixed;
@@ -162,7 +185,7 @@ h2 {
     display: none;
 }
 
-.sticky-nav li a i {
+.sticky-nav li button i {
     display: inline;
 }
 
@@ -180,11 +203,15 @@ h2 {
 
 .submenu {
     position: absolute;
-    background: rgba(20, 20, 20, 1);
-    width: 100%;
-    display: none;
+    background-image: linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .6)),
+    url(../img/header-bg2.jpg);
+    background-position: center;
+    width: 90%;
+    visibility: hidden;
+    opacity: 0;
     text-align: left;
     z-index: 999;
+    transition: ease all .3s;
 }
 
 .submenu li a {
@@ -195,7 +222,8 @@ h2 {
 }
 
 .menu li:hover .submenu {
-    display: block;
+    visibility: visible;
+    opacity: 1;
 }
 
 /* Discografia Section */
@@ -206,6 +234,7 @@ h2 {
     align-items: flex-start;
     padding-top: 50px;
     padding-bottom: 50px;
+    min-height: 79.6vh;
 }
 
 .discografia-text {
@@ -246,27 +275,40 @@ h2 {
 #solista:checked~.albumes .megadeth,
 #solista:checked~.albumes .hawaii,
 #solista:checked~.albumes .cacophony {
-    display: none;
+    position: absolute;
+    visibility: hidden;
+    opacity: 0;
+    height: 0;
+    transition: ease height .3s;
 }
 
 #megadeth:checked~.albumes .mf,
 #megadeth:checked~.albumes .hawaii,
 #megadeth:checked~.albumes .cacophony {
-    display: none;
+    position: absolute;
+    visibility: hidden;
+    opacity: 0;
+    height: 0;
+    transition: ease height .3s;
 }
 
 #cacophony:checked~.albumes .megadeth,
 #cacophony:checked~.albumes .hawaii,
 #cacophony:checked~.albumes .mf {
-    display: none;
+    position: absolute;
+    visibility: hidden;
+    opacity: 0;
+    height: 0;
+    transition: ease height .3s;
 }
 
 .discografia-box {
-    background-color: #141414;
+    background-color: rgba(20, 20, 20, .7);
     width: 70vw;
     padding: 20px;
     border: 1px solid #000;
     box-shadow: 1px 1px 15px 0 #000;
+    position: relative;
 }
 
 .albumes {
@@ -287,7 +329,6 @@ h2 {
 .discografia-imagen:hover {
     transform: scale(1.1);
     opacity: 1;
-    transition: ease all .3s;
 }
 
 /* Galeria */
@@ -328,7 +369,8 @@ h2 {
 }
 
 .galeria-imagen {
-    height: 250px;
+    height: 300px;
+    overflow: hidden;
 }
 
 .galeria-imagen img {
@@ -342,7 +384,6 @@ h2 {
 .galeria-imagen img:hover {
     filter: grayscale(0%);
     transform: scale(1.05);
-    transition: ease all .3s;
 }
 
 /* Videos Section */
@@ -413,6 +454,7 @@ h2 {
     margin-bottom: 100px;
     border: 1px solid #000;
     box-shadow: 1px 1px 15px 0 #000;
+    border-radius: 5px;
     transition: ease all .3s;
 }
 
@@ -425,7 +467,6 @@ h2 {
     border: 1px solid #ccc;
     box-shadow: 1px 1px 15px 0 #ccc;
     transform: scale(1.05);
-    transition: ease all .3s;
 }
 
 /* Contact Section */
@@ -478,7 +519,7 @@ input[type=checkbox] {
 /* Footer */
 
 footer {
-    background-color: rgba(27, 27, 27, .3);
+    background-color: rgba(15, 15, 15, .5);
     border-top: 1px solid #ccc;
     padding: 30px 0px;
     display: flex;
@@ -500,13 +541,14 @@ footer {
     }
     /* Navigation */
     .navegacion .menu {
-        width: 10vw;
+        width: 12vw;
     }
-
     .navegacion .social-box {
         width: 15vw;
     }
-
+    .header-box {
+        background-position: center;
+    }
     /* Galeria */
     .galeria-container {
         grid-template-columns: repeat(2, 1fr);
@@ -520,13 +562,15 @@ footer {
 
     /* Navigation */
     .navegacion .menu {
-        width: 12vw;
+        width: 14vw;
     }
-
     .logo {
         height: 10vh;
     }
 
+    .header-box {
+        background-position: center;
+    }
     /* Galeria */
     .galeria-container {
         grid-template-columns: repeat(2, 1fr);
@@ -539,14 +583,20 @@ footer {
     }
 
     /* Navigation */
+    .navegacion .menu li button span {
+        display: none;
+    }
     .navegacion .menu {
-        width: 14vw;
+        width: 15vw;
     }
 
     .logo {
         height: 8vh;
     }
 
+    .header-box {
+        background-position: center;
+    }
     /* Galeria */
     .galeria-container {
         grid-template-columns: repeat(2, 1fr);
@@ -564,13 +614,16 @@ footer {
     }
 
     /* Navigation */
-    .navegacion .menu li a span {
+    .navegacion .menu li button span {
         display: none;
     }
     .navegacion .menu {
-        width: 14vw;
+        width: 15vw;
     }
 
+    .submenu {
+        width: 17.8vw;
+    }
     .navegacion .social-box {
         width: 20vw;
     }
@@ -579,6 +632,9 @@ footer {
         height: 8vh;
     }
 
+    .header-box {
+        background-position: center;
+    }
     /* Discografia Section*/
     .discografia-imagen {
         width: 16rem;
@@ -609,6 +665,9 @@ footer {
         font-size: 14px;
     }
 
+    .header-box {
+        background-position: center;
+    }
     /* Navigation */
     .navegacion {
         width: 80vw;
@@ -618,12 +677,17 @@ footer {
         width: 100vw;
     }
 
-    .navegacion .menu li a span {
+    .navegacion .menu li button span {
         display: none;
     }
 
     .navegacion .menu {
-        width: 17vw;
+        width: 19vw;
+    }
+
+    .submenu {
+        font-size: 130%;
+        width: 150%;
     }
 
     .navegacion .social-box {
