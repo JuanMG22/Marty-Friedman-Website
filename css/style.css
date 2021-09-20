@@ -41,8 +41,8 @@ p {
     border-radius: 5px;
     display: inline-block;
     animation: bounceIn;
-    animation-duration: 1s;
-    animation-delay: .5s;
+    animation-duration: 2s;
+    animation-delay: .2s;
 }
 
 .btn-noticia:link,
@@ -309,6 +309,8 @@ p {
     border: 1px solid #000;
     box-shadow: 1px 1px 15px 0 #000;
     position: relative;
+    animation: zoomInUp;
+    animation-duration: .8s;
 }
 
 .albumes {
@@ -357,6 +359,8 @@ p {
     padding: 20px;
     border: 1px solid #000;
     box-shadow: 1px 1px 15px 0 #000;
+    animation: zoomInUp;
+    animation-duration: .8s;
 }
 
 .galeria-container {
@@ -390,6 +394,14 @@ p {
 
 .videos-section {
     border-top: 1px solid #fff;
+    display: flex;
+    flex-direction: column;
+}
+
+.videos-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .videos-section p {
@@ -404,8 +416,9 @@ p {
 
 .videos-section iframe {
     text-align: center;
-    margin: 20px;
-    margin-left: 40px;
+    height: 40vh;
+    width: 40vw;
+    margin: 10px;
 }
 
 /* Noticias Section */
