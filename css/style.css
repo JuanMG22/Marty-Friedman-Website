@@ -95,8 +95,6 @@ p {
     text-align: center;
 }
 
-
-
 /* Navigation */
 .navegacion {
     width: 50vw;
@@ -252,39 +250,43 @@ p {
     text-align: center;
 }
 
-.categoria-input {
+.discografia-input {
+    cursor: pointer;
+    font-size: 125%;
     margin: 5px;
 }
 
 #todo,
 #solista,
 #megadeth,
-#cacophony {
+#cacophony,
+#hawaii {
     opacity: 0;
 }
 
 #todo:checked~.todo,
-#solista:checked~.solista,
 #megadeth:checked~.megadeth,
+#solista:checked~.solista,
 #cacophony:checked~.cacophony,
-.categoria-input:hover {
+#hawaii:checked~.hawaii,
+.discografia-input:hover {
     color: #dba520;
     transition: ease all .3s;
-}
-
-#solista:checked~.albumes .megadeth,
-#solista:checked~.albumes .hawaii,
-#solista:checked~.albumes .cacophony {
-    position: absolute;
-    visibility: hidden;
-    opacity: 0;
-    height: 0;
-    transition: ease height .3s;
 }
 
 #megadeth:checked~.albumes .mf,
 #megadeth:checked~.albumes .hawaii,
 #megadeth:checked~.albumes .cacophony {
+    position: absolute;
+    visibility: hidden;
+    opacity: 0;
+    height: 0;
+    transition: ease height .3s;
+}   
+
+#solista:checked~.albumes .megadeth,
+#solista:checked~.albumes .hawaii,
+#solista:checked~.albumes .cacophony {
     position: absolute;
     visibility: hidden;
     opacity: 0;
@@ -302,6 +304,15 @@ p {
     transition: ease height .3s;
 }
 
+#hawaii:checked~.albumes .megadeth,
+#hawaii:checked~.albumes .cacophony,
+#hawaii:checked~.albumes .mf {
+    position: absolute;
+    visibility: hidden;
+    opacity: 0;
+    height: 0;
+    transition: ease height .3s;
+}
 .discografia-box {
     background-color: rgba(20, 20, 20, .7);
     width: 70vw;
@@ -349,7 +360,7 @@ p {
 
 .galeria-text h2 span {
     padding-bottom: 10px;
-    border-bottom: 1px solid #fff;
+    border-bottom: 2px solid #fff;
 }
 
 
@@ -430,7 +441,6 @@ p {
         url(../img/noticias-bg.jpg);
     background-size: cover;
     background-attachment: fixed;
-
 }
 
 .noticias-container {
@@ -482,6 +492,205 @@ p {
     transform: scale(1.05);
 }
 
+/* Tour section */
+.tour-section {
+    display: flex;
+    justify-content: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    min-height: 79.6vh;
+}
+
+.tour-box {
+    background-color: rgba(20, 20, 20, .7);
+    width: 70vw;
+    padding: 20px;
+    border: 1px solid #000;
+    box-shadow: 1px 1px 15px 0 #000;
+    position: relative;
+    animation: zoomInUp;
+    animation-duration: .8s;
+    min-height: 70vh;
+}
+
+.tour-text {
+    margin-bottom: 40px;
+}
+
+.tour-text h2 span {
+    padding-bottom: 10px;
+    border-bottom: 2px solid #fff;
+}
+
+/* Gear Section */
+.gear-section {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    min-height: 79.6vh;
+}
+
+.gear-text {
+    margin-bottom: 10px;
+}
+
+.gear-text h2  {
+    margin-bottom: 20px;
+}
+
+.gear-text h3 {
+    color: #dba520;
+    font-size: 130%;
+    margin: 40px 20px;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+.gear-text h2 span {
+    padding-bottom: 10px;
+    border-bottom: 2px solid #fff;
+    margin-bottom: 10px;
+}
+
+.marcas-box {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.gear-text img {
+    filter: invert(100%);
+    height: 10vh;
+    width: 12vw;
+}
+
+.gear-categoria {
+    margin-top: 40px;
+    text-align: left;
+}
+
+.gear-input {
+    font-size: 180%;
+    cursor: pointer;
+}
+
+#guitarras,
+#amps,
+#pedales,
+#pickups {
+    opacity: 0;
+}
+
+.gear-input:hover {
+    color: #dba520;
+    transition: ease all .3s;
+}
+
+#guitarras:checked~.guitarras,
+#amps:checked~.amps,
+#pedales:checked~.pedales,
+#pickups:checked~.pickups {
+    color: #dba520;
+}
+
+#guitarras:checked~.albumes .amps,
+#guitarras:checked~.albumes .pickups,
+#guitarras:checked~.albumes .pedales {
+    position: absolute;
+    visibility: hidden;
+    opacity: 0;
+    height: 0;
+    transition: ease height .3s;
+}
+
+#amps:checked~.albumes .gt,
+#amps:checked~.albumes .pickups,
+#amps:checked~.albumes .pedales {
+    position: absolute;
+    visibility: hidden;
+    opacity: 0;
+    height: 0;
+    transition: ease height .3s;
+}
+
+#pickups:checked~.albumes .gt,
+#pickups:checked~.albumes .amps,
+#pickups:checked~.albumes .pedales {
+    position: absolute;
+    visibility: hidden;
+    opacity: 0;
+    height: 0;
+    transition: ease height .3s;
+}
+
+#pedales:checked~.albumes .gt,
+#pedales:checked~.albumes .amps,
+#pedales:checked~.albumes .pickups {
+    position: absolute;
+    visibility: hidden;
+    opacity: 0;
+    height: 0;
+    transition: ease height .3s;
+}
+
+.gear-box {
+    background-color: rgba(20, 20, 20, .7);
+    width: 70vw;
+    padding: 20px;
+    border: 1px solid #000;
+    box-shadow: 1px 1px 15px 0 #000;
+    position: relative;
+    animation: zoomInUp;
+    animation-duration: .8s;
+}
+
+.gear-guitarras-imagen {
+    margin: 30px 10px 0px 0px;
+    width: 40rem;
+    height: 12rem;
+    opacity: .5;
+    transition: ease all .3s;
+}
+
+.gear-amps-imagen {
+    margin: 30px 10px 0px 0px;
+    width: 35rem;
+    height: 12rem;
+    opacity: .5;
+    transition: ease all .3s;
+}
+
+.gear-pickups-imagen {
+    margin: 30px 10px 0px 0px;
+    width: 35rem;
+    height: 20rem;
+    opacity: .5;
+    transition: ease all .3s;
+}
+
+.gear-pedals-imagen {
+    margin: 30px 10px 0px 0px;
+    width: 13rem;
+    height: 20rem;
+    opacity: .5;
+    transition: ease all .3s;
+}
+
+.gear-pedals-imagen-xl {
+    margin: 30px 10px 0px 0px;
+    width: 30rem;
+    height: 19.5rem;
+    opacity: .5;
+    transition: ease all .3s;
+}
+
+
+
+.gear-over:hover {
+    transform: scale(1.1);
+    opacity: 1;
+}
 /* Contact Section */
 
 .contact-section {
@@ -546,7 +755,7 @@ footer {
     margin-right: 8vw;
 }
 
-/* Responsive */
+/* Media Queries*/
 
 @media only screen and (max-width: 1400px) {
     body {

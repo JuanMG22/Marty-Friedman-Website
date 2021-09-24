@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
@@ -15,8 +15,9 @@
     <script src="https://kit.fontawesome.com/4592a31928.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./css/style.css">
 
-    <!-- Animate CSS -->
+    <!-- Animate CSS y AOS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     
 </head>
 
@@ -62,23 +63,24 @@
             <div class="header-text">
                 <h1 class="titulo">Marty Friedman</h1>
                 <h2>Escucha el último album</h2>
-            </div>
+            
             <a href="https://open.spotify.com/album/25iszifCj3DHz8NAIgHFAu" target="_blank" class="btn btn-full">TOKYO
                 JUKEBOX 3</a>
+            </div>
         </div>
     </section>
     <!-- Seccion Noticias del index -->
     <section class="noticias-section js--noticias-section">
-        <h2 class="noticias-heading  wow animate__animated animate__fadeInUp"><span>Noticias</span> </h2>
-        <div class="noticias-container">
-            <div class="noticias-box wow animate__animated animate__fadeInUp">
+        <h2 class="noticias-heading" data-aos="fade-up"><span>Noticias</span> </h2>
+        <div class="noticias-container" data-aos="fade-up">
+            <div class="noticias-box">
                 <img class="noticia-imagen" src="./img/noticia-imagen.gif" alt="Imagen Noticia">
                 <h3>Titulo Noticia</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur, quos illo? Laudantium ea explicabo
                     voluptas!</p>
                 <a class="btn btn-full btn-noticia" href="#">Leer más</a>
             </div>
-            <div class="noticias-box wow animate__animated animate__fadeInUp">
+            <div class="noticias-box">
                 <img class="noticia-imagen" src="./img/noticia-imagen.gif" alt="Imagen Noticia">
                 <h3>Titulo Noticia</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur, quos illo? Laudantium ea explicabo
@@ -86,7 +88,7 @@
                 </p>
                 <a class="btn btn-full btn-noticia" href="#">Leer más</a>
             </div>
-            <div class="noticias-box wow animate__animated animate__fadeInUp">
+            <div class="noticias-box">
                 <img class="noticia-imagen" src="./img/noticia-imagen.gif" alt="Imagen Noticia">
                 <h3>Titulo Noticia</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur, quos illo? Laudantium ea explicabo
@@ -94,7 +96,7 @@
                 </p>
                 <a class="btn btn-full btn-noticia" href="#">Leer más</a>
             </div>
-            <div class="noticias-box wow animate__animated animate__fadeInUp">
+            <div class="noticias-box">
                 <img class="noticia-imagen" src="./img/noticia-imagen.gif" alt="Imagen Noticia">
                 <h3>Titulo Noticia</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur, quos illo? Laudantium ea explicabo
@@ -102,7 +104,7 @@
                 </p>
                 <a class="btn btn-full btn-noticia" href="#">Leer más</a>
             </div>
-            <div class="noticias-box wow animate__animated animate__fadeInUp">
+            <div class="noticias-box">
                 <img class="noticia-imagen" src="./img/noticia-imagen.gif" alt="Imagen Noticia">
                 <h3>Titulo Noticia</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur, quos illo? Laudantium ea explicabo
@@ -110,7 +112,7 @@
                 </p>
                 <a class="btn btn-full btn-noticia" href="#">Leer más</a>
             </div>
-            <div class="noticias-box wow animate__animated animate__fadeInUp">
+            <div class="noticias-box">
                 <img class="noticia-imagen" src="./img/noticia-imagen.gif" alt="Imagen Noticia">
                 <h3>Titulo Noticia</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur, quos illo? Laudantium ea explicabo
@@ -119,10 +121,9 @@
                 <a class="btn btn-full btn-noticia" href="#">Leer más</a>
             </div>
         </div>
-    </section>
     <!-- Seccion de Contacto -->
     <section id="contact-section" class="contact-section">
-        <div class="wow animate__animated animate__fadeInUp">
+        <div data-aos="fade-up">
         <h2 class="contact-heading"><span>Contacto</span></h2>
         <form class="contact-form">
             <label class="contact-label" for="nombre">Nombre</label>
@@ -191,9 +192,10 @@
         <p>Devoloped by Juan Manuel González</p>
     </footer>
     <!-- JavaScript -->
-    <script src="http://wowjs.uk/dist/wow.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
-    new WOW().init();
+        AOS.init({once: true,
+        duration: 800});
     </script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
