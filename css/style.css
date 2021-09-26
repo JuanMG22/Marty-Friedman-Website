@@ -30,6 +30,16 @@ p {
     color: #ccc;
 }
 
+.general-box {
+    background-color: rgba(20, 20, 20, .7);
+    width: 70vw;
+    padding: 20px;
+    border: 1px solid #000;
+    box-shadow: 1px 1px 15px 0 #000;
+    animation: zoomInUp;
+    animation-duration: .8s;
+}
+
 /* Buttons */
 
 .btn:link,
@@ -540,17 +550,6 @@ p {
     padding-bottom: 50px;
 }
 
-.noticias-box {
-    background-color: rgba(20, 20, 20, .7);
-    width: 70vw;
-    padding: 20px;
-    border: 1px solid #000;
-    box-shadow: 1px 1px 15px 0 #000;
-    animation: zoomInUp;
-    animation-duration: .8s;
-    font-family: 'Roboto', sans-serif;
-}
-
 .noticias-text {
     margin-bottom: 60px;
 }
@@ -733,17 +732,6 @@ p {
     opacity: 0;
     height: 0;
     transition: ease height .3s;
-}
-
-.gear-box {
-    background-color: rgba(20, 20, 20, .7);
-    width: 70vw;
-    padding: 20px;
-    border: 1px solid #000;
-    box-shadow: 1px 1px 15px 0 #000;
-    position: relative;
-    animation: zoomInUp;
-    animation-duration: .8s;
 }
 
 .gear-guitarras-imagen {
@@ -1067,10 +1055,8 @@ footer {
     .logo {
         height: 7vh;
     }
-
-    /* Tour Section */
-    .tour-box {
-        width: 90vw;
+    .general-box {
+        width: 95vw;
     }
     /* Gear Section */
     .gear-text h3 {
@@ -1078,30 +1064,30 @@ footer {
     }
 
     .gear-input {
-        font-size: 140%;
+        font-size: 150%;
     }
     .gear-text img {
-        height: 8vh;
-        width: 20vw;
+        height: 10vh;
+        width: 22vw;
     }
     .gear-guitarras-imagen {
-        width: 15rem;
-        height: 5rem;
+        width: 20rem;
+        height: 7rem;
     }
 
     .gear-amps-imagen {
-        width: 16rem;
-        height: 8rem;
+        width: 18rem;
+        height: 10rem;
     }
 
     .gear-pickups-imagen {
-        width: 12rem;
-        height: 12rem;
+        width: 13rem;
+        height: 13rem;
     }
 
     .gear-pedals-imagen {
-        width: 9rem;
-        height: 12rem;
+        width: 10rem;
+        height: 13rem;
     }
 
     .gear-pedals-imagen-xl {
