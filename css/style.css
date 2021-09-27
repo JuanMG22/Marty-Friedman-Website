@@ -30,6 +30,10 @@ p {
     color: #ccc;
 }
 
+a {
+    text-decoration: none;
+}
+
 .general-box {
     background-color: rgba(20, 20, 20, .7);
     width: 70vw;
@@ -45,7 +49,6 @@ p {
 .btn:link,
 .btn:visited {
     font-size: 150%;
-    text-decoration: none;
     padding: 10px 30px;
     margin: 20px;
     border-radius: 5px;
@@ -60,7 +63,6 @@ p {
     font-size: 120%;
     width: 100%;
     text-align: center;
-    text-decoration: none;
     padding: 10px 60px;
     margin: 20px 30px;
     display: inline-block;
@@ -145,7 +147,6 @@ p {
 }
 
 .btn-menu {
-    text-decoration: none;
     background: none;
     border: none;
     box-shadow: none;
@@ -168,7 +169,6 @@ p {
     display: block;
     padding: 15px 30px;
     color: #fff;
-    text-decoration: none;
 }
 
 .social {
@@ -229,7 +229,6 @@ p {
     display: block;
     padding: 15px;
     color: #fff;
-    text-decoration: none;
 }
 
 .menu li:hover .submenu {
@@ -1007,7 +1006,6 @@ footer {
 
 
 @media only screen and (max-width: 480px) {
-
     /* Home */
     .titulo {
         font-size: 200%;
@@ -1064,8 +1062,9 @@ footer {
     }
 
     .gear-input {
-        font-size: 150%;
+        font-size: 185%;
     }
+
     .gear-text img {
         height: 10vh;
         width: 22vw;
@@ -1108,9 +1107,13 @@ footer {
 
 
     /* Discografia Section*/
+    .discografia-input {
+        font-size: 150%;
+    }
+
     .discografia-imagen {
-        width: 14rem;
-        height: 14rem;
+        width: 16rem;
+        height: 16rem;
         margin: 10px 10px 0px 0px;
     }
     
