@@ -480,6 +480,7 @@ a {
 }
 
 .noticia-imagen-index {
+    outline: 1px solid #252525;
     width: 25rem;
     height: 14rem;
 }
