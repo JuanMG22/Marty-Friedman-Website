@@ -1,0 +1,17 @@
+@import "./variables";
+
+// Footer
+.pie {
+    background-color: rgba(15, 15, 15, .5);
+    border-top: $borde-blanco-2;
+    padding: 1.875rem 0rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+
+    &__logo {
+        height: 3.125rem;
+        margin-right: 8vw;
+    }
+}
