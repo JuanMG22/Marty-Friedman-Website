@@ -42,7 +42,7 @@
             width: 10vw;
             text-align: left;
             z-index: 999;
-            font-size: 120%;
+            font-size: 80%;
         }
 
         &--btn-menu {
@@ -78,14 +78,15 @@
             width: 90%;
             visibility: hidden;
             opacity: 0;
-            text-align: left;
             z-index: 999;
+            font-size: 150%;
+            text-align: left;
             transition: ease all .3s;
         }
 
         &--link-submenu {
             display: block;
-            padding: 15px;
+            padding: 13px;
             color: $blanco;
             
             &:hover {

@@ -14,6 +14,8 @@
 
         <!-- Animate CSS -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
 
         <!-- CSS & Icons -->
         <script src="https://kit.fontawesome.com/4592a31928.js" crossorigin="anonymous"></script>
@@ -68,19 +70,152 @@
                     <span class="galeria__box--span">Galeria</span>
                 </h2>
             </div>
-            <div class="galeria__box--container">
-                <div class="galeria__box--imagen-container"><img class="galeria__box--img" src="../img/galeria-1.jpg" alt=""></div>
-                <div class="galeria__box--imagen-container"><img class="galeria__box--img" src="../img/galeria-2.jpg" alt=""></div>
-                <div class="galeria__box--imagen-container"><img class="galeria__box--img" src="../img/galeria-3.jpg" alt=""></div>
-                <div class="galeria__box--imagen-container"><img class="galeria__box--img" src="../img/galeria-4.jpg" alt=""></div>
-                <div class="galeria__box--imagen-container"><img class="galeria__box--img" src="../img/galeria-5.jpg" alt=""></div>
-                <div class="galeria__box--imagen-container"><img class="galeria__box--img" src="../img/galeria-6.jpg" alt=""></div>
-                <div class="galeria__box--imagen-container"><img class="galeria__box--img" src="../img/galeria-7.jpg" alt=""></div>
-                <div class="galeria__box--imagen-container"><img class="galeria__box--img" src="../img/galeria-8.jpg" alt=""></div>
-                <div class="galeria__box--imagen-container"><img class="galeria__box--img" src="../img/galeria-9.jpg" alt=""></div>
-                <div class="galeria__box--imagen-container"><img class="galeria__box--img" src="../img/galeria-10.jpg" alt=""></div>
-                <div class="galeria__box--imagen-container"><img class="galeria__box--img" src="../img/galeria-11.jpg" alt=""></div>
-                <div class="galeria__box--imagen-container"><img class="galeria__box--img" src="../img/galeria-12.jpg" alt=""></div>
+        <div class="galeria__box--container">
+            <a href="#" data-bs-toggle="modal" data-bs-target="#modal-image-1">
+                    <div class="galeria__box--imagen-container">
+                        <img class="galeria__box--img" src="../img/galeria-1.jpg" alt="">
+                    </div>
+                </a>
+                <a href="#" data-bs-toggle="modal" data-bs-target="#modal-image-2">
+                    <div class="galeria__box--imagen-container">
+                        <img class="galeria__box--img" src="../img/galeria-2.jpg" alt="">
+                    </div>
+                </a>
+                <a href="#" data-bs-toggle="modal" data-bs-target="#modal-image-3">
+                    <div class="galeria__box--imagen-container">
+                        <img class="galeria__box--img" src="../img/galeria-3.jpg" alt="">
+                    </div>
+                </a>
+                <a href="#" data-bs-toggle="modal" data-bs-target="#modal-image-4">
+                    <div class="galeria__box--imagen-container">
+                        <img class="galeria__box--img" src="../img/galeria-4.jpg" alt="">
+                    </div>
+                </a>
+                <a href="#" data-bs-toggle="modal" data-bs-target="#modal-image-5">
+                    <div class="galeria__box--imagen-container">
+                        <img class="galeria__box--img" src="../img/galeria-5.jpg" alt="">
+                    </div>
+                </a>
+                <a href="#" data-bs-toggle="modal" data-bs-target="#modal-image-6">
+                    <div class="galeria__box--imagen-container">
+                        <img class="galeria__box--img" src="../img/galeria-6.jpg" alt="">
+                    </div>
+                </a>
+                <a href="#" data-bs-toggle="modal" data-bs-target="#modal-image-7">
+                    <div class="galeria__box--imagen-container">
+                        <img class="galeria__box--img" src="../img/galeria-7.jpg" alt="">
+                    </div>
+                </a>
+                <a href="#" data-bs-toggle="modal" data-bs-target="#modal-image-8">
+                    <div class="galeria__box--imagen-container">
+                        <img class="galeria__box--img" src="../img/galeria-8.jpg" alt="">
+                    </div>
+                </a>
+                <a href="#" data-bs-toggle="modal" data-bs-target="#modal-image-9">
+                    <div class="galeria__box--imagen-container">
+                        <img class="galeria__box--img" src="../img/galeria-9.jpg" alt="">
+                    </div>
+                </a>
+                <a href="#" data-bs-toggle="modal" data-bs-target="#modal-image-10">
+                    <div class="galeria__box--imagen-container">
+                        <img class="galeria__box--img" src="../img/galeria-10.jpg" alt="">
+                    </div>
+                </a>
+                <a href="#" data-bs-toggle="modal" data-bs-target="#modal-image-11">
+                    <div class="galeria__box--imagen-container">
+                        <img class="galeria__box--img" src="../img/galeria-11.jpg" alt="">
+                    </div>
+                </a>
+                <a href="#" data-bs-toggle="modal" data-bs-target="#modal-image-12">
+                    <div class="galeria__box--imagen-container">
+                        <img class="galeria__box--img" src="../img/galeria-12.jpg" alt="">
+                    </div>
+                </a>
+        </div>
+
+        <!-- Modal de imagenes -->
+        <div tabindex="-1" aria-labelledby="modal-image-1" aria-hidden="true" class="modal fade" id="modal-image-1">
+            <div class="modal-dialog modal-lg modal-dialog-centered">
+                <div class="modal-content">
+                    <img class="img-thumbnail" src="../img/galeria-1.jpg" alt="">
+                </div>
+            </div>
+        </div>
+        <div tabindex="-1" aria-labelledby="modal-image-2" aria-hidden="true" class="modal fade" id="modal-image-2">
+            <div class="modal-dialog modal-lg modal-dialog-centered">
+                <div class="modal-content">
+                    <img class="img-thumbnail" src="../img/galeria-2.jpg" alt="">
+                </div>
+            </div>
+        </div>
+        <div tabindex="-1" aria-labelledby="modal-image-3" aria-hidden="true" class="modal fade" id="modal-image-3">
+            <div class="modal-dialog modal-lg modal-dialog-centered">
+                <div class="modal-content">
+                    <img class="img-thumbnail" src="../img/galeria-3.jpg" alt="">
+                </div>
+            </div>
+        </div>
+        <div tabindex="-1" aria-labelledby="modal-image-4" aria-hidden="true" class="modal fade" id="modal-image-4">
+            <div class="modal-dialog modal-lg modal-dialog-centered">
+                <div class="modal-content">
+                    <img class="img-thumbnail" src="../img/galeria-4.jpg" alt="">
+                </div>
+            </div>
+        </div>
+        <div tabindex="-1" aria-labelledby="modal-image-5" aria-hidden="true" class="modal fade" id="modal-image-5">
+            <div class="modal-dialog modal-lg modal-dialog-centered">
+                <div class="modal-content">
+                    <img class="img-thumbnail" src="../img/galeria-5.jpg" alt="">
+                </div>
+            </div>
+        </div>
+        <div tabindex="-1" aria-labelledby="modal-image-6" aria-hidden="true" class="modal fade" id="modal-image-6">
+            <div class="modal-dialog modal-lg modal-dialog-centered">
+                <div class="modal-content">
+                    <img class="img-thumbnail" src="../img/galeria-6.jpg" alt="">
+                </div>
+            </div>
+        </div>
+        <div tabindex="-1" aria-labelledby="modal-image-7" aria-hidden="true" class="modal fade" id="modal-image-7">
+            <div class="modal-dialog modal-lg modal-dialog-centered">
+                <div class="modal-content">
+                    <img class="img-thumbnail" src="../img/galeria-7.jpg" alt="">
+                </div>
+            </div>
+        </div>
+        <div tabindex="-1" aria-labelledby="modal-image-8" aria-hidden="true" class="modal fade" id="modal-image-8">
+            <div class="modal-dialog modal-lg modal-dialog-centered">
+                <div class="modal-content">
+                    <img class="img-thumbnail" src="../img/galeria-8.jpg" alt="">
+                </div>
+            </div>
+        </div>
+        <div tabindex="-1" aria-labelledby="modal-image-9" aria-hidden="true" class="modal fade" id="modal-image-9">
+            <div class="modal-dialog modal-lg modal-dialog-centered">
+                <div class="modal-content">
+                    <img class="img-thumbnail" src="../img/galeria-9.jpg" alt="">
+                </div>
+            </div>
+        </div>
+        <div tabindex="-1" aria-labelledby="modal-image-10" aria-hidden="true" class="modal fade" id="modal-image-10">
+            <div class="modal-dialog modal-lg modal-dialog-centered">
+                <div class="modal-content">
+                    <img class="img-thumbnail" src="../img/galeria-10.jpg" alt="">
+                </div>
+            </div>
+        </div>
+        <div tabindex="-1" aria-labelledby="modal-image-11" aria-hidden="true" class="modal fade" id="modal-image-11">
+            <div class="modal-dialog modal-lg modal-dialog-centered">
+                <div class="modal-content">
+                    <img class="img-thumbnail" src="../img/galeria-11.jpg" alt="">
+                </div>
+            </div>
+        </div>
+        <div tabindex="-1" aria-labelledby="modal-image-12" aria-hidden="true" class="modal fade" id="modal-image-12">
+            <div class="modal-dialog modal-lg modal-dialog-centered">
+                <div class="modal-content">
+                    <img class="img-thumbnail" src="../img/galeria-12.jpg" alt="">
+                </div>
             </div>
         </div>
     </section>
@@ -90,6 +225,8 @@
         <p class="pie__parrafo">&copy; Copyright 2021 Marty Friedman</p>
         <p class="pie__parrafo">Devoloped by Juan Manuel González</p>
     </footer>
+    <!-- JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </body>
 </body>
 

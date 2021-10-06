@@ -1,10 +1,10 @@
-/* Media Queries*/
+// Media Queries
 @media only screen and (max-width: 1440px) {
     body {
         font-size: 14px;
     }
-
-    /* Navigation */
+    
+    // Navigation
     .header__navegacion {
 
         &--social-box {
@@ -20,10 +20,49 @@
         }
         
     }
+    
+    // Noticias 
+    .noticias__box {
+        width: 95vw;
 
-    /* Galeria */
-    .galeria-container {
-        grid-template-columns: repeat(2, 1fr);
+        &--imagen {
+            height: 45vh;
+            width: 70vw;
+        }
+
+        &--video {
+            height: 40vh;
+            width: 70vw;
+        }
+
+    }
+
+    // Tour
+    .tour__box {
+        width: 95vw;
+    }
+
+    // Discografia
+    .discografia__box {
+        width: 95vw;
+    }
+
+    // Videos
+    .videos__box {
+        width: 95vw;
+    }
+
+    // Gear
+    .gear__box {
+        width: 95vw;
+    }
+
+    // Galeria
+    .galeria__box {
+        width: 90vw;
+        &--container {
+            grid-template-columns: repeat(2, 1fr);
+        }
     }
 }
 
@@ -32,7 +71,7 @@
         font-size: 13px;
     }
 
-    /* Navigation */
+    // Navigation
     .header__navegacion {
 
         &--logoimg {
@@ -46,10 +85,7 @@
 
     }
 
-    /* Galeria */
-    .galeria-container {
-        grid-template-columns: repeat(2, 1fr);
-    }
+
 }
 
 @media all and (max-width: 1024px) {
@@ -57,13 +93,12 @@
         font-size: 12px;
     }
 
-    /* Navigation */
+    // Navigation
     .header__navegacion {
 
         &--social-box {
             width: 18vw;
         }
-
 
         &--logoimg {
             height: 3rem;
@@ -80,24 +115,6 @@
 
     }
 
-    /* Gear Section */
-    .gear-guitarras-imagen {
-        width: 32rem;
-        height: 9rem;
-    }
-
-    .gear-amps-imagen {
-        width: 30rem;
-    }
-
-    .gear-pickups-imagen {
-        width: 25rem;
-    }
-
-    /* Galeria */
-    .galeria-container {
-        grid-template-columns: repeat(2, 1fr);
-    }
 }
 
 @media all and (max-width: 768px) {
@@ -110,7 +127,7 @@
         font-size: 14px;
     }
 
-    /* Navigation */
+    // Navigation
     .header__navegacion {
 
         &--social-box {
@@ -127,68 +144,77 @@
             margin-right: 2.8rem;
         }
 
+        &--btn-menu {
+            font-size: 130%;
+        }
         &--submenu {
             width: 17.8vw;
         }
 
     }
 
-    /* Noticias Section*/
-
-    .noticia-imagen {
-        height: 30vh;
-        width: 50vw;
+    // Discografia
+    .discografia__box {
+        &--input {
+            font-size: 160%;
+        }
     }
 
-    .noticia-video {
-        height: 30vh;
-        width: 50vw;
+    // Gear
+    .gear__box {
+
+        &--marcas-logo {
+            height: 12vh;
+            width: 14vw;
+        }
+
+        &--guitarras {
+            margin: 30px 0px 0px 0px;
+            width: 27rem;
+            height: 9rem;
+            opacity: 1;
+        }
+
+        &--amps {
+            margin: 30px 0px 0px 0px;
+            width: 27rem;
+            height: 12rem;
+            opacity: 1;
+        }
+
+        &--pickups {
+            margin: 30px 0px 0px 0px;
+            width: 25rem;
+            height: 16rem;
+            opacity: 1;
+        }
+
+        &--pedals {
+            margin: 30px 0px 0px 0px;
+            width: 11rem;
+            height: 17rem;
+            opacity: 1;
+        }
+
+        &--pedals-xl {
+            margin: 30px 0px 0px 0px;
+            width: 27rem;
+            height: 18rem;
+            opacity: 1;
+        }
     }
 
-    /* Gear Section */
-    .gear-guitarras-imagen {
-        width: 20rem;
-        height: 7rem;
-    }
-
-    .gear-amps-imagen {
-        width: 20rem;
-        height: 10rem;
-    }
-
-    .gear-pickups-imagen {
-        width: 16rem;
-        height: 16rem;
-    }
-
-    .gear-pedals-imagen-xl {
-        width: 20rem;
-        height: 15rem;
-    }
-
-    /* Discografia Section*/
-    .discografia-imagen {
-        width: 16rem;
-        height: 16rem;
-        margin: 10px 10px 0px 0px;
-    }
-
-    /* Galeria */
-    .galeria-container {
-        grid-template-columns: repeat(1, 1fr);
+    // Galeria
+    .galeria__box {
+        width: 90vw;
+        &--container {
+            grid-template-columns: repeat(1, 1fr);
+        }
     }
 }
 
 
 @media only screen and (max-width: 480px) {
-
-    /* Home */
-    .titulo {
-        font-size: 200%;
-        display: block;
-        text-align: center;
-    }
-
     body {
         font-size: 10px;
     }
@@ -209,7 +235,10 @@
         &--icon {
             font-size: 180%;
         }
-        
+
+        &--btn-menu {
+            font-size: 130%;
+        }
 
         &--menu {
             width: 19vw;
@@ -217,7 +246,7 @@
 
         &--submenu {
             width: 25vw;
-            font-size: 130%;
+            font-size: 160%;
         }
 
     }
@@ -235,7 +264,6 @@
         }
 
     // Noticias Section Index
-
     .noticias-index {
 
         &__container {
@@ -258,85 +286,55 @@
         }
     }
 
-
-    /* Gear Section */
-    .gear-text h3 {
-        font-size: 115%;
+    // Discografia
+    .discografia__box {
+        &--imagen {
+            margin: 10px 0px;
+            width: 17rem;
+            height: 17rem;
+            opacity: 1;
+        }
     }
 
-    .gear-input {
-        font-size: 185%;
-    }
+    // Gear
+    .gear__box {
+        &--marcas-logo {
+            height: 10vh;
+            width: 26vw;
+        }
 
-    .gear-text img {
-        height: 10vh;
-        width: 22vw;
-    }
+        &--guitarras {
+            width: 20rem;
+            height: 7rem;
+        }
 
-    .gear-guitarras-imagen {
-        width: 20rem;
-        height: 7rem;
-    }
+        &--amps {
+            width: 20rem;
+            height: 10rem;
+        }
 
-    .gear-amps-imagen {
-        width: 18rem;
-        height: 10rem;
-    }
+        &--pickups {
+            width: 20rem;
+            height: 11rem;
+        }
 
-    .gear-pickups-imagen {
-        width: 13rem;
-        height: 13rem;
-    }
+        &--pedals {
+            width: 9rem;
+            height: 13rem;
+        }
 
-    .gear-pedals-imagen {
-        width: 10rem;
-        height: 13rem;
-    }
-
-    .gear-pedals-imagen-xl {
-        width: 16rem;
-        height: 10rem;
-    }
-
-    /* Noticias Section*/
-
-    .noticia-imagen {
-        height: 30vh;
-        width: 50vw;
-    }
-
-    .noticia-video {
-        height: 30vh;
-        width: 50vw;
-    }
-
-
-    /* Discografia Section*/
-    .discografia-input {
-        font-size: 150%;
-    }
-
-    .discografia-imagen {
-        width: 16rem;
-        height: 16rem;
-        margin: 10px 10px 0px 0px;
-    }
-
-    .logo-footer {
-        height: 30px;
-        margin-right: 0vw;
-    }
-
-    /* Galeria */
-    .galeria-container {
-        grid-template-columns: repeat(1, 1fr);
+        &--pedals-xl {
+            width: 18rem;
+            height: 13rem;
+        }
     }
 
     // Footer
     .pie {
+
         &__logo {
             height: 2rem;
-            margin-right: 0;
+            margin-right: 5vw;
         }
     }
 }

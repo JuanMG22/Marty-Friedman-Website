@@ -6,8 +6,7 @@
     border-top: $borde-blanco-2;
     padding: 1.875rem 0rem;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-items: center;
 
     &__logo {

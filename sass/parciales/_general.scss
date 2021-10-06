@@ -22,12 +22,19 @@ h1 {
 
 h2 {
     font-size: 350%;
+    font-weight: bold;
     color: $blanco;
 }
 
 p {
     font-family: 'Roboto', sans-serif;
     color: $blanco-texto;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    font-weight: 400;
 }
 
 li {
