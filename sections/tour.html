@@ -11,57 +11,62 @@
         <link rel="icon" type="image/png" sizes="32x32" href="../favicon_io//favicon-32x32.png">
         <link rel="icon" type="image/png" sizes="16x16" href="../favicon_io/favicon-16x16.png">
         <link rel="manifest" href="../favicon_io/site.webmanifest">
-        <!-- CSS y Icons -->
-        <script src="https://kit.fontawesome.com/4592a31928.js" crossorigin="anonymous"></script>
+
         <!-- Animate CSS -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
-        <link rel="stylesheet" href="../css/style.css">
+
+        <!-- CSS & Icons -->
+        <script src="https://kit.fontawesome.com/4592a31928.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="../css/main.css">
         
 </head>
 
 <body>
     <!-- Header y Navbar -->
-    <header class="header-section">
-        <nav class="navegacion">
-            <div class="social-box">
+    <header class="header">
+        <nav class="header__navegacion">
+            <div class="header__navegacion--social-box">
                 <a href="https://www.facebook.com/martyfriedman.official" target="_blank"><i
-                        class="fab fa-facebook-square social"></i></a>
+                        class="fab fa-facebook-square header__navegacion--social header__navegacion--icon social"></i></a>
                 <a href="https://twitter.com/marty_friedman?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"
-                    target="_blank"><i class="fab fa-twitter social"></i></a>
-                <a href="https://www.instagram.com/martyfriedman/" target="_blank"><i class="fab fa-instagram social"></i></a>
+                    target="_blank"><i class="fab fa-twitter header__navegacion--social header__navegacion--icon"></i></a>
+                <a href="https://www.instagram.com/martyfriedman/" target="_blank"><i
+                        class="fab fa-instagram header__navegacion--social header__navegacion--icon"></i></a>
                 <a href="https://www.youtube.com/channel/UC8p0ZqjT7f_zZiS-py5w-WQ" target="_blank"><i
-                        class="fab fa-youtube social"></i></a>
+                        class="fab fa-youtube header__navegacion--social header__navegacion--icon"></i></a>
                 <a href="https://open.spotify.com/artist/5czW6bitDSKbNBNDizRT9p" target="_blank"><i
-                        class="fab fa-spotify social"></i></a>
+                        class="fab fa-spotify header__navegacion--social header__navegacion--icon"></i></a>
             </div>
-            <a href="../index.html"><img class="logo" src="../img/logo.png" alt="Marty Friedman Logo"></a>
-            <!-- Menu -->
-            <ul class="menu">
-                <li>
-                    <button id="btn-menu" class="btn-menu">
-                        <span>Menu</span>
-                            <i class="fas fa-bars menu-icon"></i>
+            <a href="../index.html">
+                <img class="header__navegacion--logoimg" src="../img/logo.png" alt="Marty Friedman Logo">
+            </a>
+            <ul class="header__navegacion--menu">
+                <li class="header__navegacion--item-menu">
+                    <button id="btn-menu" class="header__navegacion--btn-menu">
+                        <span class="header__navegacion--menu-text">Menu</span>
+                            <i class="fas fa-bars menu-icon header__navegacion--icon header__navegacion--icon-menu"></i>
                     </button>
-                    <!-- Submenu -->
-                    <ul class="submenu">
-                        <li><a href="noticias.html">Noticias</a></li>
-                        <li><a href="tour.html">Tour</a></li>
-                        <li><a href="discografia.html">Discografia</a></li>
-                        <li><a href="galeria.html">Galeria</a></li>
-                        <li><a href="videos.html">Videos</a></li>
-                        <li><a href="gear.html">Gear</a></li>
-                        <li><a href="../index.html#contact-section">Contacto</a></li>
+                    <ul class="header__navegacion--submenu">
+                        <li class="header__navegacion--item-submenu"><a class="header__navegacion--link-submenu" href="noticias.html">Noticias</a></li>
+                        <li class="header__navegacion--item-submenu"><a class="header__navegacion--link-submenu" href="tour.html">Tour</a></li>
+                        <li class="header__navegacion--item-submenu"><a class="header__navegacion--link-submenu" href="discografia.html">Discografia</a></li>
+                        <li class="header__navegacion--item-submenu"><a class="header__navegacion--link-submenu" href="galeria.html">Galeria</a></li>
+                        <li class="header__navegacion--item-submenu"><a class="header__navegacion--link-submenu" href="videos.html">Videos</a></li>
+                        <li class="header__navegacion--item-submenu"><a class="header__navegacion--link-submenu" href="gear.html">Gear</a></li>
+                        <li class="header__navegacion--item-submenu"><a class="header__navegacion--link-submenu" href="../index.html#contact-section">Contacto</a></li>
                     </ul>
                 </li>
             </ul>
         </nav>
     </header>
     </section>
-    <section class="tour-section js--tour-section">
-        <div class="general-box">
-            <div class="tour-text">
-                <h1>Marty Friedman Discografia</h1>
-                <h2><span>Tour</span></h2>
+    <section class="tour js--tour-section">
+        <div class="tour__box">
+            <div class="tour__box--heading">
+                <h1>Marty Friedman Tour</h1>
+                <h2 class="tour__box--titulo">
+                    <span class="tour__box--span">Tour</span>
+                </h2>
             </div>
             <div class="tour-contenedor">
                 <script charset="utf-8" src="https://widget.bandsintown.com/main.min.js"></script><a class="bit-widget-initializer" data-artist-name="marty friedman" data-display-local-dates="false" data-display-past-dates="true" data-auto-style="false" data-text-color="#FFFFFF" data-link-color="#dba520" data-background-color="rgba(0,0,0,0)" data-display-limit="10" data-display-start-time="true" data-link-text-color="#FFFFFF" data-display-lineup="false" data-display-play-my-city="false" data-separator-color="rgba(124,124,124,0.25)"></a>
@@ -69,10 +74,10 @@
         </div>
     </section>
     <!-- Footer -->
-    <footer>
-        <img src="../img/logo.png" alt="Logo-footer" class="logo-footer">
-        <p>&copy; Copyright 2021 Marty Friedman</p>
-        <p>Devoloped by Juan Manuel González</p>
+    <footer class="pie">
+        <img class="pie__logo" src="../img/logo.png" alt="Logo marty Friedman">
+        <p class="pie__parrafo">&copy; Copyright 2021 Marty Friedman</p>
+        <p class="pie__parrafo">Devoloped by Juan Manuel González</p>
     </footer>
     <!-- JavaScript -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>

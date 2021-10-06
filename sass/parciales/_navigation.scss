@@ -1,0 +1,129 @@
+@import "./variables";
+
+.header {
+    background-image: linear-gradient(rgba(0, 0, 0, .9), rgba(0, 0, 0, .5)),
+    url(../img/header-bg2.jpg);
+    background-size: cover;
+    border-bottom: 4px solid $blanco;
+    display: flex;
+    justify-content: center;
+
+    &__navegacion {
+        width: 50vw;
+        background: none;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+        margin: 5px 0;
+
+        &--logoimg {
+            height: 4.23rem;
+            margin-right: 5.9rem;
+        }
+
+        &--social {
+            transform: scale(1);
+            margin-bottom: 5px;
+            transition: ease all .3s;
+
+            &:hover {
+                transform: scale(1.15);
+                color: $amarillo;
+            }
+        }
+
+        &--icon {
+            font-size: 200%;
+            margin-left: 1.25rem;
+            color: $blanco;
+        }
+
+        &--menu {
+            width: 10vw;
+            text-align: left;
+            z-index: 999;
+            font-size: 120%;
+        }
+
+        &--btn-menu {
+            padding: 15px 30px;
+            color: $blanco;
+            background: none;
+            border: none;
+            box-shadow: none;
+            cursor: pointer;
+            transition: ease all .3s;
+
+            &:hover {
+                background: $amarillo;
+                color: $gris-oscuro;
+            }
+        }
+        &--menu-text {
+            font-size: 140%;
+            letter-spacing: 1px;
+        }
+
+        &--item-menu {
+            position: relative;
+        }
+        
+        // Sub Menu
+
+        &--submenu {
+            position: absolute;
+            background-image: linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .6)),
+            url(../img/header-bg2.jpg);
+            background-position: center;
+            width: 90%;
+            visibility: hidden;
+            opacity: 0;
+            text-align: left;
+            z-index: 999;
+            transition: ease all .3s;
+        }
+
+        &--link-submenu {
+            display: block;
+            padding: 15px;
+            color: $blanco;
+            
+            &:hover {
+                background: $amarillo;
+                color: $gris-oscuro;
+            }
+        }
+
+        &--item-menu:hover &--submenu {
+            visibility: visible;
+            opacity: 1;
+        }
+    }
+
+    // Sticky Nav, se activa con JS
+    .sticky-nav {
+        position: fixed;
+        background-color: rgba(20, 20, 20, .8);
+        width: 100vw;
+        margin: 0;
+        z-index: 999;
+        border-bottom: $borde-blanco;
+        box-shadow: 0 2px 2px $blanco;
+
+        .header__navegacion--menu {
+            margin-right: 13vw;
+        }
+
+        .header__navegacion--social {
+            display: none;
+        }
+
+        .header__navegacion--logoimg {
+            margin-right: 55.5vw;
+            margin-bottom: 5px;
+            height: 30px;
+        }
+    }
+
+}
+
