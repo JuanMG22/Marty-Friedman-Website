@@ -11,131 +11,127 @@
         <link rel="icon" type="image/png" sizes="32x32" href="../favicon_io//favicon-32x32.png">
         <link rel="icon" type="image/png" sizes="16x16" href="../favicon_io/favicon-16x16.png">
         <link rel="manifest" href="../favicon_io/site.webmanifest">
-
+        <!-- CSS y Icons -->
+        <script src="https://kit.fontawesome.com/4592a31928.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="../css/style.css">
         <!-- Animate CSS -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
-
-        <!-- CSS & Icons -->
-        <script src="https://kit.fontawesome.com/4592a31928.js" crossorigin="anonymous"></script>
-        <link rel="stylesheet" href="../css/main.css">
 </head>
 
 <body>
         <!-- Header y Navbar -->
-        <header class="header">
-        <nav class="header__navegacion">
-            <div class="header__navegacion--social-box">
-                <a href="https://www.facebook.com/martyfriedman.official" target="_blank"><i
-                        class="fab fa-facebook-square header__navegacion--social header__navegacion--icon social"></i></a>
-                <a href="https://twitter.com/marty_friedman?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"
-                    target="_blank"><i class="fab fa-twitter header__navegacion--social header__navegacion--icon"></i></a>
-                <a href="https://www.instagram.com/martyfriedman/" target="_blank"><i
-                        class="fab fa-instagram header__navegacion--social header__navegacion--icon"></i></a>
-                <a href="https://www.youtube.com/channel/UC8p0ZqjT7f_zZiS-py5w-WQ" target="_blank"><i
-                        class="fab fa-youtube header__navegacion--social header__navegacion--icon"></i></a>
-                <a href="https://open.spotify.com/artist/5czW6bitDSKbNBNDizRT9p" target="_blank"><i
-                        class="fab fa-spotify header__navegacion--social header__navegacion--icon"></i></a>
-            </div>
-            <a href="../index.html">
-                <img class="header__navegacion--logoimg" src="../img/logo.png" alt="Marty Friedman Logo">
-            </a>
-            <ul class="header__navegacion--menu">
-                <li class="header__navegacion--item-menu">
-                    <button id="btn-menu" class="header__navegacion--btn-menu">
-                        <span class="header__navegacion--menu-text">Menu</span>
-                            <i class="fas fa-bars menu-icon header__navegacion--icon header__navegacion--icon-menu"></i>
-                    </button>
-                    <ul class="header__navegacion--submenu">
-                        <li class="header__navegacion--item-submenu"><a class="header__navegacion--link-submenu" href="noticias.html">Noticias</a></li>
-                        <li class="header__navegacion--item-submenu"><a class="header__navegacion--link-submenu" href="tour.html">Tour</a></li>
-                        <li class="header__navegacion--item-submenu"><a class="header__navegacion--link-submenu" href="discografia.html">Discografia</a></li>
-                        <li class="header__navegacion--item-submenu"><a class="header__navegacion--link-submenu" href="galeria.html">Galeria</a></li>
-                        <li class="header__navegacion--item-submenu"><a class="header__navegacion--link-submenu" href="videos.html">Videos</a></li>
-                        <li class="header__navegacion--item-submenu"><a class="header__navegacion--link-submenu" href="gear.html">Gear</a></li>
-                        <li class="header__navegacion--item-submenu"><a class="header__navegacion--link-submenu" href="../index.html#contact-section">Contacto</a></li>
-                    </ul>
-                </li>
-            </ul>
-        </nav>
-    </header>
-        <!-- Seccion Discografia -->
-        <section class="discografia">
-                <div class="discografia__box">
-                        <div class="discografia__box--heading">
-                                <h1>Marty Friedman Discografia</h1>
-                                <h2 class="discografia__box--titulo">
-                                        <span class="discografia__box--span">Discografia</span>
-                                </h2>
+        <header class="header-section">
+                <nav class="navegacion">
+                        <div class="social-box">
+                                <a href="https://www.facebook.com/martyfriedman.official" target="_blank"><i
+                                                class="fab fa-facebook-square social"></i></a>
+                                <a href="https://twitter.com/marty_friedman?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"
+                                        target="_blank"><i class="fab fa-twitter social"></i></a>
+                                <a href="https://www.instagram.com/martyfriedman/" target="_blank"><i
+                                                class="fab fa-instagram social"></i></a>
+                                <a href="https://www.youtube.com/channel/UC8p0ZqjT7f_zZiS-py5w-WQ" target="_blank"><i
+                                                class="fab fa-youtube social"></i></a>
+                                <a href="https://open.spotify.com/artist/5czW6bitDSKbNBNDizRT9p" target="_blank"><i
+                                                class="fab fa-spotify social"></i></a>
                         </div>
-                        <div class="discografia__box--categoria">
-                                <input class="discografia__box--input" name="filtro" id="todo" type="radio" checked>
-                                <label class="discografia__box--input todo" for="todo">Todo</label>
-                                <input class="discografia__box--input" name="filtro" id="megadeth" type="radio">
-                                <label class="discografia__box--input megadeth" for="megadeth">Megadeth</label>
-                                <input class="ddiscografia__box--input" name="filtro" id="solista" type="radio">
-                                <label class="discografia__box--input solista" for="solista">Solista</label>
-                                <input class="discografia__box--input" name="filtro" id="cacophony" type="radio">
-                                <label class="discografia__box--input cacophony" for="cacophony">Cacophony</label>
-                                <input class="discografia__box--input" name="filtro" id="hawaii" type="radio">
-                                <label class="discografia__box--input hawaii" for="hawaii">Hawaii</label>
-                                <div class="discografia__box--albumes  js--discografia-box">
-                                        <a href=""><img class="discografia__box--imagen mf" src="../img/album-1.jpg"
+                        <a href="../index.html"><img class="logo" src="../img/logo.png" alt="Marty Friedman Logo"></a>
+                        <!-- Menu -->
+                        <ul class="menu">
+                                <li>
+                                        <button id="btn-menu" class="btn-menu">
+                                                <span>Menu</span>
+                                                <i class="fas fa-bars menu-icon"></i>
+                                        </button>
+                                        <!-- Submenu -->
+                                        <ul class="submenu">
+                                                <li><a href="noticias.html">Noticias</a></li>
+                                                <li><a href="tour.html">Tour</a></li>
+                                                <li><a href="discografia.html">Discografia</a></li>
+                                                <li><a href="galeria.html">Galeria</a></li>
+                                                <li><a href="videos.html">Videos</a></li>
+                                                <li><a href="gear.html">Gear</a></li>
+                                                <li><a href="../index.html#contact-section">Contacto</a></li>
+                                        </ul>
+                                </li>
+                        </ul>
+                </nav>
+        </header>
+        <!-- Seccion Discografia -->
+        <section class="discografia-section">
+                <div class="general-box">
+                        <div class="discografia-text">
+                                <h1>Marty Friedman Discografia</h1>
+                                <h2><span>Discografia</span></h2>
+                        </div>
+                        <div class="discografia-categoria">
+                                <input class="discografia-input" name="filtro" id="todo" type="radio" checked>
+                                <label class="discografia-input todo" for="todo">Todo</label>
+                                <input class="discografia-input" name="filtro" id="megadeth" type="radio">
+                                <label class="discografia-input megadeth" for="megadeth">Megadeth</label>
+                                <input class="discografia-input" name="filtro" id="solista" type="radio">
+                                <label class="discografia-input solista" for="solista">Solista</label>
+                                <input class="discografia-input" name="filtro" id="cacophony" type="radio">
+                                <label class="discografia-input cacophony" for="cacophony">Cacophony</label>
+                                <input class="discografia-input" name="filtro" id="hawaii" type="radio">
+                                <label class="discografia-input hawaii" for="hawaii">Hawaii</label>
+                                <div class="albumes  js--discografia-box">
+                                        <a href=""><img class="discografia-imagen mf" src="../img/album-1.jpg"
                                                         alt="Marty Friedman Tokyo Jukebox 3"></a>
-                                        <a href=""><img class="discografia__box--imagen mf" src="../img/album-2.jpg"
+                                        <a href=""><img class="discografia-imagen mf" src="../img/album-2.jpg"
                                                         alt="Marty Friedman Wall of sound"></a>
-                                        <a href=""><img class="discografia__box--imagen mf" src="../img/album-3.jpg"
+                                        <a href=""><img class="discografia-imagen mf" src="../img/album-3.jpg"
                                                         alt="Marty Friedman Inferno"></a>
-                                        <a href=""><img class="discografia__box--imagen mf" src="../img/album-4.jpg"
+                                        <a href=""><img class="discografia-imagen mf" src="../img/album-4.jpg"
                                                         alt="Marty Friedman Tokyo Jukebox 2"></a>
-                                        <a href=""><img class="discografia__box--imagen mf" src="../img/album-5.jpg"
+                                        <a href=""><img class="discografia-imagen mf" src="../img/album-5.jpg"
                                                         alt="Marty Friedman Bad DNA"></a>
-                                        <a href=""><img class="discografia__box--imagen mf" src="../img/album-6.jpg"
+                                        <a href=""><img class="discografia-imagen mf" src="../img/album-6.jpg"
                                                         alt="Marty Friedman Tokyo Jukebox 1"></a>
-                                        <a href=""><img class="discografia__box--imagen mf" src="../img/album-7.jpg"
+                                        <a href=""><img class="discografia-imagen mf" src="../img/album-7.jpg"
                                                         alt="Marty Friedman Future Addict"></a>
-                                        <a href=""><img class="discografia__box--imagen mf" src="../img/album-8.jpg"
+                                        <a href=""><img class="discografia-imagen mf" src="../img/album-8.jpg"
                                                         alt="Marty Friedman Exhibit A Live in Europe"></a>
-                                        <a href=""><img class="discografia__box--imagen mf" src="../img/album-9.jpg"
+                                        <a href=""><img class="discografia-imagen mf" src="../img/album-9.jpg"
                                                         alt="Marty Friedman Loudspeaker"></a>
-                                        <a href=""><img class="discografia__box--imagen mf" src="../img/album-10.jpg"
+                                        <a href=""><img class="discografia-imagen mf" src="../img/album-10.jpg"
                                                         alt="Marty Friedman Music for Speeding"></a>
-                                        <a href=""><img class="discografia__box--imagen megadeth" src="../img/album-11.jpg"
+                                        <a href=""><img class="discografia-imagen megadeth" src="../img/album-11.jpg"
                                                         alt="Megadeth Risk"></a>
-                                        <a href=""><img class="discografia__box--imagen megadeth" src="../img/album-12.jpg"
+                                        <a href=""><img class="discografia-imagen megadeth" src="../img/album-12.jpg"
                                                         alt="Megadeth Cryptic Writings"></a>
-                                        <a href=""><img class="discografia__box--imagen mf" src="../img/album-13.jpg"
+                                        <a href=""><img class="discografia-imagen mf" src="../img/album-13.jpg"
                                                         alt="Marty Friedman The obsessions"></a>
-                                        <a href=""><img class="discografia__box--imagen megadeth" src="../img/album-14.jpg"
+                                        <a href=""><img class="discografia-imagen megadeth" src="../img/album-14.jpg"
                                                         alt="Megadeth Hidden Treasures"></a>
-                                        <a href=""><img class="discografia__box--imagen mf" src="../img/album-15.jpg"
+                                        <a href=""><img class="discografia-imagen mf" src="../img/album-15.jpg"
                                                         alt="Marty Friedman Introduction"></a>
-                                        <a href=""><img class="discografia__box--imagen megadeth" src="../img/album-16.jpg"
+                                        <a href=""><img class="discografia-imagen megadeth" src="../img/album-16.jpg"
                                                         alt="Megadeth Youthanasia"></a>
-                                        <a href=""><img class="discografia__box--imagen mf" src="../img/album-17.jpg"
+                                        <a href=""><img class="discografia-imagen mf" src="../img/album-17.jpg"
                                                         alt="Marty Friedman Scenes"></a>
-                                        <a href=""><img class="discografia__box--imagen megadeth" src="../img/album-18.jpg"
+                                        <a href=""><img class="discografia-imagen megadeth" src="../img/album-18.jpg"
                                                         alt="Megadeth Countdown to Extinction"></a>
-                                        <a href=""><img class="discografia__box--imagen megadeth" src="../img/album-19.jpg"
+                                        <a href=""><img class="discografia-imagen megadeth" src="../img/album-19.jpg"
                                                         alt="Megadeth Rust in Peace"></a>
-                                        <a href=""><img class="discografia__box--imagen cacophony" src="../img/album-20.jpg"
+                                        <a href=""><img class="discografia-imagen cacophony" src="../img/album-20.jpg"
                                                         alt="Cacophony Go off!"></a>
-                                        <a href=""><img class="discografia__box--imagen mf" src="../img/album-21.jpg"
+                                        <a href=""><img class="discografia-imagen mf" src="../img/album-21.jpg"
                                                         alt="Marty Friedman Dragon kiss"></a>
-                                        <a href=""><img class="discografia__box--imagen cacophony" src="../img/album-22.jpg"
+                                        <a href=""><img class="discografia-imagen cacophony" src="../img/album-22.jpg"
                                                         alt="Cacophony Speed Metal Symphony"></a>
-                                        <a href=""><img class="discografia__box--imagen hawaii" src="../img/album-23.jpg"
+                                        <a href=""><img class="discografia-imagen hawaii" src="../img/album-23.jpg"
                                                         alt="Hawaii The Natives Are Restless"></a>
-                                        <a href=""><img class="discografia__box--imagen hawaii" src="../img/album-24.jpg"
+                                        <a href=""><img class="discografia-imagen hawaii" src="../img/album-24.jpg"
                                                         alt="Hawaii One Nation Underground"></a>
                                 </div>
                         </div>
                 </div>
         </section>
 
-        <footer class="pie">
-                <img class="pie__logo" src="../img/logo.png" alt="Logo marty Friedman">
-                <p class="pie__parrafo">&copy; Copyright 2021 Marty Friedman</p>
-                <p class="pie__parrafo">Devoloped by Juan Manuel González</p>
+        <footer>
+                <img src="../img/logo.png" alt="Logo-footer" class="logo-footer">
+                <p>&copy; Copyright 2021 Marty Friedman</p>
+                <p>Devoloped by Juan Manuel González</p>
         </footer>
         <!-- JavaScript -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>

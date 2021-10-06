@@ -11,103 +11,93 @@
         <link rel="icon" type="image/png" sizes="32x32" href="../favicon_io//favicon-32x32.png">
         <link rel="icon" type="image/png" sizes="16x16" href="../favicon_io/favicon-16x16.png">
         <link rel="manifest" href="../favicon_io/site.webmanifest">
-
         <!-- Animate CSS -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
-
-        <!-- CSS & Icons -->
+        <!-- CSS y Icons -->
         <script src="https://kit.fontawesome.com/4592a31928.js" crossorigin="anonymous"></script>
-        <link rel="stylesheet" href="../css/main.css">
+        <link rel="stylesheet" href="../css/style.css">
         
 </head>
 
 <body>
     <!-- Header y Navbar -->
-    <header class="header">
-        <nav class="header__navegacion">
-            <div class="header__navegacion--social-box">
+    <header class="header-section">
+        <nav class="navegacion">
+            <div class="social-box">
                 <a href="https://www.facebook.com/martyfriedman.official" target="_blank"><i
-                        class="fab fa-facebook-square header__navegacion--social header__navegacion--icon social"></i></a>
+                        class="fab fa-facebook-square social"></i></a>
                 <a href="https://twitter.com/marty_friedman?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"
-                    target="_blank"><i class="fab fa-twitter header__navegacion--social header__navegacion--icon"></i></a>
-                <a href="https://www.instagram.com/martyfriedman/" target="_blank"><i
-                        class="fab fa-instagram header__navegacion--social header__navegacion--icon"></i></a>
+                    target="_blank"><i class="fab fa-twitter social"></i></a>
+                <a href="https://www.instagram.com/martyfriedman/" target="_blank"><i class="fab fa-instagram social"></i></a>
                 <a href="https://www.youtube.com/channel/UC8p0ZqjT7f_zZiS-py5w-WQ" target="_blank"><i
-                        class="fab fa-youtube header__navegacion--social header__navegacion--icon"></i></a>
+                        class="fab fa-youtube social"></i></a>
                 <a href="https://open.spotify.com/artist/5czW6bitDSKbNBNDizRT9p" target="_blank"><i
-                        class="fab fa-spotify header__navegacion--social header__navegacion--icon"></i></a>
+                        class="fab fa-spotify social"></i></a>
             </div>
-            <a href="../index.html">
-                <img class="header__navegacion--logoimg" src="../img/logo.png" alt="Marty Friedman Logo">
-            </a>
-            <ul class="header__navegacion--menu">
-                <li class="header__navegacion--item-menu">
-                    <button id="btn-menu" class="header__navegacion--btn-menu">
-                        <span class="header__navegacion--menu-text">Menu</span>
-                            <i class="fas fa-bars menu-icon header__navegacion--icon header__navegacion--icon-menu"></i>
+            <a href="../index.html"><img class="logo" src="../img/logo.png" alt="Marty Friedman Logo"></a>
+            <ul class="menu">
+                <li class="enlace">
+                    <button id="btn-menu" class="btn-menu">
+                        <span>Menu</span>
+                            <i class="fas fa-bars menu-icon"></i>
                     </button>
-                    <ul class="header__navegacion--submenu">
-                        <li class="header__navegacion--item-submenu"><a class="header__navegacion--link-submenu" href="noticias.html">Noticias</a></li>
-                        <li class="header__navegacion--item-submenu"><a class="header__navegacion--link-submenu" href="tour.html">Tour</a></li>
-                        <li class="header__navegacion--item-submenu"><a class="header__navegacion--link-submenu" href="discografia.html">Discografia</a></li>
-                        <li class="header__navegacion--item-submenu"><a class="header__navegacion--link-submenu" href="galeria.html">Galeria</a></li>
-                        <li class="header__navegacion--item-submenu"><a class="header__navegacion--link-submenu" href="videos.html">Videos</a></li>
-                        <li class="header__navegacion--item-submenu"><a class="header__navegacion--link-submenu" href="gear.html">Gear</a></li>
-                        <li class="header__navegacion--item-submenu"><a class="header__navegacion--link-submenu" href="../index.html#contact-section">Contacto</a></li>
+                    <ul class="submenu">
+                        <li><a href="noticias.html">Noticias</a></li>
+                        <li><a href="tour.html">Tour</a></li>
+                        <li><a href="discografia.html">Discografia</a></li>
+                        <li><a href="galeria.html">Galeria</a></li>
+                        <li><a href="videos.html">Videos</a></li>
+                        <li><a href="gear.html">Gear</a></li>
+                        <li><a href="../index.html#contact-section">Contacto</a></li>
                     </ul>
                 </li>
             </ul>
         </nav>
     </header>
     <!-- Seccion Videos -->
-    <section class="videos js--videos-section">
-        <div class="videos__box">
-            <div class="videos__box--heading">
-                <h1>Marty Friedman Videos</h1>
-                <h2 class="videos__box--titulo">
-                    <span class="videos__box--span">últimos videos</span>
-                </h2>
-                <p class="videos__box--parrafo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa voluptatem, aliquid omnis voluptas obcaecati
-                    ipsum impedit error a quidem totam debitis nemo placeat excepturi ipsa facilis dicta qui ad tempora.</p>
+    <section class="videos-section js--videos-section">
+        <div class="general-box">
+            <h2><span>últimos videos</span></h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa voluptatem, aliquid omnis voluptas obcaecati
+                ipsum impedit error a quidem totam debitis nemo placeat excepturi ipsa facilis dicta qui ad tempora.</p>
+                <div class="videos-container">
+                    <iframe src="https://www.youtube-nocookie.com/embed/47wq9W90bAQ"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+                    
+                    <iframe src="https://www.youtube-nocookie.com/embed/y9newkA4g7Q"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+                    
+                    <iframe src="https://www.youtube-nocookie.com/embed/pXECaAsYD-s"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+                    
+                    <iframe src="https://www.youtube-nocookie.com/embed/qEwEESAXHIE"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+                    
+                    <iframe src="https://www.youtube.com/embed/UKmKcsySlgE" title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+                    
+                    <iframe src="https://www.youtube-nocookie.com/embed/oR5iwoxh2rI"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+                </div>
             </div>
-            <div class="videos__box--container">
-                <iframe class="videos__box--video" src="https://www.youtube-nocookie.com/embed/47wq9W90bAQ"
-                title="YouTube video player" frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen></iframe>
-                    
-                <iframe class="videos__box--video"  src="https://www.youtube-nocookie.com/embed/y9newkA4g7Q"
-                title="YouTube video player" frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen></iframe>
-                    
-                <iframe class="videos__box--video"  src="https://www.youtube-nocookie.com/embed/pXECaAsYD-s"
-                title="YouTube video player" frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen></iframe>
-                    
-                <iframe class="videos__box--video"  src="https://www.youtube-nocookie.com/embed/qEwEESAXHIE"
-                title="YouTube video player" frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen></iframe>
-                    
-                <iframe class="videos__box--video"  src="https://www.youtube.com/embed/UKmKcsySlgE" title="YouTube video player"
-                frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen></iframe>
-                    
-                <iframe class="videos__box--video"  src="https://www.youtube-nocookie.com/embed/oR5iwoxh2rI"
-                title="YouTube video player" frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen></iframe>
-            </div>
-        </div>
-    </section>
-    <!-- Footer -->
-    <footer class="pie">
-        <img class="pie__logo" src="../img/logo.png" alt="Logo marty Friedman">
-        <p class="pie__parrafo">&copy; Copyright 2021 Marty Friedman</p>
-        <p class="pie__parrafo">Devoloped by Juan Manuel González</p>
+        </section>
+        <!-- Footer -->
+        <footer>
+        <img src="../img/logo.png" alt="Logo-footer" class="logo-footer">
+        <p>&copy; Copyright 2021 Marty Friedman</p>
+        <p>Devoloped by Juan Manuel González</p>
     </footer>
     <!-- JavaScript -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>

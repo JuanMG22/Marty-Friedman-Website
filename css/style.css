@@ -1,0 +1,1139 @@
+@import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Staatliches',
+    cursive;
+}
+
+body {
+    background-image: linear-gradient(rgba(45, 45, 45, .8), rgba(45, 45, 45, .8)),
+        url(../img/contact-bg.jpg);
+    color: #fff;
+    text-rendering: optimizeLegibility;
+    font-size: 16px;
+}
+
+h1 {
+    display: none;
+}
+
+h2 {
+    font-size: 350%;
+    color: #fff;
+}
+
+p {
+    font-family: 'Roboto', sans-serif;
+    color: #ccc;
+}
+
+a {
+    text-decoration: none;
+}
+
+.general-box {
+    background-color: rgba(20, 20, 20, .7);
+    width: 70vw;
+    padding: 20px;
+    border: 1px solid #000;
+    box-shadow: 1px 1px 15px 0 #000;
+    animation: zoomInUp;
+    animation-duration: .8s;
+}
+
+/* Buttons */
+
+.btn:link,
+.btn:visited {
+    font-size: 150%;
+    padding: 10px 30px;
+    margin: 20px;
+    border-radius: 5px;
+    display: inline-block;
+    animation: bounceIn;
+    animation-duration: 2s;
+    animation-delay: .2s;
+}
+
+.btn-noticia:link,
+.btn-noticia:visited {
+    font-size: 120%;
+    width: 100%;
+    text-align: center;
+    padding: 10px 60px;
+    margin: 20px 30px;
+    display: inline-block;
+    letter-spacing: 1px;
+}
+
+.btn-full:link,
+.btn-full:visited {
+    border: 2px solid #fff;
+    color: #fff;
+    transition: ease all .3s;
+}
+
+.btn-full:hover,
+.btn-full:active {
+    background-color: #fff;
+    color: #000;
+}
+
+/* Header Section */
+
+.header-section {
+    background-image: linear-gradient(rgba(0, 0, 0, .9), rgba(0, 0, 0, .5)),
+        url(../img/header-bg2.jpg);
+    background-size: cover;
+    border-bottom: 4px solid #fff;
+    display: flex;
+    justify-content: center;
+}
+
+.header-box {
+    height: 92vh;
+    background-image: linear-gradient(rgba(45, 45, 45, .4), rgba(0, 0, 0, 1)),
+        url(../img/header-bg.jpg);
+    background-size: cover;
+    background-position: 0% 22%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 50px;
+}
+
+.header-text {
+    text-align: center;
+}
+
+/* Navigation */
+.navegacion {
+    width: 50vw;
+    background: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin: 5px 0;
+}
+
+.navegacion i {
+    font-size: 200%;
+    margin-left: 20px;
+    color: #fff;
+}
+
+.logo {
+    height: 7vh;
+    margin-right: 4.9vw;
+}
+
+.navegacion ul {
+    list-style: none;
+}
+
+.menu {
+    width: 10vw;
+    text-align: left;
+    z-index: 999;
+    font-size: 120%;
+}
+.menu li button span {
+    font-size: 140%;
+    letter-spacing: 1px;
+}
+
+.btn-menu {
+    background: none;
+    border: none;
+    box-shadow: none;
+    cursor: pointer;
+    transition: ease all .3s;
+}
+
+.btn-menu:hover,
+.menu li a:hover {
+    background: #dba520;
+    color: #141414;
+}
+
+.menu>li {
+    position: relative;
+}
+
+.menu>li>a,
+.menu>li>button {
+    display: block;
+    padding: 15px 30px;
+    color: #fff;
+}
+
+.social {
+    transform: scale(1);
+    margin-bottom: 5px;
+    transition: ease all .3s;
+}
+
+.social:hover {
+    transform: scale(1.15);
+    color: #dba520;
+}
+
+.sticky-nav {
+    position: fixed;
+    background-color: rgba(20, 20, 20, .8);
+    width: 100vw;
+    margin: 0;
+    z-index: 999;
+    border-bottom: 1px solid #fff;
+    box-shadow: 0 2px 2px #fff;
+}
+
+.sticky-nav i {
+    display: none;
+}
+
+.sticky-nav li button i {
+    display: inline;
+}
+
+.sticky-nav .logo {
+    margin-right: 55.5vw;
+    margin-bottom: 5px;
+    height: 30px;
+}
+
+.sticky-nav .menu {
+    margin-right: 13vw;
+}
+
+/* Submenu */
+
+.submenu {
+    position: absolute;
+    background-image: linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .6)),
+    url(../img/header-bg2.jpg);
+    background-position: center;
+    width: 90%;
+    visibility: hidden;
+    opacity: 0;
+    text-align: left;
+    z-index: 999;
+    transition: ease all .3s;
+}
+
+.submenu li a {
+    display: block;
+    padding: 15px;
+    color: #fff;
+}
+
+.menu li:hover .submenu {
+    visibility: visible;
+    opacity: 1;
+}
+
+/* Discografia Section */
+
+.discografia-section {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    min-height: 79.6vh;
+}
+
+.discografia-text {
+    margin-bottom: 10px;
+}
+
+.discografia-text h2 span {
+    padding-bottom: 10px;
+    border-bottom: 1px solid #fff;
+}
+
+.discografia-categoria {
+    font-size: 130%;
+    margin-top: 40px;
+    text-align: center;
+}
+
+.discografia-input {
+    cursor: pointer;
+    font-size: 125%;
+    margin: 5px;
+}
+
+#todo,
+#solista,
+#megadeth,
+#cacophony,
+#hawaii {
+    opacity: 0;
+}
+
+#todo:checked~.todo,
+#megadeth:checked~.megadeth,
+#solista:checked~.solista,
+#cacophony:checked~.cacophony,
+#hawaii:checked~.hawaii,
+.discografia-input:hover {
+    color: #dba520;
+    transition: ease all .3s;
+}
+
+#megadeth:checked~.albumes .mf,
+#megadeth:checked~.albumes .hawaii,
+#megadeth:checked~.albumes .cacophony {
+    position: absolute;
+    visibility: hidden;
+    opacity: 0;
+    height: 0;
+    transition: ease height .3s;
+}   
+
+#solista:checked~.albumes .megadeth,
+#solista:checked~.albumes .hawaii,
+#solista:checked~.albumes .cacophony {
+    position: absolute;
+    visibility: hidden;
+    opacity: 0;
+    height: 0;
+    transition: ease height .3s;
+}
+
+#cacophony:checked~.albumes .megadeth,
+#cacophony:checked~.albumes .hawaii,
+#cacophony:checked~.albumes .mf {
+    position: absolute;
+    visibility: hidden;
+    opacity: 0;
+    height: 0;
+    transition: ease height .3s;
+}
+
+#hawaii:checked~.albumes .megadeth,
+#hawaii:checked~.albumes .cacophony,
+#hawaii:checked~.albumes .mf {
+    position: absolute;
+    visibility: hidden;
+    opacity: 0;
+    height: 0;
+    transition: ease height .3s;
+}
+.discografia-box {
+    background-color: rgba(20, 20, 20, .7);
+    width: 70vw;
+    padding: 20px;
+    border: 1px solid #000;
+    box-shadow: 1px 1px 15px 0 #000;
+    position: relative;
+    animation: zoomInUp;
+    animation-duration: .8s;
+}
+
+.albumes {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.discografia-imagen {
+    margin: 30px 30px 0px 0px;
+    width: 22rem;
+    height: 22rem;
+    opacity: .5;
+    transition: ease all .3s;
+}
+
+.discografia-imagen:hover {
+    transform: scale(1.1);
+    opacity: 1;
+}
+
+/* Galeria */
+
+.galeria-section {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.galeria-text {
+    margin-bottom: 10px;
+}
+
+.galeria-text h2 span {
+    padding-bottom: 10px;
+    border-bottom: 2px solid #fff;
+}
+
+
+.galeria-box {
+    background-color: rgba(20, 20, 20, .7);
+    width: 70vw;
+    padding: 20px;
+    border: 1px solid #000;
+    box-shadow: 1px 1px 15px 0 #000;
+    animation: zoomInUp;
+    animation-duration: .8s;
+}
+
+.galeria-container {
+    width: 100%;
+    margin: 50px auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 1fr;
+    grid-gap: 10px;
+}
+
+.galeria-imagen {
+    height: 300px;
+    overflow: hidden;
+}
+
+.galeria-imagen img {
+    width: 100%;
+    height: 100%;
+    filter: grayscale(100%);
+    transform: scale(1);
+    transition: ease all .3s;
+}
+
+.galeria-imagen img:hover {
+    filter: grayscale(0%);
+    transform: scale(1.05);
+}
+
+/* Videos Section */
+
+.videos-section {
+    display: flex;
+    justify-content: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    min-height: 79.6vh;
+}
+
+.videos-box {
+    background-color: rgba(20, 20, 20, .7);
+    width: 70vw;
+    padding: 20px;
+    border: 1px solid #000;
+    box-shadow: 1px 1px 15px 0 #000;
+    animation: zoomInUp;
+    animation-duration: .8s;
+    min-height: 70vh;
+}
+
+.videos-box h2 span {
+    padding-bottom: 10px;
+    border-bottom: 1px solid #ccc;
+}
+
+.videos-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.videos-section p {
+    text-align: center;
+    margin: 25px;
+}
+
+.videos-section h2 {
+    text-align: center;
+    margin-top: 100px;
+}
+
+.videos-section iframe {
+    text-align: center;
+    height: 50vh;
+    width: 70vw;
+    margin: 10px;
+}
+
+/* Noticias Section Index */
+
+.noticias-section-index {
+    border-top: 1px solid #fff;
+    text-align: left;
+    background-image: linear-gradient(rgba(0, 0, 0, .2), rgba(0, 0, 0, .8)), url(../img/noticias-bg.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.noticias-container-index {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.noticia-imagen-index {
+    outline: 1px solid #252525;
+    width: 25rem;
+    height: 14rem;
+}
+
+.noticias-heading-index {
+    margin-bottom: 50px;
+    margin-top: 150px;
+    text-align: center;
+}
+
+.noticias-box-index h3 {
+    font-size: 140%;
+    color: #fff;
+    text-align: left;
+    font-family: 'Roboto', sans-serif;
+}
+
+.noticias-box-index p {
+    margin: 10px 0px;
+    text-align: left;
+}
+
+.noticias-box-index time {
+    font-size: 90%;
+    padding-right: auto;
+    color: #ccc;
+    margin: 10px 0px;
+    align-self: flex-start;
+}
+
+.noticias-section-index span {
+    padding-bottom: 10px;
+    border-bottom: 1px solid #ccc;
+}
+
+
+.noticias-box-index {
+    background-color: #121212;
+    width: 27rem;
+    height: 32rem;
+    padding: 20px;
+    margin-left: 5vw;
+    margin-right: 5vw;
+    margin-bottom: 150px;
+    border: 7px solid #252525;
+    box-shadow: 1px 1px 10px 0 #000;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    transition: ease all .3s;
+}
+
+.noticias-box-index:hover {
+    border: 7px solid #484848;
+    transform: scale(1.01);
+}
+
+/* Noticias section  */
+.noticias-section {
+    min-height: 79.5vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.noticias-text {
+    margin-bottom: 60px;
+}
+
+.noticias-text h2 span {
+    padding-bottom: 10px;
+    border-bottom: 2px solid #fff;
+}
+
+.noticia-heading h3 {
+    padding-top: 60px;
+    margin-bottom: 20px;
+    font-size: 250%;
+    text-align: center;
+}
+
+.noticia-heading .fecha {
+    margin: 20px;
+    font-size: 110%;
+    color: #afa8a8;
+}
+
+.noticia-articulo p {
+    margin: 20px;
+    font-size: 120%;
+    color: #afa8a8;
+}
+
+.noticia-imagen {
+    margin: 20px;
+    height: 40vh;
+    width: 40vw;
+}
+
+.noticia-video {
+    margin: 20px;
+    height: 40vh;
+    width: 40vw;
+    text-align: center;
+}
+
+/* Tour section */
+.tour-section {
+    display: flex;
+    justify-content: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    min-height: 79.6vh;
+}
+
+.tour-box {
+    background-color: rgba(20, 20, 20, .7);
+    width: 70vw;
+    padding: 20px;
+    border: 1px solid #000;
+    box-shadow: 1px 1px 15px 0 #000;
+    position: relative;
+    animation: zoomInUp;
+    animation-duration: .8s;
+    min-height: 70vh;
+}
+
+.tour-text {
+    margin-bottom: 40px;
+}
+
+.tour-text h2 span {
+    padding-bottom: 10px;
+    border-bottom: 2px solid #fff;
+}
+
+/* Gear Section */
+.gear-section {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    min-height: 79.6vh;
+}
+
+.gear-text {
+    margin-bottom: 10px;
+}
+
+.gear-text h2  {
+    margin-bottom: 20px;
+}
+
+.gear-text h3 {
+    color: #dba520;
+    font-size: 130%;
+    margin: 40px 20px;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+.gear-text h2 span {
+    padding-bottom: 10px;
+    border-bottom: 2px solid #fff;
+    margin-bottom: 10px;
+}
+
+.marcas-box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.gear-text img {
+    filter: invert(100%);
+    height: 10vh;
+    width: 12vw;
+}
+
+.gear-categoria {
+    margin-top: 40px;
+    text-align: left;
+}
+
+.gear-input {
+    font-size: 180%;
+    cursor: pointer;
+}
+
+#guitarras,
+#amps,
+#pedales,
+#pickups {
+    opacity: 0;
+}
+
+.gear-input:hover {
+    color: #dba520;
+    transition: ease all .3s;
+}
+
+#guitarras:checked~.guitarras,
+#amps:checked~.amps,
+#pedales:checked~.pedales,
+#pickups:checked~.pickups {
+    color: #dba520;
+}
+
+#guitarras:checked~.albumes .amps,
+#guitarras:checked~.albumes .pickups,
+#guitarras:checked~.albumes .pedales {
+    position: absolute;
+    visibility: hidden;
+    opacity: 0;
+    height: 0;
+    transition: ease height .3s;
+}
+
+#amps:checked~.albumes .gt,
+#amps:checked~.albumes .pickups,
+#amps:checked~.albumes .pedales {
+    position: absolute;
+    visibility: hidden;
+    opacity: 0;
+    height: 0;
+    transition: ease height .3s;
+}
+
+#pickups:checked~.albumes .gt,
+#pickups:checked~.albumes .amps,
+#pickups:checked~.albumes .pedales {
+    position: absolute;
+    visibility: hidden;
+    opacity: 0;
+    height: 0;
+    transition: ease height .3s;
+}
+
+#pedales:checked~.albumes .gt,
+#pedales:checked~.albumes .amps,
+#pedales:checked~.albumes .pickups {
+    position: absolute;
+    visibility: hidden;
+    opacity: 0;
+    height: 0;
+    transition: ease height .3s;
+}
+
+.gear-guitarras-imagen {
+    margin: 30px 10px 0px 0px;
+    width: 40rem;
+    height: 12rem;
+    opacity: .5;
+    transition: ease all .3s;
+}
+
+.gear-amps-imagen {
+    margin: 30px 10px 0px 0px;
+    width: 35rem;
+    height: 12rem;
+    opacity: .5;
+    transition: ease all .3s;
+}
+
+.gear-pickups-imagen {
+    margin: 30px 10px 0px 0px;
+    width: 35rem;
+    height: 20rem;
+    opacity: .5;
+    transition: ease all .3s;
+}
+
+.gear-pedals-imagen {
+    margin: 30px 10px 0px 0px;
+    width: 13rem;
+    height: 20rem;
+    opacity: .5;
+    transition: ease all .3s;
+}
+
+.gear-pedals-imagen-xl {
+    margin: 30px 10px 0px 0px;
+    width: 30rem;
+    height: 19.5rem;
+    opacity: .5;
+    transition: ease all .3s;
+}
+
+
+
+.gear-over:hover {
+    transform: scale(1.1);
+    opacity: 1;
+}
+/* Contact Section */
+
+.contact-section {
+    border-top: 1px solid #ccc;
+    text-align: center;
+    padding-bottom: 150px;
+    background-image: linear-gradient(rgba(45, 45, 45, .8), rgba(45, 45, 45, .8)),
+        url(../img/contact-bg.jpg);
+    background-size: cover;
+}
+
+.contact-heading {
+    margin-top: 150px;
+    margin-bottom: 100px;
+}
+
+.contact-heading span {
+    padding-bottom: 10px;
+    border-bottom: 1px solid #ccc;
+}
+
+.contact-form {
+    text-align: left;
+    width: 60%;
+    margin: 0 auto;
+}
+
+input[type=text],
+input[type=email],
+select,
+textarea {
+    width: 100%;
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+
+}
+
+input[type=checkbox] {
+    margin: 10px 5px 10px 0;
+}
+
+.send-button,
+.reset-button {
+    padding: 10px;
+}
+
+/* Footer */
+
+footer {
+    background-color: rgba(15, 15, 15, .5);
+    border-top: 1px solid #ccc;
+    padding: 30px 0px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.logo-footer {
+    height: 50px;
+    margin-right: 8vw;
+}
+
+/* Media Queries*/
+
+@media only screen and (max-width: 1440px) {
+    body {
+        font-size: 15px;
+    }
+    /* Navigation */
+    .navegacion .menu {
+        width: 12vw;
+    }
+    .navegacion .social-box {
+        width: 15vw;
+    }
+    .header-box {
+        background-position: center;
+    }
+    /* Galeria */
+    .galeria-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+    body {
+        font-size: 13px;
+    }
+
+    /* Navigation */
+    .navegacion .menu {
+        width: 14vw;
+    }
+    .logo {
+        height: 10vh;
+    }
+
+    .header-box {
+        background-position: center;
+    }
+    /* Galeria */
+    .galeria-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media all and (max-width: 1024px) {
+    body {
+        font-size: 12px;
+    }
+
+    /* Navigation */
+    .navegacion .menu li button span {
+        display: none;
+    }
+    .navegacion .menu {
+        width: 15vw;
+    }
+
+    .logo {
+        height: 8vh;
+    }
+
+    .header-box {
+        background-position: center;
+    }
+
+    /* Gear Section */
+    .gear-guitarras-imagen {
+        width: 32rem;
+        height: 9rem;
+    }
+
+    .gear-amps-imagen { 
+        width: 30rem;
+    }     
+
+    .gear-pickups-imagen {
+        width: 25rem;
+    }
+
+    /* Galeria */
+    .galeria-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media all and (max-width: 768px) {
+    body {
+        font-size: 10px;
+    }
+
+    p,
+    label {
+        font-size: 14px;
+    }
+
+    /* Navigation */
+    .navegacion .menu li button span {
+        display: none;
+    }
+    .navegacion .menu {
+        width: 15vw;
+    }
+
+    .submenu {
+        width: 17.8vw;
+    }
+    .navegacion .social-box {
+        width: 20vw;
+    }
+
+    .logo {
+        height: 8vh;
+    }
+
+    .header-box {
+        background-position: center;
+    }
+    /* Noticias Section*/
+
+    .noticia-imagen {
+        height: 30vh;
+        width: 50vw;
+    }
+
+    .noticia-video {
+        height: 30vh;
+        width: 50vw;
+    }
+
+     /* Gear Section */
+     .gear-guitarras-imagen {
+         width: 20rem;
+         height: 7rem;
+     }
+
+     .gear-amps-imagen {
+         width: 20rem;
+         height: 10rem;
+     }
+
+     .gear-pickups-imagen {
+         width: 16rem;
+         height: 16rem;
+     }
+     .gear-pedals-imagen-xl {
+         width: 20rem;
+         height: 15rem;
+     }
+
+    /* Discografia Section*/
+    .discografia-imagen {
+        width: 16rem;
+        height: 16rem;
+        margin: 10px 10px 0px 0px;
+    }
+    /* Galeria */
+    .galeria-container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+
+@media only screen and (max-width: 480px) {
+    /* Home */
+    .titulo {
+        font-size: 200%;
+        display: block;
+        text-align: center;
+    }
+    body {
+        font-size: 10px;
+    }
+
+    p,
+    label {
+        font-size: 14px;
+    }
+
+    .header-box {
+        background-position: center;
+    }
+    /* Navigation */
+    .navegacion {
+        width: 80vw;
+    }
+
+    .sticky-nav {
+        width: 100vw;
+    }
+
+    .navegacion .menu li button span {
+        display: none;
+    }
+
+    .navegacion .menu {
+        width: 19vw;
+    }
+
+    .submenu {
+        font-size: 130%;
+        width: 150%;
+    }
+
+    .navegacion .social-box {
+        width: 30vw;
+    }
+
+    .logo {
+        height: 7vh;
+    }
+    .general-box {
+        width: 95vw;
+    }
+    /* Gear Section */
+    .gear-text h3 {
+        font-size: 115%;
+    }
+
+    .gear-input {
+        font-size: 185%;
+    }
+
+    .gear-text img {
+        height: 10vh;
+        width: 22vw;
+    }
+    .gear-guitarras-imagen {
+        width: 20rem;
+        height: 7rem;
+    }
+
+    .gear-amps-imagen {
+        width: 18rem;
+        height: 10rem;
+    }
+
+    .gear-pickups-imagen {
+        width: 13rem;
+        height: 13rem;
+    }
+
+    .gear-pedals-imagen {
+        width: 10rem;
+        height: 13rem;
+    }
+
+    .gear-pedals-imagen-xl {
+        width: 16rem;
+        height: 10rem;
+    }
+    /* Noticias Section*/
+
+   .noticia-imagen {
+       height: 30vh;
+       width: 50vw;
+   }
+
+   .noticia-video {
+       height: 30vh;
+       width: 50vw;
+   }
+
+
+    /* Discografia Section*/
+    .discografia-input {
+        font-size: 150%;
+    }
+
+    .discografia-imagen {
+        width: 16rem;
+        height: 16rem;
+        margin: 10px 10px 0px 0px;
+    }
+    
+    /* Footer */
+    footer {
+        padding: 20px 0px;
+    }
+
+    footer p{
+        font-size: 110%;
+    }
+
+    .logo-footer {
+        height: 30px;
+        margin-right: 0vw;
+    }
+
+    /* Galeria */
+    .galeria-container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}

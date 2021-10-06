@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-        <meta charset="UTF-8">
+    <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Marty Friedman Gear</title>
@@ -11,153 +11,117 @@
         <link rel="icon" type="image/png" sizes="32x32" href="../favicon_io//favicon-32x32.png">
         <link rel="icon" type="image/png" sizes="16x16" href="../favicon_io/favicon-16x16.png">
         <link rel="manifest" href="../favicon_io/site.webmanifest">
-
-        <!-- Animate CSS -->
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
-
-        <!-- CSS & Icons -->
+        <!-- CSS y Icons -->
         <script src="https://kit.fontawesome.com/4592a31928.js" crossorigin="anonymous"></script>
-        <link rel="stylesheet" href="../css/main.css">
-
+        <!-- Animate CSS -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+        <link rel="stylesheet" href="../css/style.css">
+        
 </head>
 
 <body>
-        <!-- Header y Navbar -->
-        <header class="header">
-                <nav class="header__navegacion">
-                        <div class="header__navegacion--social-box">
+    <!-- Header y Navbar -->
+    <header class="header-section">
+                <nav class="navegacion">
+                        <div class="social-box">
                                 <a href="https://www.facebook.com/martyfriedman.official" target="_blank"><i
-                                                class="fab fa-facebook-square header__navegacion--social header__navegacion--icon social"></i></a>
+                                                class="fab fa-facebook-square social"></i></a>
                                 <a href="https://twitter.com/marty_friedman?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"
-                                        target="_blank"><i
-                                                class="fab fa-twitter header__navegacion--social header__navegacion--icon"></i></a>
+                                        target="_blank"><i class="fab fa-twitter social"></i></a>
                                 <a href="https://www.instagram.com/martyfriedman/" target="_blank"><i
-                                                class="fab fa-instagram header__navegacion--social header__navegacion--icon"></i></a>
+                                                class="fab fa-instagram social"></i></a>
                                 <a href="https://www.youtube.com/channel/UC8p0ZqjT7f_zZiS-py5w-WQ" target="_blank"><i
-                                                class="fab fa-youtube header__navegacion--social header__navegacion--icon"></i></a>
+                                                class="fab fa-youtube social"></i></a>
                                 <a href="https://open.spotify.com/artist/5czW6bitDSKbNBNDizRT9p" target="_blank"><i
-                                                class="fab fa-spotify header__navegacion--social header__navegacion--icon"></i></a>
+                                                class="fab fa-spotify social"></i></a>
                         </div>
-                        <a href="../index.html">
-                                <img class="header__navegacion--logoimg" src="../img/logo.png"
-                                        alt="Marty Friedman Logo">
-                        </a>
-                        <ul class="header__navegacion--menu">
-                                <li class="header__navegacion--item-menu">
-                                        <button id="btn-menu" class="header__navegacion--btn-menu">
-                                                <span class="header__navegacion--menu-text">Menu</span>
-                                                <i
-                                                        class="fas fa-bars menu-icon header__navegacion--icon header__navegacion--icon-menu"></i>
+                        <a href="../index.html"><img class="logo" src="../img/logo.png" alt="Marty Friedman Logo"></a>
+                        <!-- Menu -->
+                        <ul class="menu">
+                                <li>
+                                        <button id="btn-menu" class="btn-menu">
+                                                <span>Menu</span>
+                                                <i class="fas fa-bars menu-icon"></i>
                                         </button>
-                                        <ul class="header__navegacion--submenu">
-                                                <li class="header__navegacion--item-submenu"><a
-                                                                class="header__navegacion--link-submenu"
-                                                                href="noticias.html">Noticias</a></li>
-                                                <li class="header__navegacion--item-submenu"><a
-                                                                class="header__navegacion--link-submenu"
-                                                                href="tour.html">Tour</a></li>
-                                                <li class="header__navegacion--item-submenu"><a
-                                                                class="header__navegacion--link-submenu"
-                                                                href="discografia.html">Discografia</a></li>
-                                                <li class="header__navegacion--item-submenu"><a
-                                                                class="header__navegacion--link-submenu"
-                                                                href="galeria.html">Galeria</a></li>
-                                                <li class="header__navegacion--item-submenu"><a
-                                                                class="header__navegacion--link-submenu"
-                                                                href="videos.html">Videos</a></li>
-                                                <li class="header__navegacion--item-submenu"><a
-                                                                class="header__navegacion--link-submenu"
-                                                                href="gear.html">Gear</a></li>
-                                                <li class="header__navegacion--item-submenu"><a
-                                                                class="header__navegacion--link-submenu"
-                                                                href="../index.html#contact-section">Contacto</a></li>
+                                        <!-- Submenu -->
+                                        <ul class="submenu">
+                                                <li><a href="noticias.html">Noticias</a></li>
+                                                <li><a href="tour.html">Tour</a></li>
+                                                <li><a href="discografia.html">Discografia</a></li>
+                                                <li><a href="galeria.html">Galeria</a></li>
+                                                <li><a href="videos.html">Videos</a></li>
+                                                <li><a href="gear.html">Gear</a></li>
+                                                <li><a href="../index.html#contact-section">Contacto</a></li>
                                         </ul>
                                 </li>
                         </ul>
                 </nav>
         </header>
-        <!-- Gear Section -->
-        <section class="gear">
-                <div class="gear__box">
-                        <div class="gear__box--heading">
-                                <h1>Marty Friedman Gear</h1>
-                                <h2 class="gear__box--titulo">
-                                        <span class="gear__box--span">Gear</span>
-                                </h2>
-                        </div>
-                                <div class="gear__box--marcas">
-                                        <img class="gear__box--marcas-logo" src="../img/jackson-logo.svg" alt="Jackson Logo">
-                                        <img class="gear__box--marcas-logo" src="../img/engl-logo.png" alt="Engl Logo">
-                                        <img class="gear__box--marcas-logo" src="../img/emg-logo.png" alt="EMG Logo">
-                                        <img class="gear__box--marcas-logo" src="../img/boss-logo.png" alt="Boss Logo">
-                                        <img class="gear__box--marcas-logo" src="../img/mxr-logo.png" alt="MXR Logo">
+    <section class="gear-section">
+                <div class="general-box">
+                        <div class="gear-text">
+                                <h1>Marty Friedman Discografia</h1>
+                                <h2><span>Gear</span></h2>
+                                
+                                <div class="marcas-box">
+                                    <img src="../img/jackson-logo.svg" alt="Jackson Logo">
+                                    <img src="../img/engl-logo.png" alt="Engl Logo">
+                                    <img src="../img/emg-logo.png" alt="EMG Logo">
+                                    <img src="../img/boss-logo.png" alt="Boss Logo">
+                                    <img src="../img/mxr-logo.png" alt="MXR Logo">
                                 </div>
-                                <h3 class="gear__box--sub-titulo">Marty uses signatures Jackson guitars, ENGL amps, EMG pickups, BOSS audio and MXR
-                                        pedals.Discover more about.</h3>
-                <div class="gear__box--categoria">
-                        <input class="gear__box--input" name="filtro" id="guitarras" type="radio" checked>
-                        <label class="gear__box--input guitarras" for="guitarras">Guitarras</label>
-                        <input class="gear__box--input" name="filtro" id="amps" type="radio">
-                        <label class="gear__box--input amps" for="amps">Amps</label>
-                        <input class="gear__box--input" name="filtro" id="pickups" type="radio">
-                        <label class="gear__box--input pickups" for="pickups">Pickups</label>
-                        <input class="gear__box--input" name="filtro" id="pedales" type="radio">
-                        <label class="gear__box--input pedales" for="pedales">Pedales</label>
-                        <div class="gear__box--img-container  js--gear-box">
-                                <a href="https://www.jacksonguitars.com/gear/shape/mf1/usa-signature-marty-friedman-mf-1/2803333801"
-                                        target="_blank"><img class="gear__box--guitarras gear__box--over gt"
-                                                src="../img/guitarra-1.png" alt="Jackson Marty Friedman MF 1 usa"></a>
-                                <a href="https://www.jacksonguitars.com/gear/shape/mf1/pro-series-signature-marty-friedman-mf-1/2919904552"
-                                        target="_blank"><img class="gear__box--guitarras gear__box--over gt"
-                                                src="../img/guitarra-2.png" alt="Jackson pro  Marty Friedman MF1"></a>
-                                <a href="https://www.chorder.com/electric-guitars/jackson/ke1mf-marty-friedman-3201"
-                                        target="_blank"><img class="gear__box--guitarras gear__box--over gt"
-                                                src="../img/guitarra-3.png" alt="Jackson KE1 MF Marty Friedman"></a>
-                                <a href="https://prsguitars.com/artists/story/prs_signature_artist_marty_friedman_releases_new_album_inferno"
-                                        target="_blank"><img class="gear__box--guitarras gear__box--over gt"
-                                                src="../img/guitarra-4.png" alt="PRS Marty Friedman"></a>
-                                <a href="https://ibanez.fandom.com/wiki/MFM2" target="_blank"><img
-                                                class="gear__box--guitarras gear__box--over gt" src="../img/guitarra-5.png"
-                                                alt="Ibanez MFM2 LRD Marty Freidman"></a>
-                                <a href="https://www.engl-amps.com/marty-friedman-inferno-signature-e766"
-                                        target="_blank"><img class="gear__box--amps gear__box--over amps"
-                                                src="../img/amp-1.png"
-                                                alt="ENGL MARTY FRIEDMAN “INFERNO” SIGNATURE E766"></a>
-                                <a href="https://www.engl-amps.com/powerball-2-e645-2#content" target="_blank"><img
-                                                class="gear__box--amps gear__box--over amps" src="../img/amp-2.png"
-                                                alt="ENGL POWERBALL II E645II"></a>
-                                <a href="https://www.emgpickups.com/guitar/signature-sets/mf-set.html"
-                                        target="_blank"><img class="gear__box--pickups gear__box--over pickups"
-                                                src="../img/pickups-1.png" alt="EMG MF SET"></a>
-                                <a href="https://www.jimdunlop.com/mxr-smart-gate-noise-gate/" target="_blank"><img
-                                                class="gear__box--pedals gear__box--over pedales" src="../img/pedal-3.png"
-                                                alt="MXR Smart Gate"></a>
-                                <a href="https://www.jimdunlop.com/mxr-phase-90/" target="_blank"><img
-                                                class="gear__box--pedals gear__box--over pedales" src="../img/pedal-4.png"
-                                                alt="MXR Phase 90"></a>
-                                <a href="https://www.jimdunlop.com/mxr-bass-compressor/" target="_blank"><img
-                                                class="gear__box--pedals gear__box--over pedales" src="../img/pedal-5.png"
-                                                alt="MXR Phase 90"></a>
-                                <a href="https://www.boss.info/es-es/products/ch-1/" target="_blank"><img
-                                                class="gear__box--pedals gear__box--over pedales" src="../img/pedal-1.png"
-                                                alt="BOSS Super Chorus CH1"></a>
-                                <a href="https://www.boss.info/es-es/products/dd-500/" target="_blank"><img
-                                                class="gear__box--pedals-xl gear__box--over pedales" src="../img/pedal-2.png"
-                                                alt="BOSS Delay DD 500"></a>
+                            <h3>Marty uses signatures Jackson guitars, ENGL amps, EMG pickups, BOSS audio and MXR pedals. Discover more about.</h3>
                         </div>
-                </div>
+                        <div class="gear-categoria">
+                                <input class="gear-input" name="filtro" id="guitarras" type="radio" checked>
+                                <label class="gear-input guitarras" for="guitarras">Guitarras</label>
+                                <input class="gear-input" name="filtro" id="amps" type="radio">
+                                <label class="gear-input amps" for="amps">Amps</label>
+                                <input class="gear-input" name="filtro" id="pickups" type="radio">
+                                <label class="gear-input pickups" for="pickups">Pickups</label>
+                                <input class="gear-input" name="filtro" id="pedales" type="radio">
+                                <label class="gear-input pedales" for="pedales">Pedales</label>
+                                <div class="albumes  js--gear-box">
+                                        <a href="https://www.jacksonguitars.com/gear/shape/mf1/usa-signature-marty-friedman-mf-1/2803333801" target="_blank"><img class="gear-guitarras-imagen gear-over gt" src="../img/guitarra-1.png"
+                                                        alt="Jackson Marty Friedman MF 1 usa"></a>
+                                        <a href="https://www.jacksonguitars.com/gear/shape/mf1/pro-series-signature-marty-friedman-mf-1/2919904552" target="_blank"><img class="gear-guitarras-imagen gear-over gt" src="../img/guitarra-2.png"
+                                                        alt="Jackson pro  Marty Friedman MF1"></a>
+                                        <a href="https://www.chorder.com/electric-guitars/jackson/ke1mf-marty-friedman-3201" target="_blank"><img class="gear-guitarras-imagen gear-over gt" src="../img/guitarra-3.png"
+                                                        alt="Jackson KE1 MF Marty Friedman"></a>
+                                        <a href="https://prsguitars.com/artists/story/prs_signature_artist_marty_friedman_releases_new_album_inferno" target="_blank"><img class="gear-guitarras-imagen gear-over gt" src="../img/guitarra-4.png"
+                                                        alt="PRS Marty Friedman"></a>
+                                        <a href="https://ibanez.fandom.com/wiki/MFM2" target="_blank"><img class="gear-guitarras-imagen gear-over gt" src="../img/guitarra-5.png"
+                                                        alt="Ibanez MFM2 LRD Marty Freidman"></a>
+                                        <a href="https://www.engl-amps.com/marty-friedman-inferno-signature-e766" target="_blank"><img class="gear-amps-imagen gear-over amps" src="../img/amp-1.png"
+                                                        alt="ENGL MARTY FRIEDMAN “INFERNO” SIGNATURE E766"></a>
+                                        <a href="https://www.engl-amps.com/powerball-2-e645-2#content" target="_blank"><img class="gear-amps-imagen gear-over amps" src="../img/amp-2.png"
+                                                        alt="ENGL POWERBALL II E645II"></a>
+                                        <a href="https://www.emgpickups.com/guitar/signature-sets/mf-set.html" target="_blank"><img class="gear-pickups-imagen gear-over pickups" src="../img/pickups-1.png"
+                                                        alt="EMG MF SET"></a>
+                                        <a href="https://www.jimdunlop.com/mxr-smart-gate-noise-gate/" target="_blank"><img class="gear-pedals-imagen gear-over pedales" src="../img/pedal-3.png"
+                                                        alt="MXR Smart Gate"></a>
+                                        <a href="https://www.jimdunlop.com/mxr-phase-90/" target="_blank"><img class="gear-pedals-imagen gear-over pedales" src="../img/pedal-4.png"
+                                                        alt="MXR Phase 90"></a>
+                                        <a href="https://www.jimdunlop.com/mxr-bass-compressor/" target="_blank"><img class="gear-pedals-imagen gear-over pedales" src="../img/pedal-5.png"
+                                                        alt="MXR Phase 90"></a>
+                                        <a href="https://www.boss.info/es-es/products/ch-1/" target="_blank"><img class="gear-pedals-imagen gear-over pedales" src="../img/pedal-1.png"
+                                                        alt="BOSS Super Chorus CH1"></a>
+                                        <a href="https://www.boss.info/es-es/products/dd-500/" target="_blank"><img class="gear-pedals-imagen-xl gear-over pedales" src="../img/pedal-2.png"
+                                                        alt="BOSS Delay DD 500"></a>
+                                </div>
+                        </div>
                 </div>
         </section>
-        <!-- Footer -->
-        <footer class="pie">
-                <img class="pie__logo" src="../img/logo.png" alt="Logo marty Friedman">
-                <p class="pie__parrafo">&copy; Copyright 2021 Marty Friedman</p>
-                <p class="pie__parrafo">Devoloped by Juan Manuel González</p>
-        </footer>
-        <!-- JavaScript -->
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
-        <script src="../js/script.js"></script>
+    <!-- Footer -->
+    <footer>
+        <img src="../img/logo.png" alt="Logo-footer" class="logo-footer">
+        <p>&copy; Copyright 2021 Marty Friedman</p>
+        <p>Devoloped by Juan Manuel González</p>
+    </footer>
+    <!-- JavaScript -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+    <script src="../js/script.js"></script>
 </body>
 
 </html>

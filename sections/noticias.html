@@ -11,117 +11,112 @@
         <link rel="icon" type="image/png" sizes="32x32" href="../favicon_io//favicon-32x32.png">
         <link rel="icon" type="image/png" sizes="16x16" href="../favicon_io/favicon-16x16.png">
         <link rel="manifest" href="../favicon_io/site.webmanifest">
-
+        <!-- CSS y Icons -->
+        <script src="https://kit.fontawesome.com/4592a31928.js" crossorigin="anonymous"></script>
         <!-- Animate CSS -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
-
-        <!-- CSS & Icons -->
-        <script src="https://kit.fontawesome.com/4592a31928.js" crossorigin="anonymous"></script>
-        <link rel="stylesheet" href="../css/main.css">
+        <link rel="stylesheet" href="../css/style.css">
         
 </head>
 
 <body>
     <!-- Header y Navbar -->
-    <header class="header">
-        <nav class="header__navegacion">
-            <div class="header__navegacion--social-box">
+    <header class="header-section">
+        <nav class="navegacion">
+            <div class="social-box">
                 <a href="https://www.facebook.com/martyfriedman.official" target="_blank"><i
-                        class="fab fa-facebook-square header__navegacion--social header__navegacion--icon social"></i></a>
+                        class="fab fa-facebook-square social"></i></a>
                 <a href="https://twitter.com/marty_friedman?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"
-                    target="_blank"><i class="fab fa-twitter header__navegacion--social header__navegacion--icon"></i></a>
-                <a href="https://www.instagram.com/martyfriedman/" target="_blank"><i
-                        class="fab fa-instagram header__navegacion--social header__navegacion--icon"></i></a>
+                    target="_blank"><i class="fab fa-twitter social"></i></a>
+                <a href="https://www.instagram.com/martyfriedman/" target="_blank"><i class="fab fa-instagram social"></i></a>
                 <a href="https://www.youtube.com/channel/UC8p0ZqjT7f_zZiS-py5w-WQ" target="_blank"><i
-                        class="fab fa-youtube header__navegacion--social header__navegacion--icon"></i></a>
+                        class="fab fa-youtube social"></i></a>
                 <a href="https://open.spotify.com/artist/5czW6bitDSKbNBNDizRT9p" target="_blank"><i
-                        class="fab fa-spotify header__navegacion--social header__navegacion--icon"></i></a>
+                        class="fab fa-spotify social"></i></a>
             </div>
-            <a href="../index.html">
-                <img class="header__navegacion--logoimg" src="../img/logo.png" alt="Marty Friedman Logo">
-            </a>
-            <ul class="header__navegacion--menu">
-                <li class="header__navegacion--item-menu">
-                    <button id="btn-menu" class="header__navegacion--btn-menu">
-                        <span class="header__navegacion--menu-text">Menu</span>
-                            <i class="fas fa-bars menu-icon header__navegacion--icon header__navegacion--icon-menu"></i>
+            <a href="../index.html"><img class="logo" src="../img/logo.png" alt="Marty Friedman Logo"></a>
+            <!-- Menu -->
+            <ul class="menu">
+                <li>
+                    <button id="btn-menu" class="btn-menu">
+                        <span>Menu</span>
+                            <i class="fas fa-bars menu-icon"></i>
                     </button>
-                    <ul class="header__navegacion--submenu">
-                        <li class="header__navegacion--item-submenu"><a class="header__navegacion--link-submenu" href="noticias.html">Noticias</a></li>
-                        <li class="header__navegacion--item-submenu"><a class="header__navegacion--link-submenu" href="tour.html">Tour</a></li>
-                        <li class="header__navegacion--item-submenu"><a class="header__navegacion--link-submenu" href="discografia.html">Discografia</a></li>
-                        <li class="header__navegacion--item-submenu"><a class="header__navegacion--link-submenu" href="galeria.html">Galeria</a></li>
-                        <li class="header__navegacion--item-submenu"><a class="header__navegacion--link-submenu" href="videos.html">Videos</a></li>
-                        <li class="header__navegacion--item-submenu"><a class="header__navegacion--link-submenu" href="gear.html">Gear</a></li>
-                        <li class="header__navegacion--item-submenu"><a class="header__navegacion--link-submenu" href="../index.html#contact-section">Contacto</a></li>
+                    <!-- Submenu -->
+                    <ul class="submenu">
+                        <li><a href="noticias.html">Noticias</a></li>
+                        <li><a href="tour.html">Tour</a></li>
+                        <li><a href="discografia.html">Discografia</a></li>
+                        <li><a href="galeria.html">Galeria</a></li>
+                        <li><a href="videos.html">Videos</a></li>
+                        <li><a href="gear.html">Gear</a></li>
+                        <li><a href="../index.html#contact-section">Contacto</a></li>
                     </ul>
                 </li>
             </ul>
         </nav>
     </header>
-    <section class="noticias js--noticias-section">
-        <div class="noticias__box">
-            <div class="noticias__box--heading">
-                <h1>Marty Friedman Noticias</h1>
-                <h2 class="noticias__box--titulo">
-                    <span class="noticias__box--span">Noticias</span>
-                </h2>
+    <section class="noticias-section js--noticias-section">
+        <div class="general-box">
+            <div class="noticias-text">
+                <h1>Marty Friedman Discografia</h1>
+                <h2><span>Noticias</span></h2>
             </div>
-            <article class="noticias__box--articulo" id="noticia-1">
-                <div class="noticias__box--articulo-heading">
-                    <h3 class="noticias__box--titulo-noticia">Jackson Guitars and Marty Friedman Team Up for the Pro Series Signature MF-1</h3>
-                    <time class="noticias__box--fecha" datetime="04-02.2021">Domingo, 4 de Febrero</time>
+            <article class="noticia-articulo" id="noticia-1">
+                <div class="noticia-heading">
+                    <h3>Jackson Guitars and Marty Friedman Team Up for the Pro Series Signature MF-1</h3>
+                    <time class="fecha" datetime="04-02.2021">Domingo, 4 de Febrero</time>
                 </div>
-                <img class="noticias__box--imagen" src="../img/noticia-imagen-1.jpg" alt="Marty Friedman with Jackson Guitar">
-                <p class="noticias__box--parrafo">Scottsdale, AZ (February 4, 2021) -- Jackson continues its longstanding relationship with guitarist Marty Friedman by honoring the virtuoso with the all-new Pro Series Signature Marty Friedman MF-1.</p>
-                <p class="noticias__box--parrafo">One of the most influential and respected players in the world, Marty Friedman’s impactful and game-changing contributions to heavy metal and guitar in general continue to inspire generations of musicians and music fans to this day. He defined modern guitar playing with Jason Becker in Cacophony, was a key element in the wildly successful rise of thrash pioneers Megadeth, and with his “Marty-esque” improvisations and exotic fusion of Eastern and Western music, has achieved global success as a solo artist.</p>
-                <p class="noticias__box--parrafo">Metal magnificent, the all-new Pro Series Signature Marty Friedman MF-1 features a mahogany body with a cracked Purple Mirror top finish, complete with 3-ply white/abalone/white body binding, all-black hardware and reverse Jackson 3x3 (3 over, 3 under) AT-1 black headstock.</p>
-                <p class="noticias__box--parrafo">“It’s just a gorgeous guitar,” said Friedman. “The people at Jackson came up with a way to develop this – it’s actually really a custom type of job but they managed to do it in such a way to put it out to the public at a reasonable price point.</p>
-                <p class="noticias__box--parrafo">“I used this model in the photo session for my Tokyo Jukebox 3 album, and you really can’t take a bad picture with this guitar. Depending on how the light hits it, it really changes its personality and image a lot.”</p>
-                <p class="noticias__box--parrafo">The 24.75”-scale signature model is loaded with premium features to match the demanding needs of an elite and intricate player like Friedman, including a graphite-reinforced mahogany set-neck with scarf joint and bound 12” radius ebony fingerboard with 22 jumbo frets and pearloid block inlays. Passive EMG MF signature humbucking pickups deliver a sound that sings and screams, with a three-way toggle switch, two tone and two volume controls to wrangle all of the subtle nuances out of the guitar.</p>
-                <p class="noticias__box--parrafo">The sig instrument is complete with a Jackson TOM-style adjustable bridge with anchored tailpiece for improved intonation and enhanced sustain.</p>
-                <p class="noticias__box--parrafo"><b>Watch the company's video demo:</b></p>
-                <iframe class="noticias__box--video" src="https://www.youtube.com/embed/mhl7OC1GEy0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <img class="noticia-imagen" src="../img/noticia-imagen-1.jpg" alt="">
+                <p>Scottsdale, AZ (February 4, 2021) -- Jackson continues its longstanding relationship with guitarist Marty Friedman by honoring the virtuoso with the all-new Pro Series Signature Marty Friedman MF-1.</p>
+                <p>One of the most influential and respected players in the world, Marty Friedman’s impactful and game-changing contributions to heavy metal and guitar in general continue to inspire generations of musicians and music fans to this day. He defined modern guitar playing with Jason Becker in Cacophony, was a key element in the wildly successful rise of thrash pioneers Megadeth, and with his “Marty-esque” improvisations and exotic fusion of Eastern and Western music, has achieved global success as a solo artist.</p>
+                <p>Metal magnificent, the all-new Pro Series Signature Marty Friedman MF-1 features a mahogany body with a cracked Purple Mirror top finish, complete with 3-ply white/abalone/white body binding, all-black hardware and reverse Jackson 3x3 (3 over, 3 under) AT-1 black headstock.</p>
+                <p>“It’s just a gorgeous guitar,” said Friedman. “The people at Jackson came up with a way to develop this – it’s actually really a custom type of job but they managed to do it in such a way to put it out to the public at a reasonable price point.</p>
+                <p>“I used this model in the photo session for my Tokyo Jukebox 3 album, and you really can’t take a bad picture with this guitar. Depending on how the light hits it, it really changes its personality and image a lot.”</p>
+                <p>The 24.75”-scale signature model is loaded with premium features to match the demanding needs of an elite and intricate player like Friedman, including a graphite-reinforced mahogany set-neck with scarf joint and bound 12” radius ebony fingerboard with 22 jumbo frets and pearloid block inlays. Passive EMG MF signature humbucking pickups deliver a sound that sings and screams, with a three-way toggle switch, two tone and two volume controls to wrangle all of the subtle nuances out of the guitar.</p>
+                <p>The sig instrument is complete with a Jackson TOM-style adjustable bridge with anchored tailpiece for improved intonation and enhanced sustain.</p>
+                <p><b>Watch the company's video demo:</b></p>
+                <iframe class="noticia-video" src="https://www.youtube.com/embed/mhl7OC1GEy0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </article>
             <article class="noticia-articulo" id="noticia-2">
                 <div class="noticia-heading">
-                    <h3 class="noticias__box--titulo-noticia">MEGADETH GUITARIST KIKO LOUREIRO INVITED MARTY FRIEDMAN TO PLAY ON OPEN SOURCE SOLO ALBUM "TO SHOW THAT MUSIC IS NOT A COMPETITION"</h3>
-                    <time class="noticias__box--fecha" datetime="20-02.2021">Domingo, 20 de Febrero</time>
+                    <h3>MEGADETH GUITARIST KIKO LOUREIRO INVITED MARTY FRIEDMAN TO PLAY ON OPEN SOURCE SOLO ALBUM "TO SHOW THAT MUSIC IS NOT A COMPETITION"</h3>
+                    <time class="fecha" datetime="20-02.2021">Domingo, 20 de Febrero</time>
                 </div>
-                <img class="noticia-imagen" src="../img/noticia-imagen-2.jpg" alt="Kiko Loureiro">
-                <p class="noticias__box--parrafo">Scottsdale, AZ (February 4, 2021) -- Jackson continues its longstanding relationship with guitarist Marty Friedman by honoring the virtuoso with the all-new Pro Series Signature Marty Friedman MF-1.</p>
-                <p class="noticias__box--parrafo">One of the most influential and respected players in the world, Marty Friedman’s impactful and game-changing contributions to heavy metal and guitar in general continue to inspire generations of musicians and music fans to this day. He defined modern guitar playing with Jason Becker in Cacophony, was a key element in the wildly successful rise of thrash pioneers Megadeth, and with his “Marty-esque” improvisations and exotic fusion of Eastern and Western music, has achieved global success as a solo artist.</p>
-                <p class="noticias__box--parrafo">Metal magnificent, the all-new Pro Series Signature Marty Friedman MF-1 features a mahogany body with a cracked Purple Mirror top finish, complete with 3-ply white/abalone/white body binding, all-black hardware and reverse Jackson 3x3 (3 over, 3 under) AT-1 black headstock.</p>
-                <p class="noticias__box--parrafo">“It’s just a gorgeous guitar,” said Friedman. “The people at Jackson came up with a way to develop this – it’s actually really a custom type of job but they managed to do it in such a way to put it out to the public at a reasonable price point.</p>
-                <p class="noticias__box--parrafo">“I used this model in the photo session for my Tokyo Jukebox 3 album, and you really can’t take a bad picture with this guitar. Depending on how the light hits it, it really changes its personality and image a lot.”</p>
-                <p class="noticias__box--parrafo">The 24.75”-scale signature model is loaded with premium features to match the demanding needs of an elite and intricate player like Friedman, including a graphite-reinforced mahogany set-neck with scarf joint and bound 12” radius ebony fingerboard with 22 jumbo frets and pearloid block inlays. Passive EMG MF signature humbucking pickups deliver a sound that sings and screams, with a three-way toggle switch, two tone and two volume controls to wrangle all of the subtle nuances out of the guitar.</p>
-                <p class="noticias__box--parrafo">The sig instrument is complete with a Jackson TOM-style adjustable bridge with anchored tailpiece for improved intonation and enhanced sustain.</p>
-                <p class="noticias__box--parrafo"><b>Watch the company's video demo:</b></p>
-                <iframe class="noticias__box--video" src="https://www.youtube.com/embed/4KXxu7VIZ50" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <img class="noticia-imagen" src="../img/noticia-imagen-2.jpg" alt="">
+                <p>Scottsdale, AZ (February 4, 2021) -- Jackson continues its longstanding relationship with guitarist Marty Friedman by honoring the virtuoso with the all-new Pro Series Signature Marty Friedman MF-1.</p>
+                <p>One of the most influential and respected players in the world, Marty Friedman’s impactful and game-changing contributions to heavy metal and guitar in general continue to inspire generations of musicians and music fans to this day. He defined modern guitar playing with Jason Becker in Cacophony, was a key element in the wildly successful rise of thrash pioneers Megadeth, and with his “Marty-esque” improvisations and exotic fusion of Eastern and Western music, has achieved global success as a solo artist.</p>
+                <p>Metal magnificent, the all-new Pro Series Signature Marty Friedman MF-1 features a mahogany body with a cracked Purple Mirror top finish, complete with 3-ply white/abalone/white body binding, all-black hardware and reverse Jackson 3x3 (3 over, 3 under) AT-1 black headstock.</p>
+                <p>“It’s just a gorgeous guitar,” said Friedman. “The people at Jackson came up with a way to develop this – it’s actually really a custom type of job but they managed to do it in such a way to put it out to the public at a reasonable price point.</p>
+                <p>“I used this model in the photo session for my Tokyo Jukebox 3 album, and you really can’t take a bad picture with this guitar. Depending on how the light hits it, it really changes its personality and image a lot.”</p>
+                <p>The 24.75”-scale signature model is loaded with premium features to match the demanding needs of an elite and intricate player like Friedman, including a graphite-reinforced mahogany set-neck with scarf joint and bound 12” radius ebony fingerboard with 22 jumbo frets and pearloid block inlays. Passive EMG MF signature humbucking pickups deliver a sound that sings and screams, with a three-way toggle switch, two tone and two volume controls to wrangle all of the subtle nuances out of the guitar.</p>
+                <p>The sig instrument is complete with a Jackson TOM-style adjustable bridge with anchored tailpiece for improved intonation and enhanced sustain.</p>
+                <p><b>Watch the company's video demo:</b></p>
+                <iframe class="noticia-video" src="https://www.youtube.com/embed/4KXxu7VIZ50" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </article>
             <article class="noticia-articulo" id="noticia-3">
                 <div class="noticia-heading">
-                    <h3 class="noticias__box--titulo-noticia">Dave Mustaine Speaks on Why He Had to Fire Early Megadeth Members, Talks How Marty Friedman Behaved at Audition</h3>
-                    <time class="noticias__box--fecha" datetime="20-02.2021">Domingo, 20 de Febrero</time>
+                    <h3>Dave Mustaine Speaks on Why He Had to Fire Early Megadeth Members, Talks How Marty Friedman Behaved at Audition</h3>
+                    <time class="fecha" datetime="20-02.2021">Domingo, 20 de Febrero</time>
                 </div>
-                <img class="noticia-imagen" src="../img/noticia-imagen-3.jpg" alt="Dave Mustaine">
-                <p class="noticias__box--parrafo">Scottsdale, AZ (February 4, 2021) -- Jackson continues its longstanding relationship with guitarist Marty Friedman by honoring the virtuoso with the all-new Pro Series Signature Marty Friedman MF-1.</p>
-                <p class="noticias__box--parrafo">One of the most influential and respected players in the world, Marty Friedman’s impactful and game-changing contributions to heavy metal and guitar in general continue to inspire generations of musicians and music fans to this day. He defined modern guitar playing with Jason Becker in Cacophony, was a key element in the wildly successful rise of thrash pioneers Megadeth, and with his “Marty-esque” improvisations and exotic fusion of Eastern and Western music, has achieved global success as a solo artist.</p>
-                <p class="noticias__box--parrafo">Metal magnificent, the all-new Pro Series Signature Marty Friedman MF-1 features a mahogany body with a cracked Purple Mirror top finish, complete with 3-ply white/abalone/white body binding, all-black hardware and reverse Jackson 3x3 (3 over, 3 under) AT-1 black headstock.</p>
-                <p class="noticias__box--parrafo">“It’s just a gorgeous guitar,” said Friedman. “The people at Jackson came up with a way to develop this – it’s actually really a custom type of job but they managed to do it in such a way to put it out to the public at a reasonable price point.</p>
-                <p class="noticias__box--parrafo">“I used this model in the photo session for my Tokyo Jukebox 3 album, and you really can’t take a bad picture with this guitar. Depending on how the light hits it, it really changes its personality and image a lot.”</p>
-                <p class="noticias__box--parrafo">The 24.75”-scale signature model is loaded with premium features to match the demanding needs of an elite and intricate player like Friedman, including a graphite-reinforced mahogany set-neck with scarf joint and bound 12” radius ebony fingerboard with 22 jumbo frets and pearloid block inlays. Passive EMG MF signature humbucking pickups deliver a sound that sings and screams, with a three-way toggle switch, two tone and two volume controls to wrangle all of the subtle nuances out of the guitar.</p>
-                <p class="noticias__box--parrafo">The sig instrument is complete with a Jackson TOM-style adjustable bridge with anchored tailpiece for improved intonation and enhanced sustain.</p>
-                <p class="noticias__box--parrafo"><b>Watch the company's video demo:</b></p>
-                <iframe class="noticias__box--video" src="https://www.youtube.com/embed/rGh_L1cIM2M" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <img class="noticia-imagen" src="../img/noticia-imagen-3.jpg" alt="">
+                <p>Scottsdale, AZ (February 4, 2021) -- Jackson continues its longstanding relationship with guitarist Marty Friedman by honoring the virtuoso with the all-new Pro Series Signature Marty Friedman MF-1.</p>
+                <p>One of the most influential and respected players in the world, Marty Friedman’s impactful and game-changing contributions to heavy metal and guitar in general continue to inspire generations of musicians and music fans to this day. He defined modern guitar playing with Jason Becker in Cacophony, was a key element in the wildly successful rise of thrash pioneers Megadeth, and with his “Marty-esque” improvisations and exotic fusion of Eastern and Western music, has achieved global success as a solo artist.</p>
+                <p>Metal magnificent, the all-new Pro Series Signature Marty Friedman MF-1 features a mahogany body with a cracked Purple Mirror top finish, complete with 3-ply white/abalone/white body binding, all-black hardware and reverse Jackson 3x3 (3 over, 3 under) AT-1 black headstock.</p>
+                <p>“It’s just a gorgeous guitar,” said Friedman. “The people at Jackson came up with a way to develop this – it’s actually really a custom type of job but they managed to do it in such a way to put it out to the public at a reasonable price point.</p>
+                <p>“I used this model in the photo session for my Tokyo Jukebox 3 album, and you really can’t take a bad picture with this guitar. Depending on how the light hits it, it really changes its personality and image a lot.”</p>
+                <p>The 24.75”-scale signature model is loaded with premium features to match the demanding needs of an elite and intricate player like Friedman, including a graphite-reinforced mahogany set-neck with scarf joint and bound 12” radius ebony fingerboard with 22 jumbo frets and pearloid block inlays. Passive EMG MF signature humbucking pickups deliver a sound that sings and screams, with a three-way toggle switch, two tone and two volume controls to wrangle all of the subtle nuances out of the guitar.</p>
+                <p>The sig instrument is complete with a Jackson TOM-style adjustable bridge with anchored tailpiece for improved intonation and enhanced sustain.</p>
+                <p><b>Watch the company's video demo:</b></p>
+                <iframe class="noticia-video" src="https://www.youtube.com/embed/rGh_L1cIM2M" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </article>
         </div>
     </section>
     <!-- Footer -->
-    <footer class="pie">
-        <img class="pie__logo" src="../img/logo.png" alt="Logo marty Friedman">
-        <p class="pie__parrafo">&copy; Copyright 2021 Marty Friedman</p>
-        <p class="pie__parrafo">Devoloped by Juan Manuel González</p>
+    <footer>
+        <img src="../img/logo.png" alt="Logo-footer" class="logo-footer">
+        <p>&copy; Copyright 2021 Marty Friedman</p>
+        <p>Devoloped by Juan Manuel González</p>
     </footer>
     <!-- JavaScript -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
