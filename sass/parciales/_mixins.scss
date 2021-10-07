@@ -1,0 +1,34 @@
+@mixin container-section {
+    min-height: 79.5vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+@mixin box-sections {
+    background-color: rgba(20, 20, 20, .7);
+    width: 70vw;
+    padding: 1.25rem;
+    border: $borde-negro;
+    box-shadow: $sombra-negra;
+    animation: zoomInUp;
+    animation-duration: .8s;
+}
+
+@mixin filtro-elementos {
+    position: absolute;
+    visibility: hidden;
+    opacity: 0;
+    height: 0;
+    transition: ease height .3s;
+}
+
+@mixin gear-items($width, $height) {
+    margin: 30px 10px 0px 0px;
+    width: $width;
+    height: $height;
+    opacity: .6;
+    transition: ease all .3s;
+}

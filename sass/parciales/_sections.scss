@@ -1,26 +1,14 @@
 @import "./variables";
+@import "./mixins";
 
 // Noticias
 .noticias {
-    min-height: 79.5vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding-top: 50px;
-    padding-bottom: 50px;
-
+    @include container-section;
     &__box {
-        background-color: rgba(20, 20, 20, .7);
-        width: 70vw;
-        padding: 1.25rem;
-        border: $borde-negro;
-        box-shadow: $sombra-negra;
-        animation: zoomInUp;
-        animation-duration: .8s;
+        @include box-sections;
 
         &--span {
-            border-bottom: $borde-blanco;
-            padding-bottom: $padding-titulo;
+            @extend .noticias-index__heading__span;
         }
 
         &--heading{
@@ -63,30 +51,16 @@
 
 // Tour
 .tour {
-    display: flex;
-    justify-content: center;
-    padding-top: 50px;
-    padding-bottom: 50px;
-    min-height: 79.6vh;
-
+    @include container-section;
     &__box {
-        background-color: rgba(20, 20, 20, .7);
-        width: 70vw;
-        padding: 1.25rem;
-        border: $borde-negro;
-        box-shadow: $sombra-negra;
-        position: relative;
-        animation: zoomInUp;
-        animation-duration: .8s;
-        min-height: 70vh;
+        @include box-sections;
 
         &--heading {
             margin-bottom: 2.5rem;
         }
 
         &--span {
-            border-bottom: $borde-blanco;
-            padding-bottom: $padding-titulo;
+            @extend .noticias-index__heading__span;
         }
     }
     
@@ -94,29 +68,16 @@
 
 // Discografia
 .discografia {
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    padding-top: 50px;
-    padding-bottom: 50px;
-    min-height: 79.6vh;
-
+    @include container-section;
     &__box {
-        background-color: rgba(20, 20, 20, .7);
-        width: 70vw;
-        padding: 1.25rem;
-        border: $borde-negro;
-        box-shadow: $sombra-negra;
-        animation: zoomInUp;
-        animation-duration: .8s;
+        @include box-sections;
 
         &--heading {
             margin-bottom: 2.5rem;
         }
 
         &--span {
-            border-bottom: $borde-blanco;
-            padding-bottom: $padding-titulo;
+            @extend .noticias-index__heading__span;
         }
 
         &--categoria {
@@ -153,43 +114,26 @@
         #megadeth:checked~&--albumes .mf,
         #megadeth:checked~&--albumes .hawaii,
         #megadeth:checked~&--albumes .cacophony {
-            position: absolute;
-            visibility: hidden;
-            opacity: 0;
-            height: 0;
-            transition: ease height .3s;
+            @include filtro-elementos;
         }
 
         #solista:checked~&--albumes .megadeth,
         #solista:checked~&--albumes .hawaii,
         #solista:checked~&--albumes .cacophony {
-            position: absolute;
-            visibility: hidden;
-            opacity: 0;
-            height: 0;
-            transition: ease height .3s;
+            @include filtro-elementos;
         }
 
         #cacophony:checked~&--albumes .megadeth,
         #cacophony:checked~&--albumes .hawaii,
         #cacophony:checked~&--albumes .mf {
-            position: absolute;
-            visibility: hidden;
-            opacity: 0;
-            height: 0;
-            transition: ease height .3s;
+            @include filtro-elementos;
         }
 
         #hawaii:checked~&--albumes .megadeth,
         #hawaii:checked~&--albumes .cacophony,
         #hawaii:checked~&--albumes .mf {
-            position: absolute;
-            visibility: hidden;
-            opacity: 0;
-            height: 0;
-            transition: ease height .3s;
+            @include filtro-elementos;
         }
-
 
         &--albumes {
             display: flex;
@@ -214,30 +158,16 @@
 
 // Galeria
 .galeria {
-    display: flex;
-    justify-content: center;
-    padding-top: 50px;
-    padding-bottom: 50px;
-    min-height: 79.6vh;
-
+    @include container-section;
     &__box {
-        background-color: rgba(20, 20, 20, .7);
-        width: 70vw;
-        padding: 1.25rem;
-        border: $borde-negro;
-        box-shadow: $sombra-negra;
-        position: relative;
-        animation: zoomInUp;
-        animation-duration: .8s;
-        min-height: 70vh;
+        @include box-sections;
 
         &--heading {
             margin-bottom: 2.5rem;
         }
 
         &--span {
-            border-bottom: $borde-blanco;
-            padding-bottom: $padding-titulo;
+            @extend .noticias-index__heading__span;
         }
 
         &--container {
@@ -272,30 +202,16 @@
 
 // Videos
 .videos {
-    display: flex;
-    justify-content: center;
-    padding-top: 50px;
-    padding-bottom: 50px;
-    min-height: 79.6vh;
-
+    @include container-section;
     &__box {
-        background-color: rgba(20, 20, 20, .7);
-        width: 70vw;
-        padding: 1.25rem;
-        border: $borde-negro;
-        box-shadow: $sombra-negra;
-        position: relative;
-        animation: zoomInUp;
-        animation-duration: .8s;
-        min-height: 70vh;
+        @include box-sections;
 
         &--heading {
             margin-bottom: 2.5rem;
         }
 
         &--span {
-            border-bottom: $borde-blanco;
-            padding-bottom: $padding-titulo;
+            @extend .noticias-index__heading__span;
         }
 
         &--parrafo {
@@ -318,29 +234,16 @@
 
 // Gear
 .gear {
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    padding-top: 50px;
-    padding-bottom: 50px;
-    min-height: 79.6vh;
-    
+    @include container-section;
     &__box {
-        background-color: rgba(20, 20, 20, .7);
-        width: 70vw;
-        padding: 20px;
-        border: $borde-negro;
-        box-shadow: $sombra-negra;
-        animation: zoomInUp;
-        animation-duration: .8s;
-
+        @include box-sections;
+        
         &--heading {
             margin-bottom: 2.5rem;
         }
 
         &--span {
-            border-bottom: $borde-blanco;
-            padding-bottom: $padding-titulo;
+            @extend .noticias-index__heading__span;
             margin-bottom: 0.625rem;
         }
 
@@ -395,41 +298,25 @@
         #guitarras:checked~&--img-container .amps,
         #guitarras:checked~&--img-container .pickups,
         #guitarras:checked~&--img-container .pedales {
-            position: absolute;
-            visibility: hidden;
-            opacity: 0;
-            height: 0;
-            transition: ease height .3s;
+            @include filtro-elementos;
         }
 
         #amps:checked~&--img-container .gt,
         #amps:checked~&--img-container .pickups,
         #amps:checked~&--img-container .pedales {
-            position: absolute;
-            visibility: hidden;
-            opacity: 0;
-            height: 0;
-            transition: ease height .3s;
+            @include filtro-elementos;
         }
 
         #pickups:checked~&--img-container .gt,
         #pickups:checked~&--img-container .amps,
         #pickups:checked~&--img-container .pedales {
-            position: absolute;
-            visibility: hidden;
-            opacity: 0;
-            height: 0;
-            transition: ease height .3s;
+            @include filtro-elementos;
         }
 
         #pedales:checked~&--img-container .gt,
         #pedales:checked~&--img-container .amps,
         #pedales:checked~&--img-container .pickups {
-            position: absolute;
-            visibility: hidden;
-            opacity: 0;
-            height: 0;
-            transition: ease height .3s;
+            @include filtro-elementos;
         }
         
         &--img-container {
@@ -438,45 +325,24 @@
             flex-wrap: wrap;
             justify-content: center;
         }
-
         &--guitarras {
-            margin: 30px 10px 0px 0px;
-            width: 40rem;
-            height: 12rem;
-            opacity: .6;
-            transition: ease all .3s;
+            @include gear-items(40rem, 12rem);
         }
 
         &--amps {
-            margin: 30px 10px 0px 0px;
-            width: 35rem;
-            height: 12rem;
-            opacity: .6;
-            transition: ease all .3s;
+            @include gear-items(35rem, 12rem);
         }
 
         &--pickups {
-            margin: 30px 10px 0px 0px;
-            width: 35rem;
-            height: 20rem;
-            opacity: .6;
-            transition: ease all .3s;
+            @include gear-items(35rem, 20rem);
         }
 
         &--pedals {
-            margin: 30px 10px 0px 0px;
-            width: 13rem;
-            height: 20rem;
-            opacity: .6;
-            transition: ease all .3s;
+            @include gear-items(13rem, 20rem);
         }
 
         &--pedals-xl {
-            margin: 30px 10px 0px 0px;
-            width: 30rem;
-            height: 19.5rem;
-            opacity: .6;
-            transition: ease all .3s;
+            @include gear-items(30rem, 19.5rem);
         }
 
         &--over:hover {

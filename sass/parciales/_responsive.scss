@@ -1,3 +1,6 @@
+@import "./variables";
+@import "./mixins";
+
 // Media Queries
 @media only screen and (max-width: 1440px) {
     body {
@@ -138,7 +141,6 @@
             font-size: 180%;
         }
 
-
         &--logoimg {
             height: 2.7rem;
             margin-right: 2.8rem;
@@ -169,38 +171,24 @@
         }
 
         &--guitarras {
+            @include gear-items(27rem, 9rem);
             margin: 30px 0px 0px 0px;
-            width: 27rem;
-            height: 9rem;
-            opacity: 1;
         }
 
         &--amps {
-            margin: 30px 0px 0px 0px;
-            width: 27rem;
-            height: 12rem;
-            opacity: 1;
+            @include gear-items(27rem, 12rem);
         }
 
         &--pickups {
-            margin: 30px 0px 0px 0px;
-            width: 25rem;
-            height: 16rem;
-            opacity: 1;
+            @include gear-items(25rem, 16rem);
         }
 
         &--pedals {
-            margin: 30px 0px 0px 0px;
-            width: 11rem;
-            height: 17rem;
-            opacity: 1;
+            @include gear-items(11rem, 17rem);
         }
 
         &--pedals-xl {
-            margin: 30px 0px 0px 0px;
-            width: 27rem;
-            height: 18rem;
-            opacity: 1;
+            @include gear-items(27rem, 18rem);
         }
     }
 
@@ -224,7 +212,7 @@
         font-size: 14px;
     }
 
-    /* Navigation */
+    // Navigation
     .header__navegacion {
         width: 80vw;
 
@@ -245,7 +233,7 @@
         }
 
         &--submenu {
-            width: 30vw;
+            width: 27vw;
             font-size: 160%;
         }
 
@@ -265,21 +253,15 @@
 
     // Noticias Section Index
     .noticias-index {
-
         &__container {
             justify-content: center;
 
             &--box {
-                background-color: #121212;
                 width: 23rem;
                 height: 30rem;
-                padding: 20px;
-                margin-left: 3vw;
-                margin-right: 3vw;
             }
 
             &--imagen {
-                outline: 1px solid #252525;
                 width: 20rem;
                 height: 11rem;
             }
@@ -304,28 +286,23 @@
         }
 
         &--guitarras {
-            width: 20rem;
-            height: 7rem;
+            @include gear-items(20rem, 7rem);
         }
 
         &--amps {
-            width: 20rem;
-            height: 10rem;
+            @include gear-items(20rem, 10rem);
         }
 
         &--pickups {
-            width: 20rem;
-            height: 11rem;
+            @include gear-items(20rem, 11rem);
         }
 
         &--pedals {
-            width: 9rem;
-            height: 13rem;
+            @include gear-items(9rem, 13rem);
         }
 
         &--pedals-xl {
-            width: 18rem;
-            height: 13rem;
+            @include gear-items(18rem, 13rem);
         }
     }
 
