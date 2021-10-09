@@ -225,16 +225,21 @@
         }
 
         &--btn-menu {
+            padding: 15px 30px;
             font-size: 130%;
         }
 
+        &--icon-menu {
+            margin: 0;
+        }
+
         &--menu {
-            width: 19vw;
+            width: 15vw;
         }
 
         &--submenu {
-            width: 27vw;
-            font-size: 160%;
+            width: 25vw;
+            font-size: 170%;
         }
 
     }
@@ -270,11 +275,13 @@
 
     // Discografia
     .discografia__box {
-        &--imagen {
+        &--figure {
             margin: 10px 0px;
+        }
+
+        &--imagen {
             width: 17rem;
             height: 17rem;
-            opacity: 1;
         }
     }
 

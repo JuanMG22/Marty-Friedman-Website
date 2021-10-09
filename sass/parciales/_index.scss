@@ -1,4 +1,5 @@
 @import "./variables";
+@import "./mixins";
 
 // Hero Section 
 
@@ -41,8 +42,7 @@
         text-align: center;
 
         &--span {
-            border-bottom: $borde-blanco;
-            padding-bottom: $padding-titulo;
+            @include borde-h2;
         }
     }
 
@@ -61,7 +61,7 @@
             margin-right: 5vw;
             margin-bottom: 150px;
             border: 7px solid #252525;
-            box-shadow: 1px 1px 10px 0 #000;
+            box-shadow: $sombra-negra;
             border-radius: $borde-redondeado;
             display: flex;
             flex-direction: column;
@@ -118,7 +118,7 @@
         margin-bottom: 6.25rem;
 
         &--span {
-            @extend .noticias-index__heading__span;
+            @include borde-h2;
         }
     }
 

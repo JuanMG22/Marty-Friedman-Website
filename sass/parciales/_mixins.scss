@@ -7,6 +7,11 @@
     padding-bottom: 50px;
 }
 
+@mixin borde-h2 {
+    border-bottom: $borde-blanco;
+    padding-bottom: $padding-titulo;
+}
+
 @mixin box-sections {
     background-color: rgba(20, 20, 20, .7);
     width: 70vw;
@@ -21,7 +26,7 @@
     position: absolute;
     visibility: hidden;
     opacity: 0;
-    height: 0;
+    height: 50%;
     transition: ease height .3s;
 }
 
