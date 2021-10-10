@@ -269,7 +269,6 @@
     @include container-section;
     &__box {
         @include box-sections;
-        
         &--heading {
             margin-bottom: 2.5rem;
         }

@@ -1,10 +1,10 @@
-@mixin container-section {
-    min-height: 79.5vh;
+@mixin container-section($height: 80vh) {
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    justify-content: center;
+    align-items: flex-start;
     padding-top: 50px;
     padding-bottom: 50px;
+    min-height: $height;
 }
 
 @mixin borde-h2 {
@@ -14,6 +14,9 @@
 
 @mixin box-sections {
     background-color: rgba(20, 20, 20, .7);
+    position: relative;
+    overflow: hidden;
+    min-height: 65vh;
     width: 70vw;
     padding: 1.25rem;
     border: $borde-negro;
@@ -26,7 +29,7 @@
     position: absolute;
     visibility: hidden;
     opacity: 0;
-    height: 50%;
+    height: 0;
     transition: ease height .3s;
 }
 
