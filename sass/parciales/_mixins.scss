@@ -12,12 +12,12 @@
     padding-bottom: $padding-titulo;
 }
 
-@mixin box-sections {
+@mixin box-sections($width: 70vw) {
     background-color: rgba(20, 20, 20, .7);
     position: relative;
     overflow: hidden;
     min-height: 65vh;
-    width: 70vw;
+    width: $width;
     padding: 1.25rem;
     border: $borde-negro;
     box-shadow: $sombra-negra;

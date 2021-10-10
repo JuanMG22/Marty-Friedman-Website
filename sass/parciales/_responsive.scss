@@ -2,70 +2,9 @@
 @import "./mixins";
 
 // Media Queries
-@media only screen and (max-width: 1440px) {
-    body {
-        font-size: 14px;
-    }
-    
-    // Navigation
-    .header__navegacion {
-
-        &--social-box {
-            width: 15vw;
-        }
-
-        &--logoimg {
-            height: 3rem;
-            margin-right: 5.9rem;
-        }
-        &--menu {
-            width: 12vw;
-        }
-        
-    }
-    
-    // Noticias 
-    .noticias__box {
-        width: 95vw;
-
-        &--imagen {
-            height: 45vh;
-            width: 70vw;
-        }
-
-        &--video {
-            height: 40vh;
-            width: 70vw;
-        }
-
-    }
-
-    // Tour
-    .tour__box {
-        width: 95vw;
-    }
-
-    // Discografia
-    .discografia__box {
-        width: 95vw;
-    }
-
-    // Videos
-    .videos__box {
-        width: 95vw;
-    }
-
-    // Gear
-    .gear__box {
-        width: 95vw;
-    }
-
-    // Galeria
-    .galeria__box {
-        width: 90vw;
-        &--container {
-            grid-template-columns: repeat(2, 1fr);
-        }
+@mixin laptop {
+    @media only screen and (max-width: 1440px) {
+        @content;
     }
 }
 

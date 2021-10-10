@@ -1,4 +1,5 @@
 @import "./variables";
+@import "./responsive";
 
 .header {
     background-image: linear-gradient(rgba(0, 0, 0, .9), rgba(0, 0, 0, .5)),
@@ -19,6 +20,11 @@
         &--logoimg {
             height: 4.23rem;
             margin-right: 5.9rem;
+
+            @include laptop {
+                height: 3rem;
+                margin-right: 5.9rem;
+            }
         }
 
         &--social {
@@ -29,6 +35,12 @@
             &:hover {
                 transform: scale(1.15);
                 color: $amarillo;
+            }
+        }
+
+        &--social-box {
+            @include laptop {
+                width: 15vw;
             }
         }
 
@@ -43,6 +55,10 @@
             text-align: left;
             z-index: 999;
             font-size: 80%;
+
+            @include laptop {
+                width: 12vw;
+            }
         }
 
         &--btn-menu {
