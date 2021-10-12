@@ -103,6 +103,7 @@
         }
 
         &--input {
+            user-select: none;
             cursor: pointer;
             font-size: 125%;
             margin: 5px;
@@ -333,6 +334,7 @@
 
         &--input {
             font-size: 180%;
+            user-select: none;
             cursor: pointer;
             transition: ease all .3s;
 
