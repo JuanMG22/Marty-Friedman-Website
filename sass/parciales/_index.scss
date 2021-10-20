@@ -6,7 +6,7 @@
 .encabezado {
 
     &__box {
-        height: 92vh;
+        height: 93vh;
         background-image: linear-gradient(rgba(45, 45, 45, .4), rgba(0, 0, 0, 1)),
         url(../img/header-bg.jpg);
         background-size: cover;
@@ -15,7 +15,7 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        padding-bottom: 50px;
+        padding-bottom: 3.125rem;
 
         &--text {
             animation: zoomInUp;
@@ -37,8 +37,8 @@
     background-attachment: fixed;
 
     &__heading {
-        margin-bottom: 50px;
-        margin-top: 150px;
+        margin-bottom: 3.125rem;
+        margin-top: 9.375rem;
         text-align: center;
 
         &--span {
@@ -56,10 +56,8 @@
             background-color: #121212;
             width: 27rem;
             height: 32rem;
-            padding: 20px;
-            margin-left: 5vw;
-            margin-right: 5vw;
-            margin-bottom: 150px;
+            padding: 1.25rem;
+            margin: 0rem 6rem 9.375rem 6rem;
             border: 7px solid #252525;
             box-shadow: $sombra-negra;
             border-radius: $borde-redondeado;
@@ -85,7 +83,7 @@
             font-size: 90%;
             padding-right: auto;
             color: $blanco-texto;
-            margin: 10px 0px;
+            margin: 0.625rem 0rem;
             align-self: flex-start;
         }
 
@@ -97,8 +95,52 @@
         }
 
         &--parrafo {
-            margin: 10px 0px;
+            margin: 0.625rem 0rem;
             text-align: left;
+        }
+    }
+}
+
+// About Section
+.about {
+    border-top: $borde-blanco;
+    min-height: 100vh;
+    padding: 9.375rem 0rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background-image: linear-gradient(rgba(17, 17, 17, 0.5), rgba(17, 17, 17, 0.8)),
+    url(../../img/header-bg2.jpg);
+    &__text {
+        width: 40rem;
+        height: 10rem;
+        margin: 0rem 6rem;
+        &--heading {
+            margin-bottom: 3.125rem;
+            text-align: center
+        }
+        &--span {
+            @include borde-h2;
+        }
+
+        &--descripcion {
+            font-family: 'Roboto', sans-serif;
+            font-size: 150%;
+        }
+        
+    }
+
+    &__img {
+        margin-right: 6rem;
+        height: 38rem;
+        width: 33rem;
+        box-shadow: $sombra-negra;
+        outline: $borde-blanco-2;
+        transition: ease all .3s;
+
+        &:hover {
+            animation: pulse;
+            animation-duration: 1s;
         }
     }
 }
@@ -108,7 +150,7 @@
 .contact {
     border-top: $borde-blanco-2;
     text-align: center;
-    padding-bottom: 150px;
+    padding-bottom: 9.375rem;
     background-image: linear-gradient(rgba(45, 45, 45, .8), rgba(45, 45, 45, .8)),
     url(../img/contact-bg.jpg);
     background-size: cover;
@@ -132,14 +174,14 @@
         &--pais,
         &--textarea {
             width: 100%;
-            padding: 5px;
+            padding: 0.313rem;
             border-radius: $borde-redondeado;
             border: $borde-blanco-2;
             resize: none;
         }
 
         &--newsletter {
-            margin: 10px 5px 10px 0;
+            margin: 0.625rem 0.313rem 0.625rem 0rem;
         }
 
         &--enviar {

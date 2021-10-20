@@ -22,6 +22,7 @@ body {
 
 h1 {
     display: none;
+    font-weight: bold;
 }
 
 h2 {
@@ -50,72 +51,34 @@ a {
     color: $blanco;
 }
 
-/* Buttons */
+// Buttons
 
 .btn {
-    &:link {
-        font-size: 150%;
-        padding: 10px 30px;
-        margin: 20px;
-        border-radius: 5px;
-        display: inline-block;
-        animation: bounceIn;
-        animation-duration: 2s;
-        animation-delay: 1s;
-    }
-
-    &:visited {
-        font-size: 150%;
-        padding: 10px 30px;
-        margin: 20px;
-        border-radius: 5px;
-        display: inline-block;
-        animation: bounceIn;
-        animation-duration: 2s;
-        animation-delay: .2s;
-    }
+    font-size: 150%;
+    padding: 0.625rem 1.875rem;
+    margin: 1.25rem;
+    border-radius: 5px;
+    display: inline-block;
+    animation: bounceIn;
+    animation-duration: 2s;
+    animation-delay: 1s;
 }
 
 .btn-noticia {
-    &:link {
-        font-size: 120%;
-        width: 100%;
-        text-align: center;
-        padding: 10px 60px;
-        margin: 20px 30px;
-        display: inline-block;
-        letter-spacing: 1px;
-    }
-
-    &:visited {
-        font-size: 120%;
-        width: 100%;
-        text-align: center;
-        padding: 10px 60px;
-        margin: 20px 30px;
-        display: inline-block;
-        letter-spacing: 1px;
-    }
+    font-size: 120%;
+    width: 100%;
+    text-align: center;
+    padding: 0.625rem 3.75rem;
+    margin: 1.25rem 1.875rem;
+    display: inline-block;
+    letter-spacing: 1px;
 }
 
 .btn-full {
-    &:link {
-        border: 2px solid $blanco;
-        color: $blanco;
-        transition: ease all .3s;
-    }
-
-    &:visited {
-        border: 2px solid $blanco;
-        color: $blanco;
-        transition: ease all .3s;
-    }
-
-    &:hover {
-        background-color: $blanco;
-        color: $negro;
-    }
-
+    border: 2px solid $blanco;
+    color: $blanco;
+    transition: ease all .3s;
+    &:hover,
     &:active {
         background-color: $blanco;
         color: $negro;

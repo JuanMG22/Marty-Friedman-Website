@@ -5,7 +5,7 @@
     background-image: linear-gradient(rgba(0, 0, 0, .9), rgba(0, 0, 0, .5)),
     url(../img/header-bg2.jpg);
     background-size: cover;
-    border-bottom: 4px solid $blanco;
+    border-bottom: 0.156rem solid $blanco;
     display: flex;
     justify-content: center;
 
@@ -15,21 +15,21 @@
         display: flex;
         justify-content: space-between;
         align-items: flex-end;
-        margin: 5px 0;
+        margin: 0.313rem 0;
 
         &--logoimg {
-            height: 4.23rem;
-            margin-right: 5.9rem;
+            width: 3.28rem;
+            height: 3.55rem;
+            margin-right: 5rem;
 
             @include laptop {
                 height: 3rem;
-                margin-right: 5.9rem;
             }
         }
 
         &--social {
             transform: scale(1);
-            margin-bottom: 5px;
+            margin-bottom: 0.313rem;
             transition: ease all .3s;
 
             &:hover {
@@ -62,7 +62,7 @@
         }
 
         &--btn-menu {
-            padding: 15px 30px;
+            padding: 0.938rem 1.875rem;
             color: $blanco;
             background: none;
             border: none;
@@ -102,7 +102,7 @@
 
         &--link-submenu {
             display: block;
-            padding: 13px;
+            padding: 0.813rem;
             color: $blanco;
             
             &:hover {
@@ -137,8 +137,9 @@
 
         .header__navegacion--logoimg {
             margin-right: 55.5vw;
-            margin-bottom: 5px;
-            height: 30px;
+            margin-bottom: 0.313rem;
+            height: 2.2rem;
+            width: 1.875rem;
         }
     }
 
