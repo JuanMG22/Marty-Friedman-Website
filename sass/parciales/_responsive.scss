@@ -57,6 +57,16 @@
 
     }
 
+    // About
+    .about {
+
+        &__img {
+            width: 26rem;
+            height: 30rem;
+        }
+    }
+
+
 }
 
 @media all and (max-width: 768px) {
@@ -81,6 +91,7 @@
         }
 
         &--logoimg {
+            width: 2.49rem;
             height: 2.7rem;
             margin-right: 2.8rem;
         }
@@ -92,6 +103,16 @@
             width: 17.8vw;
         }
 
+    }
+
+    // About
+    .about {
+
+        &__img {
+            margin: 0;
+            width: 20rem;
+            height: 22rem;
+        }
     }
 
     // Discografia
@@ -182,6 +203,15 @@
         }
 
     }
+
+    // About
+    .about {
+
+        &__img {
+            width: 16rem;
+            height: 18rem;
+        }
+    }
     
     // Hero Section
         .encabezado {
@@ -202,7 +232,7 @@
 
             &--box {
                 width: 23rem;
-                height: 30rem;
+                height: 29rem;
             }
 
             &--imagen {

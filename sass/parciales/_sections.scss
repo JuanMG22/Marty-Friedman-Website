@@ -390,16 +390,64 @@
             animation-duration: .8s;
             animation-delay: .3s;
         }
+        
+        &--figure {
+            position: relative;
+            display: flex;
+            transition: all ease .3s;
+            &:hover {
+                transform: scale(1.05);
+            }
+        }
+
         &--guitarras {
             @include gear-items(40rem, 12rem);
         }
+
+        &--text-box {
+            margin-top: 20px;
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            align-items: center;
+            overflow: hidden;
+        }
+
+        &--text {
+            position: relative;
+            font-size: 135%;
+            text-align: center;
+            color: $blanco-texto;
+            transition: all ease .3s;
+        }
+
+        &--text-link {
+            @include text-link(85%, 40%);
+        }
+
+        &--text-link-pickups {
+            @include text-link(90%, 42%);
+        }
+
+        &--text-link-pedals {
+            @include text-link(91%, 35%);
+        }
+
+        &--text-link-pedals-xl {
+            @include text-link(91%, 40%);
+        }
+
+        @include efecto-text-link;
 
         &--amps {
             @include gear-items(35rem, 12rem);
         }
 
         &--pickups {
-            @include gear-items(35rem, 20rem);
+            @include gear-items(30rem, 20rem);
         }
 
         &--pedals {
@@ -408,11 +456,6 @@
 
         &--pedals-xl {
             @include gear-items(30rem, 19.5rem);
-        }
-
-        &--over:hover {
-            transform: scale(1.1);
-            opacity: 1;
         }
     }
 }

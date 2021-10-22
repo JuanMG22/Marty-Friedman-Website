@@ -28,14 +28,53 @@
     position: absolute;
     visibility: hidden;
     opacity: 0;
-    height: 0;
     transition: ease height .3s;
 }
 
+@mixin text-link($top, $left) {
+    position: absolute;
+    top: $top;
+    left: $left;
+    font-size: 135%;
+    opacity: 0;
+    visibility: hidden;
+    color: $blanco-texto;
+    transition: all ease .3s;
+    &:hover {
+        color: $amarillo;
+    }
+}
+
+@mixin efecto-text-link {
+    &--figure:hover>&--text-box .gear__box--text-link {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    &--figure:hover>&--text-box .gear__box--text-link-pickups {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    &--figure:hover>&--text-box .gear__box--text-link-pedals {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    &--figure:hover>&--text-box .gear__box--text-link-pedals-xl {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    &--figure:hover>&--text-box .gear__box--text {
+        opacity: 0;
+        visibility: hidden;
+    }
+}
+
 @mixin gear-items($width, $height) {
-    margin: 1.875rem 0.625rem 0rem 0rem;
+    margin: 1.875rem 0.625rem 1.25rem 0rem;
     width: $width;
     height: $height;
-    opacity: .6;
     transition: ease all .3s;
 }
