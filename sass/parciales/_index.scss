@@ -112,13 +112,14 @@
     min-height: 100vh;
     padding: 9.375rem 0rem;
     display: flex;
+    box-shadow: $sombra-negra;
 
     @include laptop-l {
         flex-wrap: wrap;
     }
     justify-content: space-around;
     background-image: linear-gradient(rgba(17, 17, 17, 1), rgba(17, 17, 17, 0.2), rgba(17, 17, 17, 1)),
-    url(../../img/header-bg2.jpg);
+    url(../img/header-bg2.jpg);
     background-size: cover;
     &__text {
         width: 42rem;
@@ -167,7 +168,6 @@
     background-image: linear-gradient(rgba(45, 45, 45, .8), rgba(45, 45, 45, 0.6), rgba(45, 45, 45, 0.8)),
     url(../img/contact-bg.jpg);
     background-size: cover;
-
     &__heading {
         margin-top: $margin-titulo;
         margin-bottom: 6.25rem;

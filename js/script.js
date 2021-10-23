@@ -1,13 +1,6 @@
-$(document).ready(function () {
-
-    /* Sticky Navigation */
-    $(".js--noticias-section, .js--discografia-box, .js--tour-section, .js--videos-section").waypoint(function (direction) {
-        if (direction == "down") {
-            $("nav").addClass('sticky-nav');
-        }
-        else {
-            $("nav").removeClass('sticky-nav');
-        }
-    });
+// Sticky Nav
+window.addEventListener('scroll', event => {
+  const height = 1000;
+  const { scrollTop } = event.target.scrollingElement;
+  document.querySelector('.header__navegacion').classList.toggle('sticky-nav', scrollTop >= height);
 });
-
