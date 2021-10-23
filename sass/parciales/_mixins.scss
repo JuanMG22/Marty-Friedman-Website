@@ -1,4 +1,4 @@
-@mixin container-section($height: 80vh) {
+@mixin container-section($height: 81vh) {
     display: flex;
     justify-content: center;
     align-items: flex-start;
@@ -12,7 +12,7 @@
 }
 
 @mixin box-sections($width: 70vw) {
-    background-color: rgba(20, 20, 20, .7);
+    background-color: rgba(20, 20, 20, .9);
     position: relative;
     overflow: hidden;
     min-height: 65vh;

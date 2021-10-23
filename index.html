@@ -13,6 +13,8 @@
     <link rel="icon" type="image/png" sizes="32x32" href="./favicon_io//favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="./favicon_io/favicon-16x16.png">
     <link rel="manifest" href="./favicon_io/site.webmanifest">
+
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
     
     <!-- Animate CSS & AOS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
@@ -84,9 +86,9 @@
                 <img class="noticias-index__container--imagen img-thumbnail" src="./img/noticia-imagen-1.jpg" alt="Marty Friedman with Jackson Guitar">
                 <time class="noticias-index__container--fecha" datetime="04-02.2021">Jueves, 4 de Febrero</time>
                 <a class="noticias-index__container--link" href="./sections/noticias.html#noticia-1">
-                    <h3 class="noticias-index__container--titulo">Jackson Guitars and Marty Friedman Team Up for the Pro Series Signature MF-1</h3>
+                    <h3 class="noticias-index__container--titulo">Jackson Guitars and Marty Friedman Team Up for the Pro Series MF-1</h3>
                 </a>
-                <p class="noticias-index__container--parrafo">Jackson continues its longstanding relationship with guitarist Marty Friedman by honoring the virtuoso with the all-new Pro Series Signature Marty Friedman MF-1.</p>
+                <p class="noticias-index__container--parrafo">Jackson continues its longstanding relationship with guitarist Marty Friedman by honoring the virtuoso with the all-new Pro Series MF-1.</p>
                 <a class="btn btn-full btn-noticia" href="./sections/noticias.html#noticia-1">Leer más</a>
             </div>
             <div class="noticias-index__container--box">
@@ -105,7 +107,7 @@
                 <a class="noticias-index__container--link" href="./sections/noticias.html#noticia-3">
                     <h3 class="noticias-index__container--titulo">Dave Mustaine Speaks How Marty Friedman Behaved at Audition</h3>
                 </a>
-                <p class="noticias-index__container--parrafo">Megadeth frontman Dave Mustaine looked back on the band's early days, firing guitarist Chris Poland and drummer Gar Samuelson, hiring Marty Friedman, and more.
+                <p class="noticias-index__container--parrafo">Megadeth frontman Dave Mustaine looked back on the band's early days, firing guitarist Chris Poland, hiring Marty Friedman, and more.
                 </p>
                 <a class="btn btn-full btn-noticia" href="./sections/noticias.html#noticia-3">Leer más</a>
             </div>
@@ -183,7 +185,8 @@
             </div>
             <label for="comentarios">Dejanos un mensaje</label>
             <textarea class="contact__form--textarea" name="consulta" rows="10" cols="40" placeholder="Tu mensaje"></textarea>
-            <input class="contact__form--enviar" type="submit" value="Enviar!">
+            <div class="g-recaptcha" data-sitekey="6LfqUescAAAAADc6WgTPeNWkolFUxWYggXJ2SvoA"></div>
+            <input class="contact__form--enviar btn btn-full" type="submit" value="Enviar!">
         </form>
         </div>
     </section>

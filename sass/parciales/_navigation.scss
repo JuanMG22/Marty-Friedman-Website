@@ -14,7 +14,7 @@
         background: none;
         display: flex;
         justify-content: space-between;
-        align-items: flex-end;
+        align-items: center;
         margin: 0.313rem 0;
 
         &--logoimg {
@@ -22,13 +22,13 @@
             height: 3.55rem;
             margin-right: 5rem;
 
-            @include laptop {
+            @include laptop-l {
                 height: 3rem;
+                margin-right: 3rem;
             }
         }
 
         &--social {
-            transform: scale(1);
             margin-bottom: 0.313rem;
             transition: ease all .3s;
 
@@ -39,7 +39,8 @@
         }
 
         &--social-box {
-            @include laptop {
+            display: flex;
+            @include laptop-l {
                 width: 15vw;
             }
         }
@@ -56,7 +57,7 @@
             z-index: 999;
             font-size: 80%;
 
-            @include laptop {
+            @include laptop-l {
                 width: 12vw;
             }
         }
@@ -72,7 +73,9 @@
 
             &:hover {
                 background: $amarillo;
+                box-shadow: $sombra-negra;
                 color: $gris-oscuro;
+                border-radius: $borde-redondeado;
             }
         }
         &--menu-text {
@@ -95,6 +98,7 @@
             visibility: hidden;
             opacity: 0;
             z-index: 999;
+            box-shadow: $sombra-negra;
             font-size: 150%;
             text-align: left;
             transition: ease all .3s;
@@ -104,9 +108,13 @@
             display: block;
             padding: 0.813rem;
             color: $blanco;
+            transition: ease all .2s;
             
             &:hover {
                 background: $amarillo;
+                box-shadow: $sombra-negra;
+                transform: scale(1.05);
+                border-radius: $borde-redondeado;
                 color: $gris-oscuro;
             }
         }
@@ -120,12 +128,12 @@
     // Sticky Nav, se activa con JS
     .sticky-nav {
         position: fixed;
-        background-color: rgba(20, 20, 20, .8);
+        background-color: rgba(14, 14, 14, .9);
         width: 100vw;
         margin: 0;
         z-index: 999;
         border-bottom: $borde-blanco;
-        box-shadow: 0 2px 2px $blanco;
+        box-shadow: $sombra-negra;
 
         .header__navegacion--menu {
             margin-right: 13vw;

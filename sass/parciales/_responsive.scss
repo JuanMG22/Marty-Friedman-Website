@@ -2,33 +2,12 @@
 @import "./mixins";
 
 // Media Queries
-@mixin laptop {
+@mixin laptop-l {
     @media only screen and (max-width: 1440px) {
         @content;
     }
 }
 
-@media only screen and (max-width: 1200px) {
-    body {
-        font-size: 13px;
-    }
-
-    // Navigation
-    .header__navegacion {
-
-        &--logoimg {
-            height: 3rem;
-            margin-right: 4.9rem;
-        }
-
-        &--menu {
-            width: 14vw;
-        }
-
-    }
-
-
-}
 
 @media all and (max-width: 1024px) {
     body {
@@ -39,7 +18,8 @@
     .header__navegacion {
 
         &--social-box {
-            width: 18vw;
+            flex-wrap: wrap;
+            width: 30vw;
         }
 
         &--logoimg {
@@ -56,6 +36,17 @@
         }
 
     }
+
+   // Noticas Section Index
+   .noticias-index {
+       &__container {
+
+           &--box {
+               margin: 0rem 1.25rem 6.25rem 1.25rem;
+               height: 28rem;
+           }
+       }
+   }
 
     // About
     .about {
@@ -104,6 +95,7 @@
         }
 
     }
+
 
     // About
     .about {
@@ -204,14 +196,6 @@
 
     }
 
-    // About
-    .about {
-
-        &__img {
-            width: 16rem;
-            height: 18rem;
-        }
-    }
     
     // Hero Section
         .encabezado {
@@ -227,10 +211,14 @@
 
     // Noticias Section Index
     .noticias-index {
+
+        &__heading {
+            margin-top: 6.25rem;
+        }
         &__container {
-            justify-content: center;
 
             &--box {
+                margin: 0rem 1.25rem 6.25rem 1.25rem;
                 width: 23rem;
                 height: 29rem;
             }
@@ -240,6 +228,30 @@
                 height: 11rem;
             }
         }
+    }
+
+    // About
+    .about {
+        padding: 6.25rem 0rem;
+
+        &__text {
+            margin: 1.25rem 1.25rem;
+        }
+
+        &__img {
+            width: 18rem;
+            height: 22rem;
+        }
+    }
+
+.contact {
+    padding-bottom: 6.25rem;
+
+    &__heading {
+        margin-top: 6.25rem;
+        margin-bottom: 6.25rem;
+        }
+
     }
 
     // Discografia

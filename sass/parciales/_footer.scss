@@ -2,12 +2,13 @@
 
 // Footer
 .pie {
-    background-color: rgba(14, 14, 14, 0.5);
+    background-color: rgba(14, 14, 14, 0.9);
     border-top: $borde-blanco-2;
     padding: 1.875rem 0rem;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+    box-shadow: $sombra-negra;
 
     &__logo {
         height: 3.125rem;

@@ -49,7 +49,7 @@
     &__container {
         display: flex;
         flex-wrap: wrap;
-        justify-content: space-evenly;
+        justify-content: center;
         align-items: center;
 
         &--box {
@@ -57,19 +57,24 @@
             width: 27rem;
             height: 32rem;
             padding: 1.25rem;
-            margin: 0rem 6rem 9.375rem 6rem;
+            margin: 0rem 4rem 9.375rem 4rem;
             border: 7px solid #252525;
             box-shadow: $sombra-negra;
             border-radius: $borde-redondeado;
             display: flex;
             flex-direction: column;
-            justify-content: space-evenly;
+            justify-content: center;
             align-items: center;
             transition: ease all .3s;
 
+            @include laptop-l {
+                margin: 0rem 1.25rem 9.375rem 1.25rem;
+            }
+
+
             &:hover {
                 border: 7px solid #484848;
-                transform: scale(1.01);
+                transform: scale(1.02);
             }
         }
 
@@ -107,9 +112,12 @@
     min-height: 100vh;
     padding: 9.375rem 0rem;
     display: flex;
-    flex-wrap: wrap;
+
+    @include laptop-l {
+        flex-wrap: wrap;
+    }
     justify-content: space-around;
-    background-image: linear-gradient(rgba(17, 17, 17, 0.5), rgba(17, 17, 17, 0.8)),
+    background-image: linear-gradient(rgba(17, 17, 17, 1), rgba(17, 17, 17, 0.2), rgba(17, 17, 17, 1)),
     url(../../img/header-bg2.jpg);
     background-size: cover;
     &__text {
@@ -138,7 +146,7 @@
         outline: $borde-blanco-2;
         transition: ease all .3s;
 
-        @include laptop {
+        @include laptop-l {
             width: 29rem;
             height: 35rem;
         }
@@ -156,7 +164,7 @@
     border-top: $borde-blanco-2;
     text-align: center;
     padding-bottom: 9.375rem;
-    background-image: linear-gradient(rgba(45, 45, 45, .8), rgba(45, 45, 45, .8)),
+    background-image: linear-gradient(rgba(45, 45, 45, .8), rgba(45, 45, 45, 0.6), rgba(45, 45, 45, 0.8)),
     url(../img/contact-bg.jpg);
     background-size: cover;
 
@@ -183,6 +191,8 @@
             border-radius: $borde-redondeado;
             border: $borde-blanco-2;
             resize: none;
+            color: $blanco-texto;
+            background: rgba(14, 14, 14, .8);
         }
 
         &--newsletter {
@@ -191,6 +201,7 @@
 
         &--enviar {
             padding: 0.625rem;
+            background: rgba(14, 14, 14, .8);
         }
     }
 }

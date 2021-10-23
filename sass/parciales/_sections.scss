@@ -6,7 +6,7 @@
     @include container-section;
     &__box {
         @include box-sections;
-        @include laptop {
+        @include laptop-l {
             @include box-sections(95vw);
         }
         &--span {
@@ -34,15 +34,16 @@
             margin: 1.25rem;
             height: 40vh;
             width: 40vw;
+            object-fit: contain;
 
-            @include laptop {
+            @include laptop-l {
                 height: 45vh;
                 width: 70vw;
             }
         }
 
         &--parrafo {
-            margin: 1.25rem;
+            margin: 1.25rem auto;
             font-size: 120%;
             color: #afa8a8;
         }
@@ -51,11 +52,10 @@
             margin: 1.25rem;
             height: 40vh;
             width: 40vw;
-            text-align: center;
 
-            @include laptop {
-                height: 40vh;
-                width: 70vw;
+            @include laptop-l {
+                height: 50vh;
+                width: 50vw;
             }
         }
     }
@@ -66,7 +66,7 @@
     @include container-section;
     &__box {
         @include box-sections;
-        @include laptop {
+        @include laptop-l {
             @include box-sections(95vw);
         }
         &--heading {
@@ -85,7 +85,7 @@
     @include container-section;
     &__box {
         @include box-sections;
-        @include laptop {
+        @include laptop-l {
             @include box-sections(95vw);
         }
         &--heading {
@@ -207,7 +207,7 @@
     @include container-section;
     &__box {
         @include box-sections;
-        @include laptop {
+        @include laptop-l {
             @include box-sections(90vw);
         }
 
@@ -227,7 +227,7 @@
             grid-auto-rows: 1fr;
             grid-gap: 0.625rem;
 
-            @include laptop {
+            @include laptop-l {
                 grid-template-columns: repeat(2, 1fr);
             }            
         }
@@ -261,7 +261,7 @@
     @include container-section;
     &__box {
         @include box-sections;
-        @include laptop {
+        @include laptop-l {
             @include box-sections(95vw);
         }
 
@@ -287,6 +287,7 @@
             height: 50vh;
             width: 70vw;
             margin: 0.625rem;
+            object-fit: contain;
         }
     }
 }
@@ -296,7 +297,7 @@
     @include container-section;
     &__box {
         @include box-sections;
-        @include laptop {
+        @include laptop-l {
             @include box-sections(95vw);
         }
         &--heading {
@@ -318,6 +319,7 @@
             filter: invert(100%);
             height: 10vh;
             width: 12vw;
+            object-fit: contain;
         }
 
         &--sub-titulo {
