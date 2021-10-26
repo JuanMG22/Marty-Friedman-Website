@@ -34,6 +34,7 @@
     background-image: linear-gradient(rgba(0, 0, 0, .2), rgba(0, 0, 0, .8)),
     url(../img/noticias-bg.jpg);
     background-size: cover;
+    background-position: center;
     background-attachment: fixed;
 
     &__heading {
@@ -48,9 +49,12 @@
 
     &__container {
         display: flex;
-        flex-wrap: wrap;
         justify-content: center;
         align-items: center;
+
+        @include laptop-l {
+            flex-wrap: wrap;
+        }
 
         &--box {
             background-color: #121212;
@@ -61,9 +65,10 @@
             border: 7px solid #252525;
             box-shadow: $sombra-negra;
             border-radius: $borde-redondeado;
+            overflow: hidden;
             display: flex;
             flex-direction: column;
-            justify-content: center;
+            justify-content: space-around;
             align-items: center;
             transition: ease all .3s;
 
@@ -86,7 +91,6 @@
 
         &--fecha {
             font-size: 90%;
-            padding-right: auto;
             color: $blanco-texto;
             margin: 0.625rem 0rem;
             align-self: flex-start;
@@ -121,6 +125,7 @@
     background-image: linear-gradient(rgba(17, 17, 17, 1), rgba(17, 17, 17, 0.2), rgba(17, 17, 17, 1)),
     url(../img/header-bg2.jpg);
     background-size: cover;
+    background-position: center;
     &__text {
         width: 42rem;
         margin: 0rem 6rem;
@@ -165,8 +170,9 @@
     border-top: $borde-blanco-2;
     text-align: center;
     padding-bottom: 9.375rem;
-    background-image: linear-gradient(rgba(45, 45, 45, .8), rgba(45, 45, 45, 0.6), rgba(45, 45, 45, 0.8)),
+    background-image: linear-gradient(rgba(45, 45, 45, 0.8), rgba(45, 45, 45, 0.6), rgba(45, 45, 45, 0.8)),
     url(../img/contact-bg.jpg);
+    background-position: center;
     background-size: cover;
     &__heading {
         margin-top: $margin-titulo;

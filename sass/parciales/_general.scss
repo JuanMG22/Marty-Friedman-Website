@@ -10,8 +10,9 @@
 }
 
 body {
-    background-image: linear-gradient(rgba(45, 45, 45, .8), rgba(45, 45, 45, .8)),
+    background-image: linear-gradient(rgba(45, 45, 45, 0.8), rgba(45, 45, 45, 0.6), rgba(45, 45, 45, 0.8)),
         url(../img/contact-bg.jpg);
+    background-position: center;
     color: $blanco;
     text-rendering: optimizeLegibility;
     font-size: 16px;
@@ -58,7 +59,7 @@ a {
     padding: 0.625rem 1.875rem;
     margin: 1.25rem 0rem;
     border-radius: 5px;
-    display: inline-block;
+    letter-spacing: 1px;
     animation: bounceIn;
     animation-duration: 2s;
     animation-delay: 1s;
@@ -70,7 +71,6 @@ a {
     text-align: center;
     padding: 0.625rem 3.75rem;
     margin: 1.25rem 1.875rem;
-    display: inline-block;
     letter-spacing: 1px;
 }
 
