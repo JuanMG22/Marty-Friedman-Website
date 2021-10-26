@@ -1,0 +1,58 @@
+@keyframes image-slider {
+	0% {
+		background-image: linear-gradient(rgba(45, 45, 45, 0.4), #000),
+		url(../img/encabezado-bg-1.jpg);
+		background-position: center;
+	}
+	25% {
+		background-image: linear-gradient(rgba(45, 45, 45, 0.4), #000),
+		url(../img/encabezado-bg-1.jpg);
+		background-position: center;
+	}
+
+
+	26% {
+		background-image: linear-gradient(rgba(45, 45, 45, 0.4), #000),
+		url(../img/encabezado-bg-2.jpg);
+		background-position: center;
+	}
+
+	50% {
+		background-image: linear-gradient(rgba(45, 45, 45, 0.4), #000),
+		url(../img/encabezado-bg-2.jpg);
+		background-position: center;
+	}
+
+
+	51% {
+		background-image: linear-gradient(rgba(45, 45, 45, 0.4), #000),
+		url(../img/encabezado-bg-3.jpg);
+		background-position: center;
+	}
+
+	75% {
+		background-image: linear-gradient(rgba(45, 45, 45, 0.4), #000),
+		url(../img/encabezado-bg-3.jpg);
+		background-position: center;
+	}
+
+
+	76% {
+		background-image: linear-gradient(rgba(45, 45, 45, 0.4), #000),
+		url(../img/encabezado-bg-4.jpg);
+		background-position: center;
+	}
+
+	99% {
+		background-image: linear-gradient(rgba(45, 45, 45, 0.4), #000),
+		url(../img/encabezado-bg-4.jpg);
+		background-position: center;
+	}
+
+	100% {
+		background-image: linear-gradient(rgba(45, 45, 45, 0.4), #000),
+		url(../img/encabezado-bg-4.jpg);
+		background-position: center;
+	}
+
+}
