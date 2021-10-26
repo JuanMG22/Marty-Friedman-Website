@@ -10,7 +10,7 @@
     justify-content: center;
     box-shadow: $sombra-negra;
     &__navegacion {
-        width: 50vw;
+        width: 60vw;
         background: none;
         display: flex;
         justify-content: space-between;
@@ -20,7 +20,7 @@
         &--logoimg {
             width: 3.28rem;
             height: 3.55rem;
-            margin-right: 5rem;
+            margin-right: 6rem;
 
             @include laptop-l {
                 height: 3rem;
