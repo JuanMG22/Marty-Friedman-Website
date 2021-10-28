@@ -2,30 +2,30 @@
 @import "./responsive";
 
 .header {
-    background-image: linear-gradient(rgba(0, 0, 0, .9), rgba(0, 0, 0, .5)),
-    url(../img/header-bg2.jpg);
+    background: linear-gradient(rgba(14, 14, 14, 0.9), rgba(14, 14, 14, 0.9));
     background-size: cover;
     border-bottom: 0.156rem solid $blanco;
     display: flex;
     justify-content: center;
     box-shadow: $sombra-negra;
+    width: 100vw;
+    z-index: 9999;
+    position: fixed;
     &__navegacion {
-        width: 60vw;
+        width: 97vw;
         background: none;
         display: flex;
         justify-content: space-between;
         align-items: center;
-        margin: 0.313rem 0;
+        padding: 0.4rem 0rem;
 
         &--logoimg {
-            width: 3.28rem;
-            height: 3.55rem;
-            margin-right: 6rem;
+            height: 3rem;
+            filter: grayscale(100%);
+        }
 
-            @include laptop-l {
-                height: 3rem;
-                margin-right: 3rem;
-            }
+        &--logoimg-mb {
+            display: none;
         }
 
         &--social {
@@ -40,9 +40,6 @@
 
         &--social-box {
             display: flex;
-            @include laptop-l {
-                width: 15vw;
-            }
         }
 
         &--icon {
@@ -52,102 +49,107 @@
         }
 
         &--menu {
-            width: 10vw;
-            text-align: left;
             z-index: 999;
-            font-size: 80%;
-
-            @include laptop-l {
-                width: 12vw;
-            }
+            display: flex;
+            top: 0;
+            transition: all ease .3s;
         }
 
-        &--btn-menu {
-            padding: 0.938rem 1.875rem;
-            color: $blanco;
+        // Menu Hamburguesa
+
+        #btn-menu {
+            display: none;
             background: none;
             border: none;
-            box-shadow: none;
+            outline: none;
             cursor: pointer;
-            transition: ease all .3s;
-
-            &:hover {
-                background: $amarillo;
-                box-shadow: $sombra-negra;
-                color: $gris-oscuro;
-                border-radius: $borde-redondeado;
-            }
-        }
-        &--menu-text {
-            font-size: 140%;
-            letter-spacing: 1px;
-        }
-
-        &--item-menu {
+            margin-right: 2.2rem;
+            height: 1.875rem;
+            width: 30px;
             position: relative;
+            transition: all ease .3s;
         }
         
-        // Sub Menu
 
-        &--submenu {
-            position: absolute;
-            background-image: linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .6)),
-            url(../img/header-bg2.jpg);
-            background-position: center;
-            width: 90%;
-            visibility: hidden;
-            opacity: 0;
-            z-index: 999;
-            box-shadow: $sombra-negra;
-            font-size: 150%;
-            text-align: left;
-            transition: ease all .3s;
+        #btn-logo {
+            background: none;
+            border: none;
+            outline: none;
+            cursor: pointer;
         }
+
+        #btn-contact{
+            background: none;
+            color: $blanco;
+            border: none;
+            outline: none;
+            cursor: pointer;
+
+            &:active, 
+            &:visited, 
+            &:hover {
+                color: $negro;
+            }
+        }
+
+        &--lineas {
+            position: absolute;
+            content: "";
+            background: $blanco;
+            width: 30px;
+            height: 3px;
+            border-radius: 5px;
+            transition: all ease .3s;
+        }
+
+        &--linea-1 {
+            top: 0;
+        }
+        &--linea-2 {
+            top: 10px;
+        }
+
+        &--linea-3 {
+            top: 20px;
+        }
+
+        .l1-active {
+            transform: rotate(-140deg);
+            top: 10px;
+        }
+        .l2-active {
+            opacity: 0;
+        }
+        .l3-active {
+            transform: rotate(140deg);
+            top: 10px;
+        }
+
+
+        // Sub Menu
 
         &--link-submenu {
             display: block;
-            padding: 0.813rem;
+            padding: 0.4rem 0.8rem;
             color: $blanco;
+            font-size: 140%;
+            letter-spacing: 1px;
             transition: ease all .2s;
             
             &:hover {
-                background: $amarillo;
+                background: $blanco;
                 box-shadow: $sombra-negra;
-                transform: scale(1.05);
                 border-radius: $borde-redondeado;
-                color: $gris-oscuro;
+                color: $negro;
             }
+        }
+        &--item-menu {
+            display: flex;
         }
 
         &--item-menu:hover &--submenu {
             visibility: visible;
             opacity: 1;
-        }
-    }
-
-    // Sticky Nav, se activa con JS
-    .sticky-nav {
-        position: fixed;
-        background-color: rgba(14, 14, 14, .9);
-        width: 100vw;
-        margin: 0;
-        z-index: 999;
-        border-bottom: $borde-blanco;
-        box-shadow: $sombra-negra;
-
-        .header__navegacion--menu {
-            margin-right: 13vw;
-        }
-
-        .header__navegacion--social {
-            display: none;
-        }
-
-        .header__navegacion--logoimg {
-            margin-right: 55.5vw;
-            margin-bottom: 0.313rem;
-            height: 2.2rem;
-            width: 1.875rem;
         }
     }
 

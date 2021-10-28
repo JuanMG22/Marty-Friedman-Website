@@ -1,6 +1,48 @@
-// Sticky Nav
-window.addEventListener('scroll', event => {
-  const height = 1000;
-  const { scrollTop } = event.target.scrollingElement;
-  document.querySelector('.header__navegacion').classList.toggle('sticky-nav', scrollTop >= height);
-});
+// variables de las lineas que componen el icono del boton
+const linea1 = document.querySelector(`.header__navegacion--linea-1`);
+const linea2 = document.querySelector(`.header__navegacion--linea-2`);
+const linea3 = document.querySelector(`.header__navegacion--linea-3`);
+
+// Variables del boton del menu y ul del menu
+const btnBurger = document.querySelector(`#btn-menu`);
+const navMenu = document.querySelector(`.header__navegacion--menu`);
+
+// Evento que activa la navbar para dispositivos moviles
+btnBurger.addEventListener(`click`, () => { 
+    // Al detectar click del boton llamo funcion abrirCerrarMenu
+    abrirCerrarMenu();
+})
+
+
+// Fix en caso de presionar Contacto o logo en el index
+const btnContacto = document.querySelector(`#btn-contact`);
+const btnLogo = document.querySelector(`#btn-logo`);
+
+btnContacto.addEventListener(`mouseup`, () => {
+    cerrarMenu()
+})
+
+btnLogo.addEventListener(`mouseup`, () => { 
+    // Al detectar click del boton llamo funcion cierraMenu
+    cerrarMenu();
+})
+
+//Función abre/cierra menu agregando y quitando clases
+const abrirCerrarMenu = () => {
+    linea1.classList.toggle("l1-active");
+    linea2.classList.toggle("l2-active");
+    linea3.classList.toggle("l3-active");
+
+    btnBurger.classList.toggle("btn-mobile");
+    navMenu.classList.toggle("header__navegacion--menu-mobile");
+}
+
+// Función que cierra menu
+const cerrarMenu = () => {
+    linea1.classList.remove("l1-active");
+    linea2.classList.remove("l2-active");
+    linea3.classList.remove("l3-active");
+
+    btnBurger.classList.remove("btn-mobile");
+    navMenu.classList.remove("header__navegacion--menu-mobile");
+}

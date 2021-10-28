@@ -7,7 +7,7 @@
 
     &__box {
         position: relative;
-        height: 93vh;
+        height: 100vh;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -201,8 +201,12 @@
             border-radius: $borde-redondeado;
             border: $borde-blanco-2;
             resize: none;
+            outline: none;
             color: $blanco-texto;
-            background: rgba(14, 14, 14, .8);
+            background: rgba(14, 14, 14, 0.8);
+            &:focus {
+                outline: $borde-blanco;
+            }
         }
 
         &--newsletter {
@@ -210,8 +214,7 @@
         }
 
         &--enviar {
-            padding: 0.625rem;
-            background: rgba(14, 14, 14, .8);
+            background: rgba(14, 14, 14, 0.8);
         }
     }
 }

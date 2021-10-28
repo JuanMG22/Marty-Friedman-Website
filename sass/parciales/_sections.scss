@@ -323,7 +323,7 @@
         }
 
         &--sub-titulo {
-            color: $amarillo;
+            color: $blanco-texto;
             font-size: 130%;
             margin: 2.5rem 1.25rem;
             font-family: 'Roboto', sans-serif;
@@ -338,6 +338,7 @@
             font-size: 180%;
             user-select: none;
             cursor: pointer;
+            color: $blanco;
             transition: ease all .3s;
 
             &:hover {
