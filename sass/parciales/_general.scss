@@ -19,6 +19,18 @@ body {
     @include laptop-l {
         font-size: 14px;
     }
+
+    @include laptop {
+        font-size: 12px;
+    }
+
+    @include tablet {
+        font-size: 10px;
+        p,
+        label {
+            font-size: 14px;
+        }
+    }
 }
 
 h1 {

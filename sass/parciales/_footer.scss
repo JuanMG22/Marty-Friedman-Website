@@ -13,6 +13,11 @@
     &__logo {
         height: 3.125rem;
         margin-right: 8vw;
+
+        @include mobile-l {
+            height: 2rem;
+            margin-right: 5vw;
+        }
     }
 
     &__parrafo {

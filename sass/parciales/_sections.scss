@@ -85,6 +85,7 @@
     @include container-section;
     &__box {
         @include box-sections;
+
         @include laptop-l {
             @include box-sections(95vw);
         }
@@ -107,6 +108,10 @@
             cursor: pointer;
             font-size: 125%;
             margin: 0.313rem;
+
+            @include tablet {
+                font-size: 160%;
+            }
         }
 
         #todo:checked~.todo,
@@ -170,11 +175,20 @@
             &:hover {
                 transform: scale(1.1);
             }
+
+            @include mobile-l {
+                margin: 0.625rem 0;
+            }
         }
 
         &--imagen {
             width: 22rem;
             height: 22rem;
+
+            @include mobile-l {
+                width: 17rem;
+                height: 17rem;
+            }
         }
 
         &--efecto-hover {
@@ -229,6 +243,10 @@
 
             @include laptop-l {
                 grid-template-columns: repeat(2, 1fr);
+            }       
+
+            @include tablet {
+                grid-template-columns: repeat(1, 1fr);
             }            
         }
 
@@ -320,6 +338,16 @@
             height: 10vh;
             width: 12vw;
             object-fit: contain;
+
+            @include tablet {
+                height: 12vh;
+                width: 14vw;
+            }
+
+            @include mobile-l {
+                height: 10vh;
+                width: 26vw;
+            }
         }
 
         &--sub-titulo {
@@ -405,6 +433,53 @@
 
         &--guitarras {
             @include gear-items(40rem, 12rem);
+            @include tablet {
+                @include gear-items(27rem, 9rem);
+                margin: 30px 0px 0px 0px;
+            }
+            @include mobile-l {
+                @include gear-items(20rem, 7rem);
+            }
+        }
+
+        &--amps {
+            @include gear-items(35rem, 12rem);
+            @include tablet {
+                @include gear-items(27rem, 12rem);
+            }
+            @include mobile-l {
+                @include gear-items(20rem, 10rem);
+            }
+        }
+        
+        &--pickups {
+            @include gear-items(30rem, 20rem);
+            @include tablet {
+                @include gear-items(25rem, 16rem);
+            }
+            @include mobile-l {
+                @include gear-items(20rem, 11rem);
+            }
+        }
+        
+        &--pedals {
+            @include gear-items(13rem, 20rem);
+            @include tablet {
+                @include gear-items(11rem, 17rem);
+            }
+            @include mobile-l {
+                @include gear-items(9rem, 13rem);
+            }
+        }
+        
+        &--pedals-xl {
+            @include gear-items(30rem, 19.5rem);
+            @include tablet {
+                @include gear-items(27rem, 18rem);
+            }
+            @include mobile-l {
+                @include gear-items(18rem, 13rem);
+            }
         }
 
         &--text-box {
@@ -445,20 +520,5 @@
 
         @include efecto-text-link;
 
-        &--amps {
-            @include gear-items(35rem, 12rem);
-        }
-
-        &--pickups {
-            @include gear-items(30rem, 20rem);
-        }
-
-        &--pedals {
-            @include gear-items(13rem, 20rem);
-        }
-
-        &--pedals-xl {
-            @include gear-items(30rem, 19.5rem);
-        }
     }
 }

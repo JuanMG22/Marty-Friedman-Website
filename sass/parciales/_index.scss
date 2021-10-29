@@ -7,7 +7,7 @@
 
     &__box {
         position: relative;
-        height: 100vh;
+        height: 110vh;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -19,6 +19,14 @@
         background-size: cover;
         background-position: center;
         animation: image-slider 12s infinite linear;
+
+        &--titulo {
+            @include mobile-l {
+                font-size: 200%;
+                display: block;
+                text-align: center;
+            }
+        }
 
         &--text {
             animation: zoomInUp;
@@ -48,6 +56,10 @@
 
         &--span {
             @include borde-h2;
+        }
+
+        @include mobile-l {
+            margin-top: 6.25rem;
         }
     }
 
@@ -85,12 +97,26 @@
             @include laptop-l {
                 margin: 0rem 1.25rem 9.375rem 1.25rem;
             }
+
+            @include laptop {
+                height: 28rem;
+            }
+
+            @include mobile-l {
+                width: 23rem;
+                height: 29rem;
+            }
         }
 
         &--imagen {
             outline: 1px solid #252525;
             width: 25rem;
             height: 12rem;
+
+            @include mobile-l {
+                width: 20rem;
+                height: 11rem;
+            }
         }
 
         &--fecha {
@@ -121,18 +147,28 @@
     padding: 9.375rem 0rem;
     display: flex;
     box-shadow: $sombra-negra;
-
-    @include laptop-l {
-        flex-wrap: wrap;
-    }
     justify-content: space-around;
     background-image: linear-gradient(rgba(17, 17, 17, 1), rgba(17, 17, 17, 0.2), rgba(17, 17, 17, 1)),
     url(../img/header-bg2.jpg);
     background-size: cover;
     background-position: center;
+
+    @include laptop-l {
+        flex-wrap: wrap;
+    }
+
+    @include mobile-l {
+        padding: 6.25rem 0rem;
+    }
+
     &__text {
         width: 42rem;
         margin: 0rem 6rem;
+
+        @include mobile-l {
+            margin: 1.25rem 1.25rem;
+        }
+
         &--heading {
             margin-bottom: 3.125rem;
             text-align: center
@@ -156,14 +192,30 @@
         outline: $borde-blanco-2;
         transition: ease all .3s;
 
+        &:hover {
+            animation: pulse;
+            animation-duration: 1s;
+        }
+
         @include laptop-l {
             width: 29rem;
             height: 35rem;
         }
 
-        &:hover {
-            animation: pulse;
-            animation-duration: 1s;
+        @include laptop {
+            width: 26rem;
+            height: 30rem;
+        }
+
+        @include tablet {
+            margin: 0;
+            width: 20rem;
+            height: 22rem;
+        }
+
+        @include mobile-l {
+            width: 18rem;
+            height: 22rem;
         }
     }
 }
@@ -178,6 +230,11 @@
     url(../img/contact-bg.jpg);
     background-position: center;
     background-size: cover;
+
+    @include mobile-l {
+        padding-bottom: 6.25rem;
+    }
+
     &__heading {
         margin-top: $margin-titulo;
         margin-bottom: 6.25rem;
@@ -185,23 +242,31 @@
         &--span {
             @include borde-h2;
         }
+
+        @include mobile-l {
+            margin-top: 6.25rem;
+            margin-bottom: 6.25rem;
+        }
     }
 
     &__form {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
         text-align: left;
-        width: 60%;
+        width: 50%;
         margin: 0 auto;
 
         &--nombre,
         &--email,
         &--pais,
         &--textarea {
+            margin: 0.625rem 0rem;
             width: 100%;
             padding: 0.313rem;
-            border-radius: $borde-redondeado;
-            border: $borde-blanco-2;
             resize: none;
             outline: none;
+            border: $borde-blanco;
             color: $blanco-texto;
             background: rgba(14, 14, 14, 0.8);
             &:focus {
@@ -209,10 +274,14 @@
             }
         }
 
-        &--newsletter {
-            margin: 0.625rem 0.313rem 0.625rem 0rem;
+        &--newsletter-box {
+            display: flex;
+            align-items: center;
         }
-
+        
+        &--newsletter {
+            margin: 0.625rem 0.313rem 0.625rem 0.625rem;
+        }
         &--enviar {
             background: rgba(14, 14, 14, 0.8);
         }

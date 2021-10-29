@@ -65,8 +65,8 @@
         </nav>
     </header>
     <!-- Hero Section -->
-    <section class="encabezado" id="encabezado-id">
-        <div class="encabezado__box">
+    <section class="encabezado" id="encabezado-id" data-aos="fade-up">
+        <div class="encabezado__box" data-aos="fade-up">
             <div class="encabezado__box--text">
                 <h1 class="encabezado__box--titulo">Marty Friedman</h1>
                 <h2>Escucha el último album</h2>
@@ -81,7 +81,7 @@
         <h2 class="noticias-index__heading" data-aos="fade-up">
             <span class="noticias-index__heading--span">Noticias</span>
         </h2>
-        <div class="noticias-index__container" data-aos="fade-up">
+        <div class="noticias-index__container" data-aos="fade-up" data-aos-delay="300">
             <div class="noticias-index__container--box">
                 <img class="noticias-index__container--imagen img-thumbnail" src="./img/noticia-imagen-1.jpg"
                     alt="Marty Friedman with Jackson Guitar">
@@ -146,13 +146,13 @@
             <h2 class="contact__heading">
                 <span class="contact__heading--span">Contacto</span>
             </h2>
-            <form class="contact__form">
+            <form class="contact__form" data-aos="fade-up" data-aos-delay="300">
                 <label class="contact__form--label" for="nombre">Nombre</label>
-                <input class="contact__form--nombre" type="text" name="nombre" placeholder="Tu nombre" required>
+                <input class="contact__form--nombre" type="text" id="nombre" name="nombre" placeholder="Tu nombre" required>
                 <label class="contact__form--label" for="email">Email</label>
-                <input class="contact__form--email" type="email" name="email" placeholder="Tu email" required>
+                <input class="contact__form--email" id="email" type="email" name="email" placeholder="Tu email" required>
                 <label class="contact__form--label" for="pais">País</label>
-                <select class="contact__form--pais" name="pais">
+                <select class="contact__form--pais" id="pais" name="pais">
                     <option name="Afganistan">Afganistan</option>
                     <option name="Albania">Albania</option>
                     <option name="Alemania">Alemania</option>
@@ -197,11 +197,12 @@
                     <option name="Venezuela">Venezuela</option>
                     <option name="Zimbabue">Zimbabue</option>
                 </select>
-                <div id="newsletter"> Newsletter?
-                    <input class="contact__form--newsletter" type="checkbox" name="acepta" value="1">
+                <div class="contact__form--newsletter-box">
+                    <label for="newsletter">Newsletter?</label>
+                    <input id="newsletter" class="contact__form--newsletter" type="checkbox" name="acepta" value="1">
                 </div>
                 <label for="comentarios">Dejanos un mensaje</label>
-                <textarea class="contact__form--textarea" name="consulta" rows="10" cols="40"
+                <textarea class="contact__form--textarea" id="comentarios" name="consulta" rows="10" cols="40"
                     placeholder="Tu mensaje"></textarea>
 
                 <input class="contact__form--enviar btn btn-full" type="submit" value="Enviar!">

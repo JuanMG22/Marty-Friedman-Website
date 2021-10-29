@@ -2,7 +2,7 @@
 @import "./responsive";
 
 .header {
-    background: linear-gradient(rgba(14, 14, 14, 0.9), rgba(14, 14, 14, 0.9));
+    background: linear-gradient(rgba(14, 14, 14, 1), rgba(14, 14, 14, 1));
     background-size: cover;
     border-bottom: 0.156rem solid $blanco;
     display: flex;
@@ -19,13 +19,33 @@
         align-items: center;
         padding: 0.4rem 0rem;
 
+        @include tablet {
+            padding: 0.4rem 0.6rem 0rem 1.2rem;
+            width: 100vw;
+        }
+
         &--logoimg {
             height: 3rem;
             filter: grayscale(100%);
-        }
 
+            @include laptop {
+                height: 2.3rem;
+            }
+
+            @include tablet {
+                display: none;
+            }
+        }
+        
         &--logoimg-mb {
             display: none;
+            
+            @include tablet {
+                display: block;
+                height: 2.8rem;
+                margin: 0.6rem 0.3rem 0.3rem 0.3rem;
+            }
+
         }
 
         &--social {
@@ -40,12 +60,28 @@
 
         &--social-box {
             display: flex;
+
+             @include laptop {
+                 flex-wrap: wrap;
+                 width: 30vw;
+             }
+
+             @include tablet{
+                 width: 18vw;
+             }
         }
 
         &--icon {
             font-size: 200%;
             margin-left: 1.25rem;
             color: $blanco;
+
+            @include tablet {
+                font-size: 180%;
+            }
+            @include tablet {
+                margin: 0.875 0.875rem;
+            }
         }
 
         &--menu {
@@ -53,8 +89,29 @@
             display: flex;
             top: 0;
             transition: all ease .3s;
-        }
 
+            @include tablet {
+                flex-direction: column;
+                justify-content: flex-start;
+                text-align: center;
+                overflow: hidden;
+                position: fixed;
+                font-size: 160%;
+                background: linear-gradient(rgba(14, 14, 14, 1), rgba(14, 14, 14, 1));
+                background-size: cover;
+                top: 4.48rem;
+                left: 0;
+                height: 0;
+                width: 100%;
+            }
+
+        }
+        
+        &--menu-mobile {
+            @include tablet {
+                height: calc(100vh - 4.48rem);
+            }
+        }
         // Menu Hamburguesa
 
         #btn-menu {
@@ -68,6 +125,10 @@
             width: 30px;
             position: relative;
             transition: all ease .3s;
+
+            @include tablet {
+                display: block;
+            }
         }
         
 
@@ -84,6 +145,7 @@
             border: none;
             outline: none;
             cursor: pointer;
+            color: $negro;
 
             &:active, 
             &:visited, 
@@ -132,9 +194,22 @@
             display: block;
             padding: 0.4rem 0.8rem;
             color: $blanco;
+            border-radius: $borde-redondeado;
             font-size: 140%;
             letter-spacing: 1px;
-            transition: ease all .2s;
+            transition: ease all .3s;
+
+            @include laptop {
+                padding: 0.4rem 0.4rem;
+            }
+
+            @include tablet {
+                margin: 0.625rem 0rem;
+                background: $blanco;
+                box-shadow: $sombra-negra;
+                border-radius: $borde-redondeado;
+                color: $negro;
+            }
             
             &:hover {
                 background: $blanco;
