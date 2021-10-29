@@ -72,7 +72,8 @@
     // Navigation
     .header__navegacion {
         background: linear-gradient(rgba(14, 14, 14, 1));
-        padding: 0.4rem 0.6rem 0rem 0.6rem;
+        padding: 0.4rem 0.6rem 0rem 1.2rem;
+        width: 100%;
 
         #btn-menu {
             display: block;
@@ -92,15 +93,15 @@
             font-size: 160%;
             background: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.9));
             background-size: cover;
-            top: 3.4rem;
+            top: 4.48rem;
             left: 0;
-            width: 100%;
             height: 0;
+            width: 100%;
             transition: all ease 0.3s;
         }
 
         &--menu-mobile {
-            height: calc(100vh - 3.4rem);
+            height: calc(100vh - 4.48rem);
         }
 
         &--link-submenu {
@@ -117,8 +118,8 @@
         
         &--logoimg-mb {
             display: block;
-            height: 2.2rem;
-            margin-bottom: 0.2rem;
+            height: 2.8rem;
+            margin: 0.6rem 0.3rem 0.3rem 0.3rem;
         }
         
 
@@ -328,6 +329,7 @@
 
     // Footer
     .pie {
+        flex-wrap: wrap;
 
         &__logo {
             height: 2rem;
