@@ -1,3 +1,15 @@
+/****************Preloader *****************/
+
+// Variable del loader
+const preloader = document.querySelector(`#loader`);
+
+window.addEventListener(`load`, () => {
+    preloader.classList.toggle(`close-loader`);
+})
+
+
+/****************Menu Hamburguesa *****************/
+
 // variables de las lineas que componen el icono del boton
 const linea1 = document.querySelector(`.header__navegacion--linea-1`);
 const linea2 = document.querySelector(`.header__navegacion--linea-2`);
@@ -8,7 +20,7 @@ const btnBurger = document.querySelector(`#btn-menu`);
 const navMenu = document.querySelector(`.header__navegacion--menu`);
 
 // Evento que activa la navbar para dispositivos moviles
-btnBurger.addEventListener(`click`, () => { 
+btnBurger.addEventListener(`click`, () => {
     // Al detectar click del boton llamo funcion abrirCerrarMenu
     abrirCerrarMenu();
 })
@@ -22,7 +34,7 @@ btnContacto.addEventListener(`mouseup`, () => {
     cerrarMenu()
 })
 
-btnLogo.addEventListener(`mouseup`, () => { 
+btnLogo.addEventListener(`mouseup`, () => {
     // Al detectar click del boton llamo funcion cierraMenu
     cerrarMenu();
 })
