@@ -67,29 +67,7 @@
             }
         }
 
-        &--video {
-            display: block;
-            margin: auto;
-            width: 45vw;
-            height: 50vh;
-
-            @include laptop-l {
-                width: 45vw;
-                height: 45vh;
-            }
-            @include laptop {
-                width: 55vw;
-                height: 38vh;
-            }
-            @include tablet {
-                width: 70vw;
-                height: 40vh;
-            }
-            @include mobile-l {
-                width: 85vw;
-                height: 24vh;
-            }
-        }
+  
     }
 }
 
@@ -276,7 +254,7 @@
             grid-auto-rows: 1fr;
             grid-gap: 0.625rem;
 
-            @include laptop-l {
+            @include laptop {
                 grid-template-columns: repeat(2, 1fr);
             }       
 
@@ -337,13 +315,8 @@
         }
 
         &--video {
-            height: 50vh;
-            width: 70vw;
-            margin: 0.625rem;
-
-            @include mobile {
-                height: 30vh;
-            }
+            width: 100vw;
+            margin-bottom: 1.875rem;
         }
     }
 }

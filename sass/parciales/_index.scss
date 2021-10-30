@@ -254,8 +254,12 @@
         flex-direction: column;
         justify-content: space-around;
         text-align: left;
-        width: 50%;
+        width: 60%;
         margin: 0 auto;
+
+        @include tablet {
+            width: 90%;
+        }
 
         &--nombre,
         &--email,

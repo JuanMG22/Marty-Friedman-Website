@@ -8,6 +8,9 @@
         <meta name="description" content="Last News of Marty Friedman. Guitarist, producer, lyricist.">
         <meta name="keywords" content="last news, marty friedman, japan, tour dates">
         <title>Marty Friedman Noticias</title>
+        <!-- Lazy load YT -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/logico/lazy-youtube-embed/dist/lazy-youtube-embed.css"/>
+        <script defer type="text/javascript" src="https://cdn.jsdelivr.net/npm/lazy-youtube-embed@1.0.0/dist/lazy-youtube-embed.js"></script>
         <!-- Favicon -->
         <link rel="apple-touch-icon" sizes="180x180" href="../favicon_io//apple-touch-icon.png">
         <link rel="icon" type="image/png" sizes="32x32" href="../favicon_io//favicon-32x32.png">
@@ -33,10 +36,10 @@
         <header class="header">
                 <nav class="header__navegacion">
                         <a href="../index.html">
-                                <img class="header__navegacion--logoimg" src="../img/logo.png"
+                                <img loading="lazy" class="header__navegacion--logoimg" src="../img/logo.png"
                                         alt="Marty Friedman Logo">
                                 <button id="btn-logo">
-                                        <img class="header__navegacion--logoimg-mb" src="../img/logo-mb.png"
+                                        <img loading="lazy" class="header__navegacion--logoimg-mb" src="../img/logo-mb.png"
                                                 alt="Marty Friedman Logo">
                                 </button>
                         </a>
@@ -81,7 +84,7 @@
                                         <time class="noticias__box--fecha" datetime="04-02.2021">26 de octubre de
                                                 2021</time>
                                 </div>
-                                <img class="noticias__box--imagen" src="../img/noticia-imagen-1.jpg"
+                                <img loading="lazy" class="noticias__box--imagen" src="../img/noticia-imagen-1.jpg"
                                         alt="Marty Friedman with Jackson Guitar">
                                 <p class="noticias__box--parrafo">Scottsdale, AZ (February 4, 2021) -- Jackson continues
                                         its longstanding relationship with guitarist Marty Friedman by honoring the
@@ -116,10 +119,7 @@
                                         TOM-style adjustable bridge with anchored tailpiece for improved intonation and
                                         enhanced sustain.</p>
                                 <p class="noticias__box--parrafo"><strong>Watch the company's video demo:</strong></p>
-                                <iframe class="noticias__box--video" src="https://www.youtube.com/embed/mhl7OC1GEy0"
-                                        title="YouTube video player" frameborder="0"
-                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                                        allowfullscreen></iframe>
+                                <a class="noticias__box--video lazy-youtube-embed" href="https://www.youtube.com/embed/mhl7OC1GEy0"></a>
                         </article>
                         <article class="noticias__box--articulo" id="noticia-2">
                                 <div class="noticias__box--articulo-heading">
@@ -129,7 +129,7 @@
                                         <time class="noticias__box--fecha" datetime="20-02.2021">20 de octubre de
                                                 2021</time>
                                 </div>
-                                <img class="noticias__box--imagen" src="../img/noticia-imagen-2.jpg"
+                                <img loading="lazy" class="noticias__box--imagen" src="../img/noticia-imagen-2.jpg"
                                         alt="Kiko Loureiro">
                                 <p class="noticias__box--parrafo">Guitar World has published an in-depth review of
                                         Megadeth guitarist Kiko Loureiro's latest solo album, Open Source, complete with
@@ -147,10 +147,7 @@
                                         open-source, collaborative vibe is to bring the guy over as a guest."</p>
                                 <p class="noticias__box--parrafo"><strong>Read the complete review and interview
                                                 here.</strong></p>
-                                <iframe class="noticias__box--video" src="https://www.youtube.com/embed/4KXxu7VIZ50"
-                                        title="YouTube video player" frameborder="0"
-                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                                        allowfullscreen></iframe>
+                                <a class="noticias__box--video lazy-youtube-embed" href="https://www.youtube.com/embed/4KXxu7VIZ50"></a>
                         </article>
                         <article class="noticias__box--articulo" id="noticia-3">
                                 <div class="noticias__box--articulo-heading">
@@ -160,7 +157,7 @@
                                         <time class="noticias__box--fecha" datetime="20-02.2021">18 de octubre de
                                                 2021</time>
                                 </div>
-                                <img class="noticias__box--imagen" src="../img/noticia-imagen-3.jpg"
+                                <img loading="lazy" class="noticias__box--imagen" src="../img/noticia-imagen-3.jpg"
                                         alt="Dave Mustaine">
                                 <p class="noticias__box--parrafo">During a conversation with Gibson, Megadeth frontman
                                         Dave Mustaine looked back on the band's early days, firing guitarist Chris
@@ -194,18 +191,14 @@
                                 <p class="noticias__box--parrafo">The sig instrument is complete with a Jackson
                                         TOM-style adjustable bridge with anchored tailpiece for improved intonation and
                                         enhanced sustain.</p>
-                                <p class="noticias__box--parrafo"><strong>Watch a Megadeth live video with
-                                                Marty:</strong></p>
-                                <iframe class="noticias__box--video" src="https://www.youtube.com/embed/rGh_L1cIM2M"
-                                        title="YouTube video player" frameborder="0"
-                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                                        allowfullscreen></iframe>
+                                <p class="noticias__box--parrafo"><strong>Marty playing the legendary tornado of souls solo:</strong></p>
+                                <a class="noticias__box--video lazy-youtube-embed" href="https://youtu.be/ZMgiiQQfJg0"></a>
                         </article>
                 </div>
         </section>
         <!-- Footer -->
         <footer class="pie">
-                <img class="pie__logo" src="../img/logo-mb.png" alt="Logo marty Friedman">
+                <img loading="lazy" class="pie__logo" src="../img/logo-mb.png" alt="Logo marty Friedman">
                 <div class="pie__socialbox">
                         <a href="https://www.facebook.com/martyfriedman.official" target="_blank"><i
                                         class="fab fa-facebook-square pie__socialbox--social-icon"></i></a>

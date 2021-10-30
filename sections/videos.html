@@ -9,6 +9,9 @@
                 content="Find out the latest videos of Marty Friedman. Guitarist, producer, lyricist." />
         <meta name="keywords" content="videoclips, guitar videos, performance videos " />
         <title>Marty Friedman Videos</title>
+        <!-- Lazy load YT -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/logico/lazy-youtube-embed/dist/lazy-youtube-embed.css"/>
+        <script defer type="text/javascript" src="https://cdn.jsdelivr.net/npm/lazy-youtube-embed@1.0.0/dist/lazy-youtube-embed.js"></script>
         <!-- Favicon -->
         <link rel="apple-touch-icon" sizes="180x180" href="../favicon_io//apple-touch-icon.png" />
         <link rel="icon" type="image/png" sizes="32x32" href="../favicon_io//favicon-32x32.png" />
@@ -33,10 +36,10 @@
         <header class="header">
                 <nav class="header__navegacion">
                         <a href="../index.html">
-                                <img class="header__navegacion--logoimg" src="../img/logo.png"
+                                <img loading="lazy" class="header__navegacion--logoimg" src="../img/logo.png"
                                         alt="Marty Friedman Logo" />
                                 <button id="btn-logo">
-                                        <img class="header__navegacion--logoimg-mb" src="../img/logo-mb.png"
+                                        <img loading="lazy" class="header__navegacion--logoimg-mb" src="../img/logo-mb.png"
                                                 alt="Marty Friedman Logo" />
                                 </button>
                         </a>
@@ -87,46 +90,23 @@
                         </div>
                         <div class="videos__box--container">
                                 <!-- Videos -->
-                                <iframe class="videos__box--video"
-                                        src="https://www.youtube-nocookie.com/embed/47wq9W90bAQ"
-                                        title="YouTube video player" frameborder="0"
-                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                                        allowfullscreen></iframe>
+                                <a href="https://www.youtube-nocookie.com/embed/47wq9W90bAQ" class="lazy-youtube-embed videos__box--video"></a>
 
-                                <iframe class="videos__box--video"
-                                        src="https://www.youtube-nocookie.com/embed/y9newkA4g7Q"
-                                        title="YouTube video player" frameborder="0"
-                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                                        allowfullscreen></iframe>
+                                <a href="https://www.youtube-nocookie.com/embed/y9newkA4g7Q" class="lazy-youtube-embed videos__box--video"></a>
 
-                                <iframe class="videos__box--video"
-                                        src="https://www.youtube-nocookie.com/embed/pXECaAsYD-s"
-                                        title="YouTube video player" frameborder="0"
-                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                                        allowfullscreen></iframe>
+                                <a href="https://www.youtube-nocookie.com/embed/pXECaAsYD-s" class="lazy-youtube-embed videos__box--video"></a>
 
-                                <iframe class="videos__box--video"
-                                        src="https://www.youtube-nocookie.com/embed/qEwEESAXHIE"
-                                        title="YouTube video player" frameborder="0"
-                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                                        allowfullscreen></iframe>
+                                <a href="https://www.youtube-nocookie.com/embed/qEwEESAXHIE" class="lazy-youtube-embed videos__box--video"></a>
 
-                                <iframe class="videos__box--video" src="https://www.youtube.com/embed/UKmKcsySlgE"
-                                        title="YouTube video player" frameborder="0"
-                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                                        allowfullscreen></iframe>
+                                <a href="https://www.youtube.com/embed/UKmKcsySlgE" class="lazy-youtube-embed videos__box--video"></a>
 
-                                <iframe class="videos__box--video"
-                                        src="https://www.youtube-nocookie.com/embed/oR5iwoxh2rI"
-                                        title="YouTube video player" frameborder="0"
-                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                                        allowfullscreen></iframe>
+                                <a href="https://www.youtube-nocookie.com/embed/oR5iwoxh2rI" class="lazy-youtube-embed videos__box--video"></a>
                         </div>
                 </div>
         </section>
         <!-- Footer -->
         <footer class="pie">
-                <img class="pie__logo" src="../img/logo-mb.png" alt="Logo marty Friedman" />
+                <img loading="lazy" class="pie__logo" src="../img/logo-mb.png" alt="Logo marty Friedman" />
                 <div class="pie__socialbox">
                         <a href="https://www.facebook.com/martyfriedman.official" target="_blank"><i
                                         class="fab fa-facebook-square pie__socialbox--social-icon"></i></a>
