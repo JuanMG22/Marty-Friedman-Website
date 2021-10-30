@@ -33,7 +33,6 @@ const abrirCerrarMenu = () => {
     linea2.classList.toggle("l2-active");
     linea3.classList.toggle("l3-active");
 
-    btnBurger.classList.toggle("btn-mobile");
     navMenu.classList.toggle("header__navegacion--menu-mobile");
 }
 
@@ -43,6 +42,5 @@ const cerrarMenu = () => {
     linea2.classList.remove("l2-active");
     linea3.classList.remove("l3-active");
 
-    btnBurger.classList.remove("btn-mobile");
     navMenu.classList.remove("header__navegacion--menu-mobile");
 }

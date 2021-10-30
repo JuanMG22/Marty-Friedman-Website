@@ -2,7 +2,7 @@
 @import "./responsive";
 
 .header {
-    background: linear-gradient(rgba(14, 14, 14, 1), rgba(14, 14, 14, 1));
+    background: linear-gradient(rgba(14, 14, 14, 1), rgba(14, 14, 14, 0.9));
     background-size: cover;
     border-bottom: 0.156rem solid $blanco;
     display: flex;
@@ -48,41 +48,6 @@
 
         }
 
-        &--social {
-            margin-bottom: 0.313rem;
-            transition: ease all .3s;
-
-            &:hover {
-                transform: scale(1.15);
-                color: $amarillo;
-            }
-        }
-
-        &--social-box {
-            display: flex;
-
-             @include laptop {
-                 flex-wrap: wrap;
-                 width: 30vw;
-             }
-
-             @include tablet{
-                 width: 18vw;
-             }
-        }
-
-        &--icon {
-            font-size: 200%;
-            margin-left: 1.25rem;
-            color: $blanco;
-
-            @include tablet {
-                font-size: 180%;
-            }
-            @include tablet {
-                margin: 0.875 0.875rem;
-            }
-        }
 
         &--menu {
             z-index: 999;
@@ -97,19 +62,21 @@
                 overflow: hidden;
                 position: fixed;
                 font-size: 160%;
-                background: linear-gradient(rgba(14, 14, 14, 1), rgba(14, 14, 14, 1));
+                box-shadow: $sombra-negra;
+                background: linear-gradient(rgba(14, 14, 14, 1), rgba(14, 14, 14, 0.9));
                 background-size: cover;
+                background-position: center;
                 top: 4.48rem;
-                left: 0;
-                height: 0;
+                left: 100%;
                 width: 100%;
+                height: calc(100vh - 4.48rem);
             }
 
         }
         
         &--menu-mobile {
             @include tablet {
-                height: calc(100vh - 4.48rem);
+                left: 0;
             }
         }
         // Menu Hamburguesa
@@ -145,7 +112,6 @@
             border: none;
             outline: none;
             cursor: pointer;
-            color: $negro;
 
             &:active, 
             &:visited, 
@@ -190,7 +156,7 @@
 
         // Sub Menu
 
-        &--link-submenu {
+        &--link-menu {
             display: block;
             padding: 0.4rem 0.8rem;
             color: $blanco;
@@ -205,10 +171,10 @@
 
             @include tablet {
                 margin: 0.625rem 0rem;
-                background: $blanco;
+                background: none;
+                border: $borde-blanco;
                 box-shadow: $sombra-negra;
                 border-radius: $borde-redondeado;
-                color: $negro;
             }
             
             &:hover {
@@ -218,11 +184,8 @@
                 color: $negro;
             }
         }
-        &--item-menu {
-            display: flex;
-        }
 
-        &--item-menu:hover &--submenu {
+        &--item-menu:hover &--menu {
             visibility: visible;
             opacity: 1;
         }

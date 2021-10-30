@@ -1,6 +1,3 @@
-@import "./variables";
-@import "./mixins";
-
 // Media Queries
 @mixin laptop-l {
     @media all and (max-width: 1440px) {
@@ -22,6 +19,12 @@
 
 @mixin mobile-l {
     @media all and (max-width: 480px) {
+        @content;
+    }
+}
+
+@mixin mobile {
+    @media all and (max-width: 375px) {
         @content;
     }
 }

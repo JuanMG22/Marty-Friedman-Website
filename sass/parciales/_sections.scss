@@ -13,10 +13,6 @@
             @include borde-h2;
         }
 
-        &--heading{
-            margin-bottom: 3.75rem;
-        }
-
         &--titulo-noticia {
             padding-top: 3.75rem;
             margin-bottom: 1.25rem;
@@ -25,20 +21,33 @@
         }
 
         &--fecha {
-            margin: 1.25rem;
+            margin: 1.25rem auto;
             font-size: 110%;
             color: #afa8a8;
+            @include laptop-l {
+                padding: 0 6rem;
+            }
+            @include tablet {
+                padding: 0;
+            }
         }
 
         &--imagen {
-            margin: 1.25rem;
-            height: 40vh;
-            width: 40vw;
-            object-fit: contain;
-
+            display: block;
+            margin: 1.25rem auto;
+            height: 45vh;
+            object-fit: cover;
             @include laptop-l {
                 height: 45vh;
-                width: 70vw;
+            }
+            @include laptop {
+                height: 40vh;
+            }
+            @include mobile-l {
+                height: 24vh;
+            }
+            @include mobile {
+                height: 19vh;
             }
         }
 
@@ -46,16 +55,39 @@
             margin: 1.25rem auto;
             font-size: 120%;
             color: #afa8a8;
+            @include laptop-l {
+                padding: 0 6rem;
+            }
+            @include tablet {
+                padding: 0;
+            }
+
+            @include mobile-l {
+                font-size: 150%;
+            }
         }
 
         &--video {
-            margin: 1.25rem;
-            height: 40vh;
-            width: 40vw;
+            display: block;
+            margin: auto;
+            width: 45vw;
+            height: 50vh;
 
             @include laptop-l {
-                height: 50vh;
-                width: 50vw;
+                width: 45vw;
+                height: 45vh;
+            }
+            @include laptop {
+                width: 55vw;
+                height: 38vh;
+            }
+            @include tablet {
+                width: 70vw;
+                height: 40vh;
+            }
+            @include mobile-l {
+                width: 85vw;
+                height: 24vh;
             }
         }
     }
@@ -107,10 +139,13 @@
             user-select: none;
             cursor: pointer;
             font-size: 125%;
-            margin: 0.313rem;
+            margin: 0 1rem;
 
             @include tablet {
                 font-size: 160%;
+            }
+            @include mobile {
+                margin: 0 0.8rem;
             }
         }
 
@@ -130,7 +165,7 @@
         #megadeth,
         #cacophony,
         #hawaii {
-            opacity: 0;
+            display: none;
         }
 
         #megadeth:checked~&--albumes .mf,
@@ -305,7 +340,10 @@
             height: 50vh;
             width: 70vw;
             margin: 0.625rem;
-            object-fit: contain;
+
+            @include mobile {
+                height: 30vh;
+            }
         }
     }
 }
@@ -364,21 +402,26 @@
 
         &--input {
             font-size: 180%;
+            margin: 0 1rem;
             user-select: none;
             cursor: pointer;
             color: $blanco;
             transition: ease all .3s;
-
             &:hover {
                 color: $amarillo;
             }
+
+            @include mobile {
+                margin: 0 2.3rem;
+            }
+
         }
 
         #guitarras,
         #amps,
         #pedales,
         #pickups {
-            opacity: 0;
+            display: none;
         }
 
         #guitarras:checked~.guitarras,
@@ -440,6 +483,10 @@
             @include mobile-l {
                 @include gear-items(20rem, 7rem);
             }
+
+            @include mobile {
+                @include gear-items(17rem, 6rem);
+            }
         }
 
         &--amps {
@@ -450,6 +497,9 @@
             @include mobile-l {
                 @include gear-items(20rem, 10rem);
             }
+            @include mobile {
+                @include gear-items(17rem, 7rem);
+            }
         }
         
         &--pickups {
@@ -459,6 +509,9 @@
             }
             @include mobile-l {
                 @include gear-items(20rem, 11rem);
+            }
+            @include mobile {
+                @include gear-items(19rem, 10rem);
             }
         }
         
@@ -479,6 +532,9 @@
             }
             @include mobile-l {
                 @include gear-items(18rem, 13rem);
+            }
+            @include mobile {
+                @include gear-items(17rem, 12rem);
             }
         }
 
