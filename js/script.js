@@ -3,9 +3,10 @@
 // Variable del loader
 const preloader = document.querySelector(`#loader`);
 
-window.addEventListener(`load`, () => {
+
+setTimeout( () => {
     preloader.classList.toggle(`close-loader`);
-})
+}, 70)
 
 
 /****************Menu Hamburguesa *****************/

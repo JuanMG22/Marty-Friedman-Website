@@ -18,6 +18,7 @@
     <!-- Animate CSS & AOS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
@@ -33,7 +34,7 @@
     <!-- Header y Navbar -->
     <header class="header">
         <nav class="header__navegacion">
-            <a href="./index.html#encabezado-id">
+            <a href="#encabezado-id">
                 <img loading="lazy" class="header__navegacion--logoimg" src="./img/logo.png" alt="Marty Friedman Logo">
                 <button id="btn-logo">
                     <img loading="lazy" class="header__navegacion--logoimg-mb" src="./img/logo-mb.png" alt="Marty Friedman Logo">
@@ -77,10 +78,11 @@
         </div>
     </section>
     <!-- Seccion Noticias del index -->
-    <section class="noticias-index js--noticias-section">
+    <section class="noticias-index">
         <h2 class="noticias-index__heading" data-aos="fade-up">
             <span class="noticias-index__heading--span">Noticias</span>
         </h2>
+        <!-- Noticia 1 -->
         <div class="noticias-index__container" data-aos="fade-up" data-aos-delay="300">
             <div class="noticias-index__container--box">
                 <img loading="lazy" class="noticias-index__container--imagen img-thumbnail" src="./img/noticia-imagen-1.jpg"
@@ -94,6 +96,7 @@
                     guitarist Marty Friedman by honoring the virtuoso with the all-new Pro Series MF-1.</p>
                 <a class="btn btn-full btn-noticia" href="./sections/noticias.html#noticia-1">Leer más</a>
             </div>
+            <!-- Noticia 2 -->
             <div class="noticias-index__container--box">
                 <img loading="lazy" class="noticias-index__container--imagen img-thumbnail" src="./img/noticia-imagen-2.jpg"
                     alt="Kiko Loureiro">
@@ -107,11 +110,12 @@
                 </p>
                 <a class="btn btn-full btn-noticia" href="./sections/noticias.html#noticia-2">Leer más</a>
             </div>
+            <!-- Noticia 3 -->
             <div class="noticias-index__container--box">
                 <img loading="lazy" class="noticias-index__container--imagen img-thumbnail" src="./img/noticia-imagen-3.jpg"
                     alt="Dave Mustaine">
                 <time class="noticias-index__container--fecha" datetime="20-02.2021">18 de octubre de 2021</time>
-                <a class="noticias-index__container--link" href="./sections/noticias.html#noticia-3">
+                <a class="noticias-index__container--link" href="./sections/noticias.html">
                     <h3 class="noticias-index__container--titulo">Dave Mustaine Speaks How Marty Friedman Behaved at
                         Audition</h3>
                 </a>

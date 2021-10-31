@@ -126,7 +126,7 @@
             background: $blanco;
             width: 30px;
             height: 3px;
-            border-radius: 5px;
+            border-radius: $borde-redondeado;
             transition: all ease .3s;
         }
 

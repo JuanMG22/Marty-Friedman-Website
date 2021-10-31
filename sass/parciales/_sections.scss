@@ -44,7 +44,7 @@
                 height: 40vh;
             }
             @include mobile-l {
-                height: 24vh;
+                height: 22.5vh;
             }
             @include mobile {
                 height: 19vh;
@@ -67,7 +67,33 @@
             }
         }
 
-  
+        &--video {
+            display: block;
+            margin: auto;
+            width: 45vw;
+            height: 50vh;
+
+            @include laptop-l {
+                width: 45vw;
+                height: 45vh;
+            }
+
+            @include laptop {
+                width: 55vw;
+                height: 38vh;
+            }
+
+            @include tablet {
+                width: 70vw;
+                height: 40vh;
+            }
+
+            @include mobile-l {
+                width: 85vw;
+                height: 24vh;
+            }
+        }
+
     }
 }
 
