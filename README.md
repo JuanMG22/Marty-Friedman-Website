@@ -1,13 +1,13 @@
 #  Marty Friedman WebSite
 
-## Musical artist WebSite Project in HTNL, CSS & Vanilla JS
+## Musical artist WebSite Project in HTML, CSS & Vanilla JS
 
 
 
 ### Demo: [Marty Friedman Website](https://juanmg22.github.io/Marty-Friedman-Website/)
 
 [![index.png](https://i.postimg.cc/dV9c8C1v/index.png)](https://postimg.cc/HrjNmVXP)
-[index-2.png](https://postimg.cc/75cWZwNP)
+[![index.png](https://i.postimg.cc/dV9c8C1v/index.png)](https://postimg.cc/HrjNmVXP)
 [![Noticias.png](https://i.postimg.cc/765v8QNY/Noticias.png)](https://postimg.cc/MMJ3154h)
 [![Tour.png](https://i.postimg.cc/G227T8BM/Tour.png)](https://postimg.cc/3ysCPwFp)
 [![galeria.png](https://i.postimg.cc/43LC0TVS/galeria.png)](https://postimg.cc/FfLnf8Py)
