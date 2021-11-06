@@ -32,7 +32,8 @@
 ### Author
 
 > Juan Manuel González
-> Contact: Juan.m-gonzalez@outlook.com > [linkedin](https://www.linkedin.com/in/juan-manuel-gonzalez-041576218/)
+> Contact: Juan.m-gonzalez@outlook.com 
+> [linkedin](https://www.linkedin.com/in/juan-manuel-gonzalez-041576218/)
 
 
 ### Main libraries and API's used in the project
