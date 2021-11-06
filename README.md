@@ -29,18 +29,17 @@
 ### Contact Section
 [![contacto.png](https://i.postimg.cc/Jhkrjn9Q/contacto.png)](https://postimg.cc/LqmFpH4q)
 
-### Author
+### Author: Juan Manuel González
 
-> Juan Manuel González
-> Contact: Juan.m-gonzalez@outlook.com 
-> [linkedin](https://www.linkedin.com/in/juan-manuel-gonzalez-041576218/)
+- [Contact](Juan.m-gonzalez@outlook.com)
+- [Linkedin](https://www.linkedin.com/in/juan-manuel-gonzalez-041576218/)
 
 
 ### Main libraries and API's used in the project
 
 | library/API's                                                    | used                      |
 | ---------------------------------------------------------------- | ------------------------- |
-| [AnimateCss](https://animate.style/)                             | Animation Library         |
+| [AnimateCSS](https://animate.style/)                             | Animation Library         |
 | [Bootstrap](https://getbootstrap.com/)                           | CSS Framework             |
 | [AOS JS](https://michalsnik.github.io/aos/)                      | CSS & JS Library          |
 | [Font Awesome](https://pokeapi.co/)                              | Icons Library             |
