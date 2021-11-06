@@ -31,7 +31,7 @@
 
 ### Author: Juan Manuel González
 
-- [Contact](Juan.m-gonzalez@outlook.com)
+- [Contact](mailto:Juan.m-gonzalez@outlook.com)
 - [Linkedin](https://www.linkedin.com/in/juan-manuel-gonzalez-041576218/)
 
 
