@@ -3,10 +3,10 @@
 // Variable del loader
 const preloader = document.querySelector(`#loader`);
 
-
-setTimeout( () => {
+// Desaparece el preloader cuando el DOM termina de cargarse
+window.addEventListener('DOMContentLoaded', () => {
     preloader.classList.toggle(`close-loader`);
-}, 70)
+});
 
 
 /****************Menu Hamburguesa *****************/
@@ -24,7 +24,7 @@ const navMenu = document.querySelector(`.header__navegacion--menu`);
 btnBurger.addEventListener(`click`, () => {
     // Al detectar click del boton llamo funcion abrirCerrarMenu
     abrirCerrarMenu();
-})
+});
 
 
 // Fix en caso de presionar Contacto o logo en el index
@@ -33,12 +33,12 @@ const btnLogo = document.querySelector(`#btn-logo`);
 
 btnContacto.addEventListener(`mouseup`, () => {
     cerrarMenu()
-})
+});
 
 btnLogo.addEventListener(`mouseup`, () => {
     // Al detectar click del boton llamo funcion cierraMenu
     cerrarMenu();
-})
+});
 
 //Función abre/cierra menu agregando y quitando clases
 const abrirCerrarMenu = () => {

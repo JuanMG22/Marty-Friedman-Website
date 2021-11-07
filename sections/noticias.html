@@ -20,6 +20,9 @@
                 integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
                 crossorigin="anonymous">
 
+        <!-- AOS -->
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
         <!-- CSS & Icons -->
         <script src="https://kit.fontawesome.com/4592a31928.js" crossorigin="anonymous"></script>
         <link rel="stylesheet" href="../css/main.css">
@@ -76,7 +79,7 @@
                                 </h2>
                         </div>
                         <!-- Noticia 1 -->
-                        <article class="noticias__box--articulo" id="noticia-1">
+                        <article class="noticias__box--articulo" id="noticia-1" data-aos="fade-up" data-aos-delay="600"> 
                                 <div class="noticias__box--articulo-heading">
                                         <h3 class="noticias__box--titulo-noticia">Jackson Guitars and Marty Friedman
                                                 Team Up for the Pro Series Signature MF-1</h3>
@@ -124,7 +127,7 @@
                                         allowfullscreen></iframe>
                         </article>
                         <!-- Noticia 2 -->
-                        <article class="noticias__box--articulo" id="noticia-2">
+                        <article class="noticias__box--articulo" id="noticia-2" data-aos="fade-up" data-aos-delay="300">
                                 <div class="noticias__box--articulo-heading">
                                         <h3 class="noticias__box--titulo-noticia">MEGADETH GUITARIST KIKO LOUREIRO
                                                 INVITED MARTY FRIEDMAN TO PLAY ON OPEN SOURCE SOLO ALBUM "TO SHOW THAT
@@ -156,7 +159,7 @@
                                         allowfullscreen></iframe>
                         </article>
                         <!-- Noticia 3 -->
-                        <article class="noticias__box--articulo" id="noticia-3">
+                        <article class="noticias__box--articulo" id="noticia-3" data-aos="fade-up" data-aos-delay="300">
                                 <div class="noticias__box--articulo-heading">
                                         <h3 class="noticias__box--titulo-noticia">Dave Mustaine Speaks on Why He Had to
                                                 Fire Early Megadeth Members, Talks How Marty Friedman Behaved at
@@ -233,6 +236,13 @@
                 </div>
         </footer>
         <!-- JavaScript -->
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>
+                AOS.init({
+                once: true,
+                duration: 800
+                });
+        </script>
         <script src="../js/script.js"></script>
 </body>
 </body>
