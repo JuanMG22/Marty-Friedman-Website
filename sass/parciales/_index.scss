@@ -18,6 +18,7 @@
         url(../img/encabezado-bg-1.jpg);
         background-size: cover;
         background-position: center;
+        will-change: contents;
         animation: image-slider 12s infinite linear;
 
         &--icon {
