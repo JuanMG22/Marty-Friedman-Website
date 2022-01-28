@@ -32,7 +32,7 @@
 ### Author: Juan Manuel González
 
 - [Contact](mailto:Juan.m-gonzalez@outlook.com)
-- [Linkedin](https://www.linkedin.com/in/juan-manuel-gonzalez-041576218/)
+- [Linkedin](https://www.linkedin.com/in/juan-manuel-gonz%C3%A1lez-041576218/)
 
 
 ### Main libraries and API's used in the project
@@ -42,7 +42,7 @@
 | [AnimateCSS](https://animate.style/)                             | Animation Library         |
 | [Bootstrap](https://getbootstrap.com/)                           | CSS Framework             |
 | [AOS JS](https://michalsnik.github.io/aos/)                      | CSS & JS Library          |
-| [Font Awesome](https://pokeapi.co/)                              | Icons Library             |
+| [Font Awesome](https://fontawesome.com/)                         | Icons Library             |
 
 
 
